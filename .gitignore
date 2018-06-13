@@ -1,0 +1,13 @@
+# Fits file
+**.fits
+**.NL.txt
+
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mypy
+.mypy_cache/
