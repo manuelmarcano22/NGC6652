@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+../esorex/bin/esorex --output-dir=../data/grism1/objects/2003-06-04T06:33:31/ifu_fov.fits vmifuscience --CalibrateFlux=true ../data/grism1/objects/2003-06-04T06:33:31/ifu_fov.fitsifuscience.sof

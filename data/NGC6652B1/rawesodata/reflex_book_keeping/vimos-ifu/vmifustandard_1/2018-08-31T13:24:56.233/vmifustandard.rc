@@ -1,0 +1,6 @@
+vimos.Parameters.badpixel.clean="false"
+vimos.Parameters.bias.removing.method="Zmaster"
+vimos.Parameters.quality.enable="true"
+vimos.Parameters.reduceall="false"
+vimos.Parameters.response.order="5"
+vimos.Parameters.sky.align="true"

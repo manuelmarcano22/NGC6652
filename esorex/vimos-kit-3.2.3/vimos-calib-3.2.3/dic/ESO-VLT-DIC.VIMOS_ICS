@@ -1,0 +1,1339 @@
+#
+#  "@(#) $Id: ESO-VLT-DIC.VIMOS_ICS,v 1.1 2012-09-26 12:47:51 cgarcia Exp $"
+#
+#
+Dictionary Name:   ESO-VLT-DIC.VIMOS_ICS
+Scope:             INSTRUMENT
+Source:            sylvie.brau-nogue@obs-mip.fr
+Date:              $Date: 2012-09-26 12:47:51 $
+Version Control:   $@(#) $Id: ESO-VLT-DIC.VIMOS_ICS,v 1.1 2012-09-26 12:47:51 cgarcia Exp $
+Revision:          $Revision: 1.1 $ 
+Status:            Development
+Description:       Based on GEN-SPE-ESO-19400-794, 1.0/8 
+#------------------------------------------------------------------------------
+# General keywords
+#
+Parameter Name:    INS ID
+Class:             header
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     Instrument identification
+Description:	   Unique ID for this template 
+                   IDs are constructed according to the following convention:
+                        <context>/<name>/<version>
+                   where <context> is typically the instrument name
+                   (e.g. VIMOS), <name> is the module short name (e.g. INS)
+                   and <version> gives the version number of the module
+                   when applicable (e.g. 1.0)
+                   Example: "VIMOS/INS/1.0"
+
+Parameter Name:    INS DID
+Class:             header
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     Data dictionary for INS
+Description:       Name and version of ESO DID to which INS keywords
+                    comply to.
+
+Parameter Name:    INS SWSIM
+Class:             config|header|setup
+Context:           Instrument
+Type:              string
+Value Format:      %15s
+Unit:
+Comment Format:    Software simulation
+Description:       Possible values:
+                   NORMAL  : hw connected and used
+                   HW_SIM  : hw connected but simulated
+                   LCU_SIM : hw connection simulated on LCU
+
+Parameter Name:    INS SOFT DATE
+Class:             header
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Format:    Instrument SW Release date 
+Description:       Date of last release of the instrument system. 
+
+Parameter Name:    INS SOFT ID
+Class:             header|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %15s
+Unit:              
+Comment Field:     Version of ICS
+Description:       Version of instrument control software 
+
+#------------------------------------------------------------------------------
+# Instrument MODE keyword
+#
+Parameter Name:    INS MODE
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Instrument Observation Mode
+Description:       imaging (IMG), spectroscopy (MOS), integral field (IFU), test(TST)
+ 
+Parameter Name:    INS PIXSCALE
+Class:             header
+Context:           Instrument
+Type:              double
+Value Format:      %.3f
+Unit:              arcsec
+Comment Field:     Pixel scale
+Description:       Size of the pixel in arcsec derived by
+                   the instrument optics.
+
+#------------------------------------------------------------------------------
+# FILTER UNIT keywords
+#
+Parameter Name:    INS FILTi
+Class:             conf-log|private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Filter element device
+Description:       Filter element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS FILTi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Filter mode degraded 
+Description:       True (degraded) or False.
+
+Parameter Name:    INS FILTi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS FILTi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS FILTi ID
+Class:             header
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Filter ESO ID
+Description:       ESO Identification of filter mounted on FILTi and on optical path.
+
+Parameter Name:    INS FILTi NAME
+Class:             header|setup
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Filter name
+Description:       ESO name of filter mounted on FILTi and on optical path.
+
+Parameter Name:    INS FILTi IDi
+Class:             conf-log|setup
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Filter number i ESO ID in Unit FILTi
+Description:       ESO Identification of filter mounted on FILTi.
+
+Parameter Name:    INS FILTi NAMEi
+Class:             conf-log|setup
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Filter number i name in Unit FILTi
+Description:       ESO name of filter mounted on FILTi.
+
+Parameter Name:    INS FILTi NO
+Class:             maint-header|ops-log|setup
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Filter number
+Description:       Position of the filter mounted on FILTi.
+
+#------------------------------------------------------------------------------
+# GRISM UNIT keywords 
+#
+Parameter Name:    INS GRISi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Grism element device
+Description:       Grism element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS GRISi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Grism mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS GRISi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS GRISi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS GRISi ID
+Class:             header
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Grism ESO ID
+Description:       ESO Identification of grism mounted on GRISi and on optical path.
+
+Parameter Name:    INS GRISi NAME
+Class:             header|setup
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Grism name
+Description:       ESO name of grism mounted on GRISi and on optical path.
+
+Parameter Name:    INS GRISi IDi
+Class:             conf-log|setup
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Grism unique ESO ID
+Description:       ESO Identification of grism mounted on GRISi.
+
+Parameter Name:    INS GRISi NAMEi
+Class:             conf-log|setup
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Grism number i name
+Description:       ESO name of grism mounted on GRISi.
+
+Parameter Name:    INS GRISi NO
+Class:             maint-header|ops-log|setup
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Grism number
+Description:       Position of the grism in the carousel
+
+#------------------------------------------------------------------------------
+# MASK UNIT keywords
+#
+Parameter Name:    INS MASKi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Mask element device
+Description:       Mask element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS MASKi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Mask mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS MASKi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS MASKi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS MASKi CAB
+Class:             maint-header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Mask Cabinet Set 
+Description:       Mask Cabinet Set Identification (A/B).
+
+Parameter Name:    INS MASKi NO
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Mask set number
+Description:       Position of the mask in each beam cabinet 
+
+Parameter Name:    INS MASKi FIXi
+Class:             setup|ops-log|maint-header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Mask usuable(F), unusable(T)
+Description:       True (unusuable) or False.
+                   
+Parameter Name:    INS MASKi USEi
+Class:             setup|ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Number of mask use
+Description:       Number of times this mask was used
+                   
+#------------------------------------------------------------------------------
+# MASK SHUTTER Keywords
+#
+Parameter Name:    INS MSHUi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Mask Shutter device
+Description:       Mechanical element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS MSHUi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Mask Shutter mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS MSHUi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS MSHUi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS MSHUi MODE
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Mask Shutter mode
+Description:       Shutter is IN (ON) or OUT (OFF).
+
+Parameter Name:    INS MSHUi POS
+Class:             setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              mm
+Comment Field:     Mask Shutters positions (mm)
+Description:       Parameter value is curtainLow:curtainHigh 
+
+Parameter Name:    INS MSHUi POSH
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     High Mask Shutters positions (mm)
+Description:       Parameter value is positionHigh 
+
+Parameter Name:    INS MSHUi POSL
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Low Mask Shutters position (mm)
+Description:       Parameter value is positionLow 
+
+Parameter Name:    INS MSHUi SWHL
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              mm
+Comment Field:     Up. MShutter Low Soft. Lim. (in mm)
+Description:       
+
+Parameter Name:    INS MSHUi SWHU
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              mm
+Comment Field:     Up. MShutter Upper Soft. Lim. (in mm)
+Description:       
+
+Parameter Name:    INS MSHUi SWLL
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              mm
+Comment Field:     Lw. MShutter Low Soft. Lim. (in mm)
+Description:       
+
+Parameter Name:    INS MSHUi SWLU
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              mm
+Comment Field:     Lw. MShutter Upper Soft. Lim. (in mm)
+Description:       
+
+#------------------------------------------------------------------------------
+# Focusing Unit
+#
+Parameter Name:    INS FOCUi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     FOCUS device
+Description:       Element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS FOCUi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Focusing mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS FOCUi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS FOCUi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS FOCUi UPD
+Class:             private|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Updating Focusing Value 
+Description:       Updating Focusing (only for LCU Servers) 
+
+Parameter Name:    INS FOCUi MODE
+Class:             private|header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Focusing : Manual or Automatic 
+Description:       Mode Manual (MAN) or Automatic (AUTO)
+
+Parameter Name:    INS FOCUi VALUE
+Class:             private|setup|header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Camera lens position(micron)
+Description:       
+
+Parameter Name:    INS FOCUi SWL
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Focus Low Software Limit(micron)
+Description:       
+
+Parameter Name:    INS FOCUi SWU
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Focus Upper Software Limit(micron)
+Description:       
+
+Parameter Name:    INS FOCUi TEMP
+Class:             header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Temperature(C) for the beam 
+Description:       
+
+Parameter Name:    INS FOCUi REFi
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Reference temperature(C) for the beam
+Description:       
+
+Parameter Name:    INS FOCUi POSi
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Focus position(micron) for the reference temperature
+Description:       
+
+Parameter Name:    INS FOCUi POSIi
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Focus position(micron) for the reference temperature (IFU Mode)
+Description:       
+
+Parameter Name:    INS FOCUi DTi
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Variation coefficient for temperature correction
+Description:       
+
+Parameter Name:    INS FOCUi DPi
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Margin of non correction
+Description:       
+
+#------------------------------------------------------------------------------
+# Folding mirror positioning UNIT keywords
+#
+Parameter Name:    INS FOMPi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     FOMPU device
+Description:       Element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS FOMPi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     FOMP mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS FOMPi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS FOMPi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS FOMPi MODE
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Folding Mirror Positioning Mode
+Description:       True (on) or False.
+
+Parameter Name:    INS FOMPi ACT
+Class:             private|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Actuators position for the beam
+Description:       Parameter value represents actuator1:actuator2:actuator3 
+
+Parameter Name:    INS FOMPi ACTA
+Class:             private|setup|maint-header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Actuator1 position for the beam
+Description:       Parameter value represents actuator1
+
+Parameter Name:    INS FOMPi ACTB
+Class:             private|setup|maint-header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Actuator2 position for the beam
+Description:       Parameter value represents actuator2
+
+Parameter Name:    INS FOMPi ACTC
+Class:             private|setup|maint-header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Actuator3 position for the beam
+Description:       Parameter value represents actuator3
+
+#------------------------------------------------------------------------------
+# Integral Field Unit Keywords
+#
+Parameter Name:    INS IFUMi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Integral Field Mask device
+Description:       Mechanical element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS IFUMi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     IFU Mask mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS IFUMi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS IFUMi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS IFUMi MODE
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     IFU Mask mode  
+Description:       True (ON) or False.
+                   
+Parameter Name:    INS IFUMi AUTH
+Class:             maint-header|setup|ops-log
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     IFU Mask allowed  
+Description:       True (ON) or False.
+
+#------------------------------------------------------------------------------
+# Integral Field Elongator Keywords
+#
+Parameter Name:    INS IFUE
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     IFU Elongator device
+Description:       Mechanical element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS IFUE FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     IFU Elongator mode degraded 
+Description:       True (degraded) or False.
+
+Parameter Name:    INS IFUE SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS IFUE ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS IFUE MAG
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              string 
+Value Format:      %s
+Unit:              
+Comment Field:     IFU Magnification 0.33(1:2) or 0.67(1:1)
+Description:       
+
+#------------------------------------------------------------------------------
+# Integral Field Shutter Keywords
+#
+Parameter Name:    INS IFUS
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     IFU Shutter device
+Description:       Mechanical element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS IFUS FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     IFU Shutter mode degraded 
+Description:       True (degraded) or False.
+
+Parameter Name:    INS IFUS SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS IFUS ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS IFUS MODE
+Class:             header|setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     IFU Shutter CLOSED(ON) or OPEN(OFF)
+Description:       Shutter SMALL (ON) or Shutter LARGE (OFF)
+
+#------------------------------------------------------------------------------
+# Calibration UNIT keywords
+#
+Parameter Name:    INS LAMPi
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Lamp device (one for 3 boxes)
+Description:       Electrical element device. Keyword is used to reference
+                   corresponding SW device.
+
+Parameter Name:    INS LAMPi FIX
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Lamp[i] mode degraded
+Description:       True (degraded) or False.
+
+Parameter Name:    INS LAMPi SIM
+Class:             ops-log|header
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Device Hardware Simulation
+Description:       True (HW_SIM) or False.
+                   
+Parameter Name:    INS LAMPi ACC
+Class:             ops-log|conf-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:
+Comment Format:    Device Access Allowed
+Description:       True (NORMAL) or False (HW_SIM only).
+                   
+Parameter Name:    INS LAMPi STATE
+Class:             setup|ops-log|header
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     State for this lamp in each box
+Description:       ON (Switch On) or OFF (Switch Off).
+
+Parameter Name:    INS LAMPi START
+Class:             setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Light on the named lamp in each box
+Description:       equivalent to INS.LAMPi.STATE ON
+
+Parameter Name:    INS LAMPi STOP
+Class:             setup|ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Light off the named lamp in each box
+Description:       equivalent to INS.LAMPi.STATE OFF
+
+Parameter Name:    INS LAMPi TIME
+Class:             header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              s
+Comment Field:     Lamp lightening time
+Description:       time in seconds the calibration lamp was activated
+
+Parameter Name:    INS LAMPi ACCTIMi
+Class:             maint-header|setup|conf-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              h
+Comment Field:     Lamp lifetime in calibration box i
+Description:       lamp i in calibration box j accumulated time
+
+Parameter Name:    INS LAMPi ID
+Class:             private|header|setup|conf-log
+Context:           Instrument
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Calib. lamp ESO identification
+Description:       ESO identification of lamp.
+
+Parameter Name:    INS LAMPi NAME
+Class:             private|header|setup|conf-log
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Calibration lamp name
+Description:       Conventional name for lamp :
+                        - QTH50
+                        - QTH10
+                        - Ar
+                        - He
+                        - Ne
+
+Parameter Name:    INS LAMPi MAXTIM
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              h
+Comment Field:     Lamp maximum lifetime
+Description:       lamp i in all calibration box maximum accumulated 
+                   time of use before replacement
+
+Parameter Name:    INS LAMPi MAXUSE
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              s
+Comment Field:     Lamp maximum use time 
+Description:       lamp i in all calibration box maximum use time 
+
+Parameter Name:    INS LAMPi TYPE
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              s
+Comment Field:     Lamp calibration type
+Description:       lamp i in all calibration box calibration type 
+
+Parameter Name:    INS LAMPi IDLE
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              s
+Comment Field:     Lamp pre-ignition gap time 
+Description:       lamp i in all calibration box pre-ignition time 
+
+Parameter Name:    INS LAMPi FLUX
+Class:             conf-log|private|setup
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              s
+Comment Field:     Lamp Maximum Flux Delay
+Description:       lamp i in all calibration box ignition time 
+
+#-----------------------------------------------------------------------------
+#
+#-----------------------------------------------------------------------------
+# Generic Instrument classes keywords : vmimCoRotator, vmimGenRack, vmimGenSimulation
+#
+#
+#-----------------------------------------------------------------------------
+#
+#-----------------------------------------------------------------------------
+#  vmimCoRotator keywords 
+#  vmimGenRack keywords 
+#-----------------------------------------------------------------------------
+#
+Parameter Name:    INS SPY LCUi 
+Class:             private
+Context:           Instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Used to handle co-rotator device and general rackcabinet signals  
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi DS
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     DC motor Power Supply 
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi INL
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Hardware Interlock 
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi LLi
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Low Limit Reached
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi ULi
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Upper Limit Reached
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi COOLi
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Cooling Rack
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi FLOWi
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Cooling Rack Flow
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi OUTLH
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Outlet Cooling high
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi INLH
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Inlet Cooling high
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi AIRH
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Airflow Cooling 
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi COOLH
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Coolant  
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi CABH
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Cabinet High  
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi DOORi
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Rack Door State
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi TIN
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Inside cabinet temperature
+Description:       Updated with the LCU database
+
+Parameter Name:    INS SPY LCUi TOUT
+Class:             maint-header|ops-log
+Context:           Instrument
+Type:              double
+Value Format:      %f
+Unit:              
+Comment Field:     Ambient temperature
+Description:       Updated with the LCU database
+
+#
+#-----------------------------------------------------------------------------
+# General DTS Instrument classes keywords for Mechanical status
+#
+#
+#-----------------------------------------------------------------------------
+      
+Parameter Name:    INS FILTi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Filter Device mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS GRISi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Grism Device mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS MASKi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Mask Device mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS MSHUi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Mask Shutter Device mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS FOCUi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Focus Device mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS FOMPi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     FOMP Serial Port mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS FOMPi MECHA
+Class:             conf-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Actuator1 mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS FOMPi MECHB
+Class:             conf-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Actuator2 mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS FOMPi MECHC
+Class:             conf-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Actuator3 mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS IFUMi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     IFU Mask mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS IFUE MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     IFU Elongator mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS IFUS MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     IFU Shutter mech. status
+Description:  Mechanical status returned by DTS
+
+Parameter Name:    INS LAMPi MECH
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Lamp mech. status by box 
+Description:  Mechanical status returned by DTS for each lamp in each calibration box
+
+#-----------------------------------------------------------------------------
+# Log keywords
+#
+Parameter Name:    INS SOFT START
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Format:    ICS started
+Description:       Log startup of ICS.
+
+Parameter Name:    INS SOFT STOP
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Format:    ICS shutdown
+Description:       Log shutdown of ICS.
+
+Parameter Name:    INS SOFT OPMODE
+Class:             ops-log|header
+Context:           Instrument
+Type:              string
+Value Format:      %16s
+Unit:
+Comment Format:    ICS operational mode
+Description:       The ICS can work in one of the following modes:
+                   'Normal'            (hw connected and used)
+                   'Lcu Simulation'    (hw connection simulated on LCU)
+
+Parameter Name:    INS SETUP
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    ICS processing setup
+Description:       The ICS logs what setup is requested 
+
+Parameter Name:    INS CONFIG
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    ICS configuration
+Description:       The ICS logs what configuration is requested
+
+Parameter Name:    INS INIT
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    Device Initialization
+Description:       The ICS logs what initialization is performed
+
+Parameter Name:    INS MOVE
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    Device Motion
+Description:       The ICS logs what motion is performed
+
+Parameter Name:    INS SERVER LCUi
+Class:             ops-log|maint-header
+Context:           Instrument
+Type:              string
+Value Format:      %4s
+Unit:
+Comment Format:    Inst. Model complete or partial
+Description:       The ICS can use LCUs or not
+                   'lcu'    (LCUi devices built, server : vmilcuServer)
+                   'sim'    (LCUi devices built, server : vmiSimulator)
+                   'none'   (LCUi devices not built, instrument model partial)
+
+
+

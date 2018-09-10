@@ -1,0 +1,20 @@
+
+Start time     : 2018-08-31T13:24:32
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+13:24:32 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+13:24:32 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.37, WCSLIB = 4.25.1, FFTW (normal precision) = 3.3.3, FFTW (single precision) = 3.3.3, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 201107
+13:24:32 [ INFO  ] : [tid=000] Invocation command line was: esorex --suppress-prefix=TRUE --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmbias_1/2018-08-31T13:24:32.247 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_logs/vimos-ifu/vmbias_1/2018-08-31T13:24:32.247 --recipe-config=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_book_keeping/vimos-ifu/vmbias_1/2018-08-31T13:24:32.247/vmbias.rc --products-sof=products_sof.json vmbias /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_book_keeping/vimos-ifu/vmbias_1/2018-08-31T13:24:32.247/data.sof
+13:24:32 [WARNING] vimos_dfs_set_groups: [tid=000] Unrecognized frame tag: 'CCD_TABLE'
+13:24:37 [ INFO  ] vmbias: [tid=000] Combining 5 frames with method 'Median'
+13:24:38 [ INFO  ] vimos_bias_write_qc: [tid=000] Computing QC1 parameters...
+13:24:38 [ INFO  ] dfs_save_image: [tid=000] Saving MASTER_BIAS image to disk...
+13:24:39 [ INFO  ] : [tid=000] Calculating product checksums
+13:24:39 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmbias_1/2018-08-31T13:24:32.247/master_bias.fits
+13:24:39 [ INFO  ] : [tid=000] 1 product created
+13:24:39 [ INFO  ] : [tid=000] Recipe operation(s) took           6.99 seconds to complete.
+13:24:39 [ INFO  ] : [tid=000] Total size of 5 raw input frames  =    88.08 MB
+
+13:24:39 [ INFO  ] : [tid=000] => processing rate of    12.61 MB/sec 
+

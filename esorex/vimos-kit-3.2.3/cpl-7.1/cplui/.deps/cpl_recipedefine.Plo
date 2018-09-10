@@ -1,0 +1,279 @@
+cpl_recipedefine.lo: cpl_recipedefine.c ../config.h cpl_recipedefine.h \
+ cpl_recipe.h ../cplcore/cpl_macros.h ../libcext/cext/cxmacros.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h cpl_plugin.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h ../cplcore/cpl_error.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/bits/pthreadtypes.h ../cplcore/cpl_func.h \
+ ../libcext/cext/cxutils.h ../libcext/cext/cxtypes.h \
+ ../libcext/cext/cxconfig.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/float.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/inttypes.h \
+ cpl_frameset.h ../cplcore/cpl_type.h cpl_frame.h cpl_parameterlist.h \
+ cpl_parameter.h cpl_recipeconfig.h cpl_framedata.h cpl_plugininfo.h \
+ cpl_pluginlist.h ../cplcore/cpl_version.h ../cplcore/cpl_errorstate.h \
+ ../cplcore/cpl_msg.h ../cplcore/cpl_error_impl.h ../cplcore/cpl_error.h \
+ ../cplcore/cpl_type.h ../cplcore/cpl_tools.h ../cplcore/cpl_cfitsio.h \
+ ../cplcore/cpl_macros.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/longnam.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h ../cplcore/cpl_propertylist.h \
+ ../cplcore/cpl_property.h ../cplcore/cpl_errorstate.h \
+ ../cplcore/cpl_vector.h ../cplcore/cpl_matrix.h ../cplcore/cpl_array.h \
+ /usr/include/complex.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/cmathcalls.h ../cplcore/cpl_io.h ../cplcore/cpl_msg.h \
+ ../cplcore/cpl_test.h ../cplcore/cpl_imagelist.h \
+ ../cplcore/cpl_imagelist_io.h ../cplcore/cpl_image.h \
+ ../cplcore/cpl_image_io.h ../cplcore/cpl_mask.h ../cplcore/cpl_filter.h \
+ ../cplcore/cpl_image_basic.h ../cplcore/cpl_image_iqe.h \
+ ../cplcore/cpl_bivector.h ../cplcore/cpl_image_bpm.h \
+ ../cplcore/cpl_image_resample.h ../cplcore/cpl_image.h \
+ ../cplcore/cpl_matrix.h ../cplcore/cpl_polynomial.h \
+ ../cplcore/cpl_vector.h ../cplcore/cpl_bivector.h \
+ ../cplcore/cpl_image_stats.h ../cplcore/cpl_image_filter.h \
+ ../cplcore/cpl_image_gen.h ../cplcore/cpl_polynomial.h \
+ ../cplcore/cpl_imagelist.h ../cplcore/cpl_imagelist_basic.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ ../cplcore/cpl_type_impl.h /usr/include/regex.h ../cplcore/cpl_memory.h
+
+../config.h:
+
+cpl_recipedefine.h:
+
+cpl_recipe.h:
+
+../cplcore/cpl_macros.h:
+
+../libcext/cext/cxmacros.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h:
+
+cpl_plugin.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+../cplcore/cpl_error.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+../cplcore/cpl_func.h:
+
+../libcext/cext/cxutils.h:
+
+../libcext/cext/cxtypes.h:
+
+../libcext/cext/cxconfig.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/float.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/inttypes.h:
+
+cpl_frameset.h:
+
+../cplcore/cpl_type.h:
+
+cpl_frame.h:
+
+cpl_parameterlist.h:
+
+cpl_parameter.h:
+
+cpl_recipeconfig.h:
+
+cpl_framedata.h:
+
+cpl_plugininfo.h:
+
+cpl_pluginlist.h:
+
+../cplcore/cpl_version.h:
+
+../cplcore/cpl_errorstate.h:
+
+../cplcore/cpl_msg.h:
+
+../cplcore/cpl_error_impl.h:
+
+../cplcore/cpl_error.h:
+
+../cplcore/cpl_type.h:
+
+../cplcore/cpl_tools.h:
+
+../cplcore/cpl_cfitsio.h:
+
+../cplcore/cpl_macros.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/longnam.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+../cplcore/cpl_propertylist.h:
+
+../cplcore/cpl_property.h:
+
+../cplcore/cpl_errorstate.h:
+
+../cplcore/cpl_vector.h:
+
+../cplcore/cpl_matrix.h:
+
+../cplcore/cpl_array.h:
+
+/usr/include/complex.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/cmathcalls.h:
+
+../cplcore/cpl_io.h:
+
+../cplcore/cpl_msg.h:
+
+../cplcore/cpl_test.h:
+
+../cplcore/cpl_imagelist.h:
+
+../cplcore/cpl_imagelist_io.h:
+
+../cplcore/cpl_image.h:
+
+../cplcore/cpl_image_io.h:
+
+../cplcore/cpl_mask.h:
+
+../cplcore/cpl_filter.h:
+
+../cplcore/cpl_image_basic.h:
+
+../cplcore/cpl_image_iqe.h:
+
+../cplcore/cpl_bivector.h:
+
+../cplcore/cpl_image_bpm.h:
+
+../cplcore/cpl_image_resample.h:
+
+../cplcore/cpl_image.h:
+
+../cplcore/cpl_matrix.h:
+
+../cplcore/cpl_polynomial.h:
+
+../cplcore/cpl_vector.h:
+
+../cplcore/cpl_bivector.h:
+
+../cplcore/cpl_image_stats.h:
+
+../cplcore/cpl_image_filter.h:
+
+../cplcore/cpl_image_gen.h:
+
+../cplcore/cpl_polynomial.h:
+
+../cplcore/cpl_imagelist.h:
+
+../cplcore/cpl_imagelist_basic.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+../cplcore/cpl_type_impl.h:
+
+/usr/include/regex.h:
+
+../cplcore/cpl_memory.h:

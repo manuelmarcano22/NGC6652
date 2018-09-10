@@ -1,0 +1,66 @@
+[
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.badpixel.clean",
+    "recipe": "vmifustandard",
+    "description": "Bad pixel correction on master flat field.",
+    "display_name": "CleanBadPixel",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valenum": [
+      "Zmaster",
+      "Master"
+    ],
+    "valtype": "string",
+    "partype": "enum",
+    "name": "vimos.Parameters.bias.removing.method",
+    "recipe": "vmifustandard",
+    "description": "Bias removal method.",
+    "display_name": "BiasMethod",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "Zmaster"
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.quality.enable",
+    "recipe": "vmifustandard",
+    "description": "Compute QC1 parameters",
+    "display_name": "ComputeQC",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.reduceall",
+    "recipe": "vmifustandard",
+    "description": "Reduce any frame.",
+    "display_name": "ReduceAnyFrame",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "vimos.Parameters.response.order",
+    "recipe": "vmifustandard",
+    "description": "Order of the polynomial used to smooth the instrument response curve.",
+    "display_name": "ResponseOrder",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 5
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.sky.align",
+    "recipe": "vmifustandard",
+    "description": "Use sky lines to refine the wavelength calibration",
+    "display_name": "UseSkylines",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  }
+]

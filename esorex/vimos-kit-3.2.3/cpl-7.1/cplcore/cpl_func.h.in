@@ -1,0 +1,1 @@
+#define cpl_func __func__

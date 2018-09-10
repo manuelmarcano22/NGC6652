@@ -1,0 +1,13 @@
+cpl_version.lo: cpl_version.c ../config.h cpl_version.h cpl_macros.h \
+ ../libcext/cext/cxmacros.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h
+
+../config.h:
+
+cpl_version.h:
+
+cpl_macros.h:
+
+../libcext/cext/cxmacros.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h:

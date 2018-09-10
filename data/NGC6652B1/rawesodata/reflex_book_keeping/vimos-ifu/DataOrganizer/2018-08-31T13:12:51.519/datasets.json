@@ -1,0 +1,1245 @@
+[{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:22.788.fits",
+      "checksum": "E253C85E942DF985592821090CA20073",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+      "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "2",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:22.788.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T05:39:22.788",
+  "messages": ["Missing IFU_SPECPHOT_TABLE"],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": [
+    {
+      "rawFiles": [
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.295.fits",
+          "checksum": "61ED47182979E051D7A5FF62927DBBAC",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.745.fits",
+          "checksum": "46683E9338E0F8100F712E15AF789895",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.308.fits",
+          "checksum": "883CFA8D2E4478A66F3266A5EC0648C9",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.806.fits",
+          "checksum": "8C970B682CB4AAF7987BFC425D049BB7",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.291.fits",
+          "checksum": "166F66598692DDFD91E3437841F844FF",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+          "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "BIAS",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": []
+    },
+    {
+      "rawFiles": [
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:25:54.584.fits",
+          "checksum": "77B6F19F404E8D6537F1E3DEB9A09223",
+          "category": "IFU_ARC_SPECTRUM",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:24:37.707.fits",
+          "checksum": "65F109BC64FF8C87CB2DBAFFBD346F1F",
+          "category": "IFU_SCREEN_FLAT",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+          "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits",
+          "checksum": "5AC6807266F432AC7C22A7E91C4EB9CD",
+          "category": "LINE_CATALOG",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:06.327.fits",
+          "checksum": "1F976E6DCA47BB504B96D3FB0B2DA5FA",
+          "category": "IFU_IDENT",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "IFU_CAL",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": [{
+        "rawFiles": [
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.295.fits",
+            "checksum": "61ED47182979E051D7A5FF62927DBBAC",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.745.fits",
+            "checksum": "46683E9338E0F8100F712E15AF789895",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.308.fits",
+            "checksum": "883CFA8D2E4478A66F3266A5EC0648C9",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.806.fits",
+            "checksum": "8C970B682CB4AAF7987BFC425D049BB7",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.291.fits",
+            "checksum": "166F66598692DDFD91E3437841F844FF",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+            "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+            "category": "CCD_TABLE",
+            "class": "org.eso.domain.FitsFile"
+          }
+        ],
+        "auxiliary": false,
+        "name": "BIAS",
+        "messages": [],
+        "complete": true,
+        "class": "org.eso.domain.Action",
+        "actions": []
+      }]
+    }
+  ]
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:22.789.fits",
+      "checksum": "9E493C9278BC150D0BB8B3917806A0EB",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+      "checksum": "4C0C862435060E14E48B3D0879DA3720",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "3",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:22.789.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T05:39:22.789",
+  "messages": ["Missing IFU_SPECPHOT_TABLE"],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": [
+    {
+      "rawFiles": [
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.296.fits",
+          "checksum": "15771ECCB910B02FA788E64577468153",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.746.fits",
+          "checksum": "81F9ADD36E3301177F68FBAA66FA0604",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.309.fits",
+          "checksum": "A06C3CD7F8CF16CE9C4E0599EBCA7EF8",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.807.fits",
+          "checksum": "4CEE64ED35755C4AFC560ADF609AC486",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.292.fits",
+          "checksum": "28867C3F1A70206AA8517D8CBBF9BC98",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+          "checksum": "4C0C862435060E14E48B3D0879DA3720",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "BIAS",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": []
+    },
+    {
+      "rawFiles": [
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:25:54.585.fits",
+          "checksum": "5E887A9925F5958ADA6E9AC788E041F9",
+          "category": "IFU_ARC_SPECTRUM",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:24:37.708.fits",
+          "checksum": "BE7DA7CB67692F772C5541CADB4BDF06",
+          "category": "IFU_SCREEN_FLAT",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+          "checksum": "4C0C862435060E14E48B3D0879DA3720",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits",
+          "checksum": "5AC6807266F432AC7C22A7E91C4EB9CD",
+          "category": "LINE_CATALOG",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:09.125.fits",
+          "checksum": "56CF2D7A7E2853506AB921384E81567E",
+          "category": "IFU_IDENT",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "IFU_CAL",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": [{
+        "rawFiles": [
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.296.fits",
+            "checksum": "15771ECCB910B02FA788E64577468153",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.746.fits",
+            "checksum": "81F9ADD36E3301177F68FBAA66FA0604",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.309.fits",
+            "checksum": "A06C3CD7F8CF16CE9C4E0599EBCA7EF8",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.807.fits",
+            "checksum": "4CEE64ED35755C4AFC560ADF609AC486",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.292.fits",
+            "checksum": "28867C3F1A70206AA8517D8CBBF9BC98",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+            "checksum": "4C0C862435060E14E48B3D0879DA3720",
+            "category": "CCD_TABLE",
+            "class": "org.eso.domain.FitsFile"
+          }
+        ],
+        "auxiliary": false,
+        "name": "BIAS",
+        "messages": [],
+        "complete": true,
+        "class": "org.eso.domain.Action",
+        "actions": []
+      }]
+    }
+  ]
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.fits",
+      "checksum": "9584F0317BB2C406899CECCECEC7AF9C",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.5.tfits",
+      "checksum": "78FFD3EDF24578161345456480861619",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "1",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T05:39:52.285",
+  "messages": [
+    "Missing MASTER_BIAS",
+    "Missing IFU_IDS",
+    "Missing IFU_TRACE",
+    "Missing IFU_TRANSMISSION",
+    "Missing IFU_SPECPHOT_TABLE"
+  ],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": []
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.fits",
+      "checksum": "5E6E7C81A32495162AAD77D4B0D7C336",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.8.tfits",
+      "checksum": "E1334183B607F5C9A5211E5193E390E0",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "4",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T05:39:52.286",
+  "messages": [
+    "Missing MASTER_BIAS",
+    "Missing IFU_IDS",
+    "Missing IFU_TRACE",
+    "Missing IFU_TRANSMISSION",
+    "Missing IFU_SPECPHOT_TABLE"
+  ],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": []
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:07.255.fits",
+      "checksum": "512B640C32C4250A7E21B8CB6B41E358",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+      "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "2",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:07.255.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T06:01:07.255",
+  "messages": ["Missing IFU_SPECPHOT_TABLE"],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": [
+    {
+      "rawFiles": [
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.295.fits",
+          "checksum": "61ED47182979E051D7A5FF62927DBBAC",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.745.fits",
+          "checksum": "46683E9338E0F8100F712E15AF789895",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.308.fits",
+          "checksum": "883CFA8D2E4478A66F3266A5EC0648C9",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.806.fits",
+          "checksum": "8C970B682CB4AAF7987BFC425D049BB7",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.291.fits",
+          "checksum": "166F66598692DDFD91E3437841F844FF",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+          "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "BIAS",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": []
+    },
+    {
+      "rawFiles": [
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:25:54.584.fits",
+          "checksum": "77B6F19F404E8D6537F1E3DEB9A09223",
+          "category": "IFU_ARC_SPECTRUM",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:24:37.707.fits",
+          "checksum": "65F109BC64FF8C87CB2DBAFFBD346F1F",
+          "category": "IFU_SCREEN_FLAT",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+          "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits",
+          "checksum": "5AC6807266F432AC7C22A7E91C4EB9CD",
+          "category": "LINE_CATALOG",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:06.327.fits",
+          "checksum": "1F976E6DCA47BB504B96D3FB0B2DA5FA",
+          "category": "IFU_IDENT",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "IFU_CAL",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": [{
+        "rawFiles": [
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.295.fits",
+            "checksum": "61ED47182979E051D7A5FF62927DBBAC",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.745.fits",
+            "checksum": "46683E9338E0F8100F712E15AF789895",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.308.fits",
+            "checksum": "883CFA8D2E4478A66F3266A5EC0648C9",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.806.fits",
+            "checksum": "8C970B682CB4AAF7987BFC425D049BB7",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.291.fits",
+            "checksum": "166F66598692DDFD91E3437841F844FF",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits",
+            "checksum": "3881D4032BDC8FD60B8ED8CE404F2B9E",
+            "category": "CCD_TABLE",
+            "class": "org.eso.domain.FitsFile"
+          }
+        ],
+        "auxiliary": false,
+        "name": "BIAS",
+        "messages": [],
+        "complete": true,
+        "class": "org.eso.domain.Action",
+        "actions": []
+      }]
+    }
+  ]
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:07.256.fits",
+      "checksum": "930054FF08575A245E3CA4637C46BDAB",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+      "checksum": "4C0C862435060E14E48B3D0879DA3720",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "3",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:07.256.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T06:01:07.256",
+  "messages": ["Missing IFU_SPECPHOT_TABLE"],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": [
+    {
+      "rawFiles": [
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.296.fits",
+          "checksum": "15771ECCB910B02FA788E64577468153",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.746.fits",
+          "checksum": "81F9ADD36E3301177F68FBAA66FA0604",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.309.fits",
+          "checksum": "A06C3CD7F8CF16CE9C4E0599EBCA7EF8",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.807.fits",
+          "checksum": "4CEE64ED35755C4AFC560ADF609AC486",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.292.fits",
+          "checksum": "28867C3F1A70206AA8517D8CBBF9BC98",
+          "category": "BIAS",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["BIAS/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+          "checksum": "4C0C862435060E14E48B3D0879DA3720",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "BIAS",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": []
+    },
+    {
+      "rawFiles": [
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:25:54.585.fits",
+          "checksum": "5E887A9925F5958ADA6E9AC788E041F9",
+          "category": "IFU_ARC_SPECTRUM",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:24:37.708.fits",
+          "checksum": "BE7DA7CB67692F772C5541CADB4BDF06",
+          "category": "IFU_SCREEN_FLAT",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+          "checksum": "4C0C862435060E14E48B3D0879DA3720",
+          "category": "CCD_TABLE",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits",
+          "checksum": "5AC6807266F432AC7C22A7E91C4EB9CD",
+          "category": "LINE_CATALOG",
+          "class": "org.eso.domain.FitsFile"
+        },
+        {
+          "purposes": ["IFU_CAL/SCI_IFU"],
+          "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:09.125.fits",
+          "checksum": "56CF2D7A7E2853506AB921384E81567E",
+          "category": "IFU_IDENT",
+          "class": "org.eso.domain.FitsFile"
+        }
+      ],
+      "auxiliary": false,
+      "name": "IFU_CAL",
+      "messages": [],
+      "complete": true,
+      "class": "org.eso.domain.Action",
+      "actions": [{
+        "rawFiles": [
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:29:15.296.fits",
+            "checksum": "15771ECCB910B02FA788E64577468153",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:30:07.746.fits",
+            "checksum": "81F9ADD36E3301177F68FBAA66FA0604",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:00.309.fits",
+            "checksum": "A06C3CD7F8CF16CE9C4E0599EBCA7EF8",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:31:52.807.fits",
+            "checksum": "4CEE64ED35755C4AFC560ADF609AC486",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-05T15:32:45.292.fits",
+            "checksum": "28867C3F1A70206AA8517D8CBBF9BC98",
+            "category": "BIAS",
+            "class": "org.eso.domain.FitsFile"
+          },
+          {
+            "purposes": ["BIAS/IFU_CAL/SCI_IFU"],
+            "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits",
+            "checksum": "4C0C862435060E14E48B3D0879DA3720",
+            "category": "CCD_TABLE",
+            "class": "org.eso.domain.FitsFile"
+          }
+        ],
+        "auxiliary": false,
+        "name": "BIAS",
+        "messages": [],
+        "complete": true,
+        "class": "org.eso.domain.Action",
+        "actions": []
+      }]
+    }
+  ]
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.fits",
+      "checksum": "8E7B15B2D3EFA2134F82F76756950CF6",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.5.tfits",
+      "checksum": "78FFD3EDF24578161345456480861619",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "1",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T06:01:36.626",
+  "messages": [
+    "Missing MASTER_BIAS",
+    "Missing IFU_IDS",
+    "Missing IFU_TRACE",
+    "Missing IFU_TRANSMISSION",
+    "Missing IFU_SPECPHOT_TABLE"
+  ],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": []
+},{
+  "rawFiles": [
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.fits",
+      "checksum": "FEEC615F9288EA692559851F33BC473F",
+      "category": "IFU_SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.8.tfits",
+      "checksum": "E1334183B607F5C9A5211E5193E390E0",
+      "category": "CCD_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCI_IFU"],
+      "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits",
+      "checksum": "5B1CD90E1DDC833CB1ECD73A0BFF1792",
+      "category": "EXTINCT_TABLE",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "NGC-6652-B",
+      "key": "OBS.TARG.NAME"
+    },
+    {
+      "value": "142172",
+      "key": "OBS.ID"
+    },
+    {
+      "value": "NGC-6652-B-1",
+      "key": "OBS.NAME"
+    },
+    {
+      "value": "4",
+      "key": "OCS.CON.QUAD"
+    },
+    {
+      "value": "IFU",
+      "key": "INS.MODE"
+    },
+    {
+      "value": "0.330",
+      "key": "INS.PIXSCALE"
+    },
+    {
+      "value": "2",
+      "key": "OBS.TPLNO"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS1.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS2.NAME"
+    },
+    {
+      "value": "UNDEFINED",
+      "key": "INS.GRIS3.NAME"
+    },
+    {
+      "value": "HR_blue",
+      "key": "INS.GRIS4.NAME"
+    }
+  ],
+  "nightlogFile": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.NL.txt",
+  "auxiliary": true,
+  "name": "SCI_IFU",
+  "datasetName": "VIMOS.2003-06-04T06:01:36.627",
+  "messages": [
+    "Missing MASTER_BIAS",
+    "Missing IFU_IDS",
+    "Missing IFU_TRACE",
+    "Missing IFU_TRANSMISSION",
+    "Missing IFU_SPECPHOT_TABLE"
+  ],
+  "complete": false,
+  "class": "org.eso.domain.Dataset",
+  "actions": []
+}]

@@ -1,0 +1,147 @@
+[
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.apply.transmission",
+    "recipe": "vmifucalib",
+    "description": "Apply transmission correction to extracted arc lamp spectra",
+    "display_name": "ApplyTransmission",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.badpixel.clean",
+    "recipe": "vmifucalib",
+    "description": "Bad pixel correction on master flat field.",
+    "display_name": "CleanBadPixel",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valenum": [
+      "Zmaster",
+      "Master"
+    ],
+    "valtype": "string",
+    "partype": "enum",
+    "name": "vimos.Parameters.bias.removing.method",
+    "recipe": "vmifucalib",
+    "description": "Bias removal method.",
+    "display_name": "BiasMethod",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "Zmaster"
+  },
+  {
+    "valtype": "double",
+    "partype": "value",
+    "name": "vimos.Parameters.ids.maxrms",
+    "recipe": "vmifucalib",
+    "description": "Maximum tolerated RMS of residuals in IDS fit",
+    "display_name": "MaxIdsRms",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 2
+  },
+  {
+    "valenum": [
+      "FirstGuess",
+      "Blind"
+    ],
+    "valtype": "string",
+    "partype": "enum",
+    "name": "vimos.Parameters.line.ident.method",
+    "recipe": "vmifucalib",
+    "description": "Arc line identification method.",
+    "display_name": "LineIdent",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "Blind"
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.quality.enable",
+    "recipe": "vmifucalib",
+    "description": "Compute QC1 parameters",
+    "display_name": "ComputeQC",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "double",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.ksigma.high",
+    "recipe": "vmifucalib",
+    "description": "High threshold for K-sigma clipping method.",
+    "display_name": "KSigmaHigh",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 5
+  },
+  {
+    "valtype": "double",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.ksigma.low",
+    "recipe": "vmifucalib",
+    "description": "Low threshold for K-sigma clipping method.",
+    "display_name": "KSigmaLow",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 5
+  },
+  {
+    "valenum": [
+      "Average",
+      "Median",
+      "MinMax",
+      "Ksigma",
+      "Auto"
+    ],
+    "valtype": "string",
+    "partype": "enum",
+    "name": "vimos.Parameters.stacking.method",
+    "recipe": "vmifucalib",
+    "description": "Flat fields combination method.",
+    "display_name": "StackMethod",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "MinMax"
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.minmax.maximum",
+    "recipe": "vmifucalib",
+    "description": "Number of highest rejected values for rejection method.",
+    "display_name": "MaxRejection",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 1
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.minmax.minimum",
+    "recipe": "vmifucalib",
+    "description": "Number of lowest rejected values for rejection method.",
+    "display_name": "MinRejection",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 0
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.singleframes",
+    "recipe": "vmifucalib",
+    "description": "Flat fields combination method is ignored.",
+    "display_name": "AllowSingleFrames",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "vimos.Parameters.trace.failed",
+    "recipe": "vmifucalib",
+    "description": "Maximum percentage of rejected positions in fiber spectra tracing",
+    "display_name": "MaxTraceRejection",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 33
+  }
+]

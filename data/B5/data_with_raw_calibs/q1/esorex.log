@@ -1,0 +1,41 @@
+
+Start time     : 2018-09-07T11:53:44
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+11:53:44 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+11:53:44 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.37, WCSLIB = 4.25.1, FFTW (normal precision) = 3.3.3, FFTW (single precision) = 3.3.3, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 201107
+11:53:44 [ INFO  ] : [tid=000] Invocation command line was: esorex vmifuscience --CalibrateFlux=true ifuscience.sof
+11:53:44 [ INFO  ] vmifuscience: [tid=000] Loading input frames...
+11:53:45 [ INFO  ] vmifuscience: [tid=000] Bias removal...
+11:53:45 [ INFO  ] vmifuscience: [tid=000] Processing data from quadrant 1, HR_blue/Free, shutter ON...
+11:53:45 [ INFO  ] vmifuscience: [tid=000] Processing spectra in pseudo-slit 2:
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Load flat field tracing table...
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Detect traceable spectra on science...
+11:53:45 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 70.000000, Detected spectra: 165
+11:53:45 [ INFO  ] vmifuscience: [tid=000]     165 spectra detected on scientific exposure.
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Tracing detected spectra...
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Identify traced spectra on science exposure...
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Flat tracings alignment: offset: 3.892182, slope: -0.000781
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Align flat field tracings to science exposure...
+11:53:45 [ INFO  ] vmifuscience: [tid=000]   Extraction of scientific spectra...
+11:53:47 [ INFO  ] vmifuscience: [tid=000]   Align wavelength calibration to detected sky lines...
+11:53:47 [ INFO  ] ifuAlignSkylines: [tid=000]   Applying median shift of 0.043229 px
+11:53:47 [ INFO  ] ifuAlignSkylines: [tid=000]   NOT applying individual shifts
+11:53:47 [ INFO  ] vmifuscience: [tid=000]     Alignment: 0.04 CCD pixels
+11:53:47 [ INFO  ] vmifuscience: [tid=000]   Resample scientific spectra at constant wavelength step (0.54 Angstrom)
+11:53:47 [ INFO  ] vmifuscience: [tid=000] Apply transmission correction to extracted spectra...
+11:53:47 [ INFO  ] vmifuscience: [tid=000] Applying spectro-photometric calibration ...
+11:53:47 [ INFO  ] VmSpApplyPhot: [tid=000] Mean airmass: 1.0277
+11:53:47 [ INFO  ] : [tid=000] Calculating product checksums
+11:53:47 [ INFO  ] : [tid=000] Created product ifu_fov.fits (in place)
+11:53:47 [ INFO  ] : [tid=000] Created product ifu_science_flux_reduced.fits (in place)
+11:53:47 [ INFO  ] : [tid=000] Created product ifu_science_reduced.fits (in place)
+11:53:47 [ INFO  ] : [tid=000] Created product ifu_sky_ids.fits (in place)
+11:53:47 [ INFO  ] : [tid=000] Created product ifu_sky_trace.fits (in place)
+11:53:47 [ INFO  ] : [tid=000] 5 products created
+11:53:47 [ INFO  ] : [tid=000] Recipe operation(s) took           3.01 seconds to complete.
+11:53:47 [ INFO  ] : [tid=000] Size of single raw input frame  =    17.63 MB
+
+11:53:47 [ INFO  ] : [tid=000] => processing rate of     5.86 MB/sec 
+

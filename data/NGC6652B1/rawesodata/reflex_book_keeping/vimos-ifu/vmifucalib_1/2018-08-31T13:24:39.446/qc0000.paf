@@ -1,0 +1,29 @@
+PAF.HDR.START;
+PAF.TYPE            "QC1 parameters";        # Type of parameter file
+PAF.ID              "";
+PAF.NAME            "qc0000.paf";            # Name of PAF
+PAF.DESC            "";                      # Short description of PAF
+PAF.CRTE.NAME       "mmarcano";              # Name of creator
+PAF.CRTE.DAYTIM     "2018-08-31T13:24:45";   # Civil time for creation
+PAF.LCHG.NAME       "mmarcano";              # Author of par. file
+PAF.LCHG.DAYTIM     "2018-08-31T13:24:45";   # Timestamp for last change
+PAF.CHCK.NAME       "";                      # Name of appl. checking
+PAF.CHCK.DAYTIM     "";                      # Time for checking
+PAF.CHCK.CHECKSUM   "";                      # Checksum for the PAF
+PAF.HDR.END;
+#------------------------------------------------------------------------------
+QC.DID              "VIMOS_QC-1.0";          # QC1 dictionary [VIMOS]
+PRO.CATG            "IFU_ARC_SPECTRUM_EXTRACTED"; # Product category [VIMOS]
+ARCFILE             "VIMOS.2003-06-04T06:25:54.584.fits"; # Archive File Name [VIMOS]
+TPL.ID              "VIMOS_ifu_cal_NightCalib"; # Template signature ID [VIMOS]
+OCS.CON.QUAD        2;                       # Quadrant [VIMOS]
+INS.GRIS2.NAME      "HR_blue";               # Grism name [VIMOS]
+INS.FILT2.NAME      "Free";                  # Filter name [VIMOS]
+INS.IFUS.MODE       "ON";                    # IFU mode [VIMOS]
+INS.IFUE.MAG        "2:1";                   # IFU magnification [VIMOS]
+QC.IFU.HE.LAMBDA    5015.68017578125;        # He arc lamp line for flux determination (Angstrom) [VIMOS]
+QC.IFU.HE.FLUX      7462.65222545929;        # Flux at chosen He wavelength (ADU/fiber/s) [VIMOS]
+QC.IFU.HE.FLUXERR   448.804039941784;        # Error on flux at chosen He wavelength (ADU/fiber/s) [VIMOS]
+QC.IFU.NE.LAMBDA    5944.830078125;          # Ne arc lamp line for flux determination (Angstrom) [VIMOS]
+QC.IFU.NE.FLUX      18890.3824840681;        # Flux at chosen Ne wavelength (ADU/fiber/s) [VIMOS]
+QC.IFU.NE.FLUXERR   1307.54781161535;        # Error on flux at chosen Ne wavelength (ADU/fiber/s) [VIMOS]

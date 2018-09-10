@@ -1,0 +1,424 @@
+cpl_test.lo: cpl_test.c ../config.h /usr/include/complex.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/cmathcalls.h cpl_test.h cpl_macros.h \
+ ../libcext/cext/cxmacros.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h cpl_msg.h \
+ cpl_type.h ../libcext/cext/cxtypes.h ../libcext/cext/cxconfig.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/float.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/inttypes.h \
+ cpl_error.h /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h /usr/include/bits/pthreadtypes.h cpl_func.h \
+ ../libcext/cext/cxutils.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h cpl_array.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h cpl_imagelist.h cpl_imagelist_io.h cpl_image.h \
+ cpl_image_io.h cpl_io.h cpl_propertylist.h cpl_property.h cpl_mask.h \
+ cpl_matrix.h cpl_filter.h cpl_image_basic.h cpl_vector.h cpl_type.h \
+ cpl_error.h cpl_image_iqe.h cpl_bivector.h cpl_image_bpm.h \
+ cpl_image_resample.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h cpl_image.h cpl_matrix.h cpl_polynomial.h \
+ cpl_vector.h cpl_bivector.h cpl_image_stats.h cpl_image_filter.h \
+ cpl_image_gen.h cpl_polynomial.h cpl_imagelist.h cpl_imagelist_basic.h \
+ cpl_errorstate.h /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ cpl_init.h cpl_errorstate.h cpl_memory.h cpl_msg.h cpl_tools.h \
+ cpl_cfitsio.h cpl_macros.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/longnam.h \
+ cpl_propertylist.h cpl_error.h cpl_vector.h cpl_type.h cpl_type_impl.h \
+ cpl_stats_impl.h cpl_stats_defs.h cpl_stats.h cpl_image.h cpl_io_fits.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio2.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h \
+ /usr/include/pthread.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/sched.h /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/xlocale.h /usr/include/bits/setjmp.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h cpl_image_io_impl.h \
+ cpl_image_io.h cpl_image_basic_impl.h cpl_image_basic.h \
+ /usr/include/assert.h /usr/include/string.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/signal.h \
+ /usr/include/bits/sigset.h /usr/include/bits/signum.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigstack.h /usr/include/sys/ucontext.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/sigthread.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/include/sys/times.h /usr/include/sys/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fftw3.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcslib.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/cel.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/prj.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcserr.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/fitshdr.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsconfig.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/lin.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/log.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/spc.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/spx.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/sph.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/tab.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcs.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsfix.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcshdr.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsmath.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsprintf.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcstrig.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsunits.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsutil.h
+
+../config.h:
+
+/usr/include/complex.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/cmathcalls.h:
+
+cpl_test.h:
+
+cpl_macros.h:
+
+../libcext/cext/cxmacros.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h:
+
+cpl_msg.h:
+
+cpl_type.h:
+
+../libcext/cext/cxtypes.h:
+
+../libcext/cext/cxconfig.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/float.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/inttypes.h:
+
+cpl_error.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+cpl_func.h:
+
+../libcext/cext/cxutils.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h:
+
+cpl_array.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+cpl_imagelist.h:
+
+cpl_imagelist_io.h:
+
+cpl_image.h:
+
+cpl_image_io.h:
+
+cpl_io.h:
+
+cpl_propertylist.h:
+
+cpl_property.h:
+
+cpl_mask.h:
+
+cpl_matrix.h:
+
+cpl_filter.h:
+
+cpl_image_basic.h:
+
+cpl_vector.h:
+
+cpl_type.h:
+
+cpl_error.h:
+
+cpl_image_iqe.h:
+
+cpl_bivector.h:
+
+cpl_image_bpm.h:
+
+cpl_image_resample.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+cpl_image.h:
+
+cpl_matrix.h:
+
+cpl_polynomial.h:
+
+cpl_vector.h:
+
+cpl_bivector.h:
+
+cpl_image_stats.h:
+
+cpl_image_filter.h:
+
+cpl_image_gen.h:
+
+cpl_polynomial.h:
+
+cpl_imagelist.h:
+
+cpl_imagelist_basic.h:
+
+cpl_errorstate.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+cpl_init.h:
+
+cpl_errorstate.h:
+
+cpl_memory.h:
+
+cpl_msg.h:
+
+cpl_tools.h:
+
+cpl_cfitsio.h:
+
+cpl_macros.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/longnam.h:
+
+cpl_propertylist.h:
+
+cpl_error.h:
+
+cpl_vector.h:
+
+cpl_type.h:
+
+cpl_type_impl.h:
+
+cpl_stats_impl.h:
+
+cpl_stats_defs.h:
+
+cpl_stats.h:
+
+cpl_image.h:
+
+cpl_io_fits.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio2.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h:
+
+/usr/include/pthread.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+cpl_image_io_impl.h:
+
+cpl_image_io.h:
+
+cpl_image_basic_impl.h:
+
+cpl_image_basic.h:
+
+/usr/include/assert.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/sys/times.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fftw3.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcslib.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/cel.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/prj.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcserr.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/fitshdr.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsconfig.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/lin.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/log.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/spc.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/spx.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/sph.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/tab.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcs.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsfix.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcshdr.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsmath.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsprintf.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcstrig.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsunits.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/wcslib/wcsutil.h:

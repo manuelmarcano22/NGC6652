@@ -1,0 +1,11 @@
+prefix=/home/mmarcano/Documents/VIMOS/NGC6652/esorex
+exec_prefix=/home/mmarcano/Documents/VIMOS/NGC6652/esorex
+libdir=/home/mmarcano/Documents/VIMOS/NGC6652/esorex/lib
+includedir=/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.1
+Libs: -L/home/mmarcano/Documents/VIMOS/NGC6652/esorex/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include

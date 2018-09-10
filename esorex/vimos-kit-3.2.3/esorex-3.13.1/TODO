@@ -1,0 +1,11 @@
+To-do list for EsoRex
+---------------------
+
+- Better handling of logfiles. Logfiles should either be written 
+  directly to their output location, or should use a temporary name. 
+  This would allow multiple instances of EsoRex to be run in the same
+  directory without conflict.
+
+End of file
+-----------
+

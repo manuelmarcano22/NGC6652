@@ -1,0 +1,7 @@
+../data/grism2/products/master_bias.fits MASTER_BIAS
+../data/grism2/objects/2003-06-24T04:55:50/VIMOS.2003-06-24T04:55:50.706.fits IFU_SCIENCE
+../data/grism2/products/ifu_ids.fits IFU_IDS
+../data/grism2/products/ifu_trace.fits IFU_TRACE
+../data/grism2/products/ifu_transmission.fits IFU_TRANSMISSION
+../esorex/calibrations/calib/vimos-3.2.3/cal/extinct_table.tfits EXTINCT_TABLE
+../data/grism2/products/ifu_specphot_table.fits IFU_SPECPHOT_TABLE

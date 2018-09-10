@@ -1,0 +1,109 @@
+[
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.bias.badpixel.clean",
+    "recipe": "vmbias",
+    "description": "Bad pixel correction on master bias",
+    "display_name": "CleanBadPixel",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.bias.cosmics.clean",
+    "recipe": "vmbias",
+    "description": "Cosmic ray removal from each raw bias",
+    "display_name": "CleanCosmic",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.bias.overscan.remove",
+    "recipe": "vmbias",
+    "description": "Remove overscan regions from master bias",
+    "display_name": "RemoveOverscan",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.bias.quality.enable",
+    "recipe": "vmbias",
+    "description": "Compute QC1 parameters",
+    "display_name": "ComputeQC",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "double",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.ksigma.high",
+    "recipe": "vmbias",
+    "description": "High threshold for K-sigma clipping method",
+    "display_name": "KSigmaHigh",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 5
+  },
+  {
+    "valtype": "double",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.ksigma.low",
+    "recipe": "vmbias",
+    "description": "Low threshold for K-sigma clipping method",
+    "display_name": "KSigmaLow",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 5
+  },
+  {
+    "valenum": [
+      "Average",
+      "Median",
+      "MinMax",
+      "Ksigma",
+      "Auto"
+    ],
+    "valtype": "string",
+    "partype": "enum",
+    "name": "vimos.Parameters.stacking.method",
+    "recipe": "vmbias",
+    "description": "Frame combination method",
+    "display_name": "StackMethod",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "Median"
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.minmax.maximum",
+    "recipe": "vmbias",
+    "description": "Number of highest rejected values for rejection method",
+    "display_name": "MaxRejection",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 1
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.minmax.minimum",
+    "recipe": "vmbias",
+    "description": "Number of lowest rejected values for rejection method",
+    "display_name": "MinRejection",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 1
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.stacking.singleframes",
+    "recipe": "vmbias",
+    "description": "Frame combination method is ignored.",
+    "display_name": "AllowSingleFrames",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  }
+]

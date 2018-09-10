@@ -1,0 +1,610 @@
+#******************************************************************************
+# E.S.O. - VLT project
+#
+# "@(#) $Id: ESO-VLT-DIC.VIMOS_MPS,v 1.1 2012-09-26 12:47:51 cgarcia Exp $"
+#******************************************************************************
+# 
+#   ESO-VLT-DIC.VIMOS-MPS - Data Interface Dictionary for VIMOS
+#                           Mask Preparation Software
+# 
+# who       when        what
+# --------  ----------  ----------------------------------------------
+# rschmutz  03/03/2003  PPRS8943: INS.ADF.ADMID added.
+#
+#******************************************************************************
+
+Dictionary Name:   ESO-VLT_DIC.VIMOS_MPS
+Scope:             VIMOS_MPS
+Source:            ESO VLT
+Revision:          0.0
+Date:              1999-06-02
+Status:            Draft
+Description:       Data Interface Dictionary for VIMOS MPS
+
+#------------------------------------------------------------------------------
+# MPS STARTUP CONFIGURATION KEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS MPS START
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     vmmcs started
+Description:       vmmcs started
+
+Parameter Name:    INS MPS STOP
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     vmmcs stoped
+Description:       vmmcs stoped
+
+Parameter Name:    INS MPS INSTRUME
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Intrument Name
+Description:       Intrument Name ("VIMOS"|"NIRMOS")
+
+Parameter Name:    INS MPS MHSHOST
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     MHS host name
+Description:       es. "mhcu.ifctr.mi.cnr.it"
+
+Parameter Name:    INS MPS MHSUSER
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     MHS user name
+Description:       es. "vimos"
+
+Parameter Name:    INS MPS MHSPASSW
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     MHS user password
+Description:       es. "vimosftp"
+
+Parameter Name:    INS MPS OHSDATA
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     OHS home directory
+Description:       es. "/xxxx/xxxx/vimos"
+
+Parameter Name:    INS MPS MHSDATA
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     MHS home directory
+Description:       es. "/xxxx/xxxx/nirmos"
+
+Parameter Name:    INS MPS MPSDATA
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     MPS data directory
+Description:       es. "/xxxx/xxxx/nirmos"
+
+Parameter Name:    INS MPS P2M_EXE
+Class:             conf-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Pixel to mm procedure name
+Description:       Name of the procedure for the coordinate conversion from 
+                   pixel to mm (can be different for VIMOS and NIRMOS)
+
+Parameter Name:    INS MPS T_COEFF
+Class:             conf-log
+Context:           MPS
+Type:              double
+Value Format:      %f
+Unit:               
+Comment Field:     Temperature coefficient
+Description:       temperature coefficient of the scale factor
+                   due to camera temperature changes:
+                   X1=(1+a(T1-T2)*X0)
+                   
+Parameter Name:    INS MPS T_REF
+Class:             conf-log
+Context:           MPS
+Type:              double
+Value Format:      %f
+Unit:               
+Comment Field:     Reference temperature
+Description:       Reference temperature for the camera temperature
+                   changes calibration
+                   
+#------------------------------------------------------------------------------
+# ORDER/REPORT kEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS OB ID
+Class:             template
+Context:           INS
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     OB identification number
+Description:       OB identification number
+
+Parameter Name:    INS ADPi  
+Class:             template
+Context:           INS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     ID for the ADP
+Description:       The file name of the ADP (ADF in pixel)
+
+Parameter Name:    INS ADMi  
+Class:             template
+Context:           INS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     ID for the ADM
+Description:       The file name of the ADM (ADF in mm)
+
+
+Parameter Name:    INS MASKi ID
+Class:             header|template
+Context:           INS
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     Mask identification number
+Description:       Mask identification number
+
+Parameter Name:    INS MASKi NAID
+Class:             header|template
+Context:           INS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Same as PAF.ID
+Description:       Mask ID
+
+#------------------------------------------------------------------------------
+# ADF HEADER kEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS ADF TYPE
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Type of ADF
+Description:       Type of ADF value: "MOS"|"IFU"|"Imaging"|"Undefined". 
+                   For MPS: "MOS"
+
+Parameter Name:    INS ADF VERSION
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:               
+Comment Field:     Version of ADF
+Description:       Version number of MOS ADF definition
+
+Parameter Name:    INS ADF ID
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Name for the ADF
+Description:       The file name of the ADF
+
+Parameter Name:    INS ADF ADMID
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Name for the *.adm ADF
+Description:       The file name of the *.adm ADF
+
+Parameter Name:    INS ADF UNIT
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Unit of slit/object coordinates
+Description:       Unit of slit/object coordinates (PIXEL | MILLIMETER)
+
+Parameter Name:    INS ADF COMMENT
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Optional user comment for ADF
+Description:       Optional user comment for ADF
+               
+Parameter Name:    INS ADF GRISM NAME
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Grism name
+Description:       Grism name
+
+Parameter Name:    INS ADF GRISM SPECTLEN
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:               
+Comment Field:     Spectrum length in pixels
+Description:       Spectrum length in pixels
+
+Parameter Name:    INS ADF SKYREG
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:               
+Comment Field:     Sky region in arcsec
+Description:       Minimum of sky per slit border
+
+Parameter Name:    INS REF NO
+Class:             header
+Context:           ADF
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     Number of reference apertures
+Description:       Number of apertures used for mask alignment
+
+Parameter Name:    INS ARC NO
+Class:             header
+Context:           ADF
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     Number of curved apertures
+Description:       Number of curved apertures for special objects like 
+                   gravitazional arcs
+
+Parameter Name:    INS SLIT NO
+Class:             header
+Context:           ADF
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     Number of all apertures but reference ones 
+Description:       Number of all apertures for normal objects, apertures for
+                   reference objects are not included.
+
+Parameter Name:    INS SHU NO
+Class:             header
+Context:           ADF
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     Number of shutter positions
+Description:       Number of shutter positions for each shutter
+
+Parameter Name:    INS SHUi POSL
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Lower shutter positions
+Description:       Position in mm of the shutter curtainLow
+
+Parameter Name:    INS SHUi POSH
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Upper shutter positions
+Description:       Position in mm of the shutter curtainHigh
+
+#------------------------------------------------------------------------------
+# ONLY ADF SQUARE (REFERENCE) SLIT KEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS REFi TYPE
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Type of REF i
+Description:       Type of slit for reference object i: "SQUARE"
+
+Parameter Name:    INS REFi ID
+Class:             header
+Context:           ADF
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     ID of REF i
+Description:       Is the ID number of the reference object
+
+Parameter Name:    INS REFi X
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     x co-ordinate of REF i
+Description:       x co-ordinate of the center of reference aperture i on mask
+
+Parameter Name:    INS REFi Y
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     y co-ordinate of REF i
+Description:       y co-ordinate of the center of reference aperture i on mask
+
+Parameter Name:    INS REFi DIMX
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Size in x direction of REF i
+Description:       Size of slit in spatial direction of reference aperture i 
+                   on mask
+
+Parameter Name:    INS REFi DIMY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Size in y direction of REF i
+Description:       Size of slit in dispersion direction of reference aperture i 
+                   on mask
+                   
+Parameter Name:    INS REFi OBJ RA
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              degree
+Comment Field:     RA (J2000) of object
+Description:       Right Ascension of object in reference aperture i on mask
+
+Parameter Name:    INS REFi OBJ DEC
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              degree
+Comment Field:     DEC (J2000) of object
+Description:       Declination of object in reference aperture i on mask
+
+#------------------------------------------------------------------------------
+# ADF RECTANGULAR AND CURVED SLIT KEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS SLITi TYPE
+Class:             header
+Context:           ADF
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Type of SLIT i
+Description:       Type of slit i: "RECTANGLE"|"CURVE"
+
+Parameter Name:    INS SLITi ID
+Class:             header
+Context:           ADF
+Type:              integer
+Value Format:      %d
+Unit:               
+Comment Field:     ID of SLIT i
+Description:       Is the ID number of the object in the slit
+
+Parameter Name:    INS SLITi X
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     x co-ordinate of SLIT i
+Description:       x co-ordinate of the center of aperture i on mask
+
+Parameter Name:    INS SLITi Y
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     y co-ordinate of SLIT i
+Description:       y co-ordinate of the center of aperture i on mask
+
+Parameter Name:    INS SLITi DIMX
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Size in x direction of SLIT i
+Description:       Size of slit in spatial direction of aperture i on mask
+
+Parameter Name:    INS SLITi DIMY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Size in y direction of SLIT i
+Description:       Size of slit in dispersion direction of aperture i on mask
+
+Parameter Name:    INS SLITi OBJ RA
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              degree
+Comment Field:     RA (J2000) of object
+Description:       Right Ascension of object in reference aperture i on mask
+
+Parameter Name:    INS SLITi OBJ DEC
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              degree
+Comment Field:     DEC (J2000) of object
+Description:       Declination of object in aperture i on mask
+
+#------------------------------------------------------------------------------
+# ONLY ADF CURVED SLIT KEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS SLITi BEZIER DY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Slit width 
+Description:       Distance between the 2 slit curved bords
+
+Parameter Name:    INS SLITi BEZIER XX
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter X0 of X BEZIER equation
+Description:       X BEZIER equation: X(t) = AX*t^3 + BX*t^2 + CX*t + X0
+
+Parameter Name:    INS SLITi BEZIER AX
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter AX of X BEZIER equation
+Description:       X BEZIER equation: X(t) = AX*t^3 + BX*t^2 + CX*t + X0
+
+Parameter Name:    INS SLITi BEZIER BX
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter BX of X BEZIER equation
+Description:       X BEZIER equation: X(t) = AX*t^3 + BX*t^2 + CX*t + X0
+
+Parameter Name:    INS SLITi BEZIER CX
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter CX of X BEZIER equation
+Description:       X BEZIER equation: X(t) = AX*t^3 + BX*t^2 + CX*t + X0
+
+Parameter Name:    INS SLITi BEZIER YY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter Y0 of Y BEZIER equation
+Description:       Y BEZIER equation: Y(t) = AY*t^3 + BY*t^2 + CY*t + Y0
+
+Parameter Name:    INS SLITi BEZIER AY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter AY of Y BEZIER equation
+Description:       Y BEZIER equation: Y(t) = AY*t^3 + BY*t^2 + CY*t + Y0
+
+Parameter Name:    INS SLITi BEZIER BY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter BY of Y BEZIER equation
+Description:       Y BEZIER equation: Y(t) = AY*t^3 + BY*t^2 + CY*t + Y0
+
+Parameter Name:    INS SLITi BEZIER CY
+Class:             header
+Context:           ADF
+Type:              double
+Value Format:      %f
+Unit:              mm
+Comment Field:     Parameter CY of Y BEZIER equation
+Description:       Y BEZIER equation: Y(t) = AY*t^3 + BY*t^2 + CY*t + Y0
+
+#------------------------------------------------------------------------------
+# Log kEYWORDS
+#------------------------------------------------------------------------------
+
+Parameter Name:    INS MPS FTPGET 
+Class:             ops-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Get order/report
+Description:       Get an order/report from OHS  or from MHS
+
+Parameter Name:    INS MPS FTPPUT 
+Class:             ops-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Put order/report
+Description:       Put an order/report to OHS or to MHS
+
+Parameter Name:    INS MPS FRMCNV 
+Class:             ops-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     convert order/report in job/termination
+Description:       convert UNIX order/report format in/to NT job/termination format 
+
+Parameter Name:    INS MPS CRDCNV 
+Class:             ops-log
+Context:           MPS
+Type:              string
+Value Format:      %s
+Unit:               
+Comment Field:     Convert ADP in ADM and MSF
+Description:       Convert ADP (pixel) in ADM (mm) and MSF (file for laser machine)
+

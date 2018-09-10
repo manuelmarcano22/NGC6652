@@ -1,0 +1,8 @@
+* Add recipes for 4 quadrant astrometry and MOS spectro-photometric
+  calibration.
+
+* Change jitter recipes such that they can be used for stare observations
+  too and get rid of the specific recipes for stare mode.
+
+* Add flat field creation to the imaging jitter recipe to get rid of
+  fringes in the I and z band.

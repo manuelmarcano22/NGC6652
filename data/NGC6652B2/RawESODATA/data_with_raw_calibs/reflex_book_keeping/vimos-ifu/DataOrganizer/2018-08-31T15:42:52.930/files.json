@@ -1,0 +1,1528 @@
+[
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:50:27.152.fits",
+    "checksum": "41BBD0F414BA28AF64757452B4D35C1B",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:50:57.737.fits",
+    "checksum": "1B57E7D30CC17C93FA772EE3CAB4068D",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:51:19.622.fits",
+    "checksum": "5DA70427A9228B329CE5C5EADB6F2289",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:51:50.203.fits",
+    "checksum": "2C88C18E358B49D2C5B87A172C85B9A2",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:52:12.492.fits",
+    "checksum": "421BD98520D538C04F38EBEF9EFA5C3E",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:52:43.071.fits",
+    "checksum": "760E9010A3272AA42BE36739F750F2CF",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:53:05.231.fits",
+    "checksum": "A02097E3F7BA15B9DA4B81B5596CFE75",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:53:35.809.fits",
+    "checksum": "78E855939801F875D21B6981C5B0EB31",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:53:58.195.fits",
+    "checksum": "0891C8A5EDB5CF6327FB6BB901451551",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T10:54:28.786.fits",
+    "checksum": "2A6719CD76B659ED25396FAF069F2B35",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:01:35.597.fits",
+    "checksum": "1E6733BA22E58EC2E2A36C8D50F8E40A",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:01:35.598.fits",
+    "checksum": "D5936EB046C601B945C2916E5ACB58A6",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:02:05.885.fits",
+    "checksum": "7DD062FFFFD480A00065B639230EB556",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:02:05.886.fits",
+    "checksum": "16384BAAA3A7F6234DF3F653CE3DCB9E",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:02:28.113.fits",
+    "checksum": "466804BCAF2CC303CCAC5DA323573236",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:02:28.114.fits",
+    "checksum": "2F3045EE22E529FBB6FB72B4B11B7AB5",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:02:58.376.fits",
+    "checksum": "D2A10EBCF661426009F289E850D47FEB",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:02:58.377.fits",
+    "checksum": "B1DAA01B9FDF3A3F5820FE3692202E41",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:03:20.880.fits",
+    "checksum": "8D55AB8667E86C4534E54490B72D6A0F",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:03:20.881.fits",
+    "checksum": "C98FA5ACB970E58500662DD14DCB4E8E",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:03:51.144.fits",
+    "checksum": "B6F562040E48F65E48E86B0460A81ABC",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:03:51.145.fits",
+    "checksum": "E2D780A4CF518C1F840BCF659C3BD9D7",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:04:13.642.fits",
+    "checksum": "D8ABD2782D98E5B6E3694042DD84A9BC",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:04:13.643.fits",
+    "checksum": "44C3946B3582A0E11BCA5422CCFC3CBA",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:04:44.022.fits",
+    "checksum": "E9A1983A132354D63701408CF2DBFBA2",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:04:44.023.fits",
+    "checksum": "4DFB93DB54E687FC0215C575168EE50A",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:05:06.557.fits",
+    "checksum": "A84EAC4BA3EF90475290F15909CB9140",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:05:06.558.fits",
+    "checksum": "BB03E1B372B3D1D59EC2A762C1193235",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:05:36.829.fits",
+    "checksum": "105F811EE2FCF962257235CAAE02AF29",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-21T15:05:36.830.fits",
+    "checksum": "A6CCF7EE8313B974656C829CB40396AC",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T15:00:39.375.fits",
+    "checksum": "67F420ACB15BEC95F8B34DB7BB8246DC",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T15:01:17.311.fits",
+    "checksum": "E12ABC021CBCEC922777A73BAFB543D4",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T15:01:55.412.fits",
+    "checksum": "BA52758AFA07B317B6174430415D6830",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T15:02:33.758.fits",
+    "checksum": "82969A2BCA078756E79ACBACECC28F06",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T15:03:11.973.fits",
+    "checksum": "D6BEF33A5B2858C2CAE282450406538D",
+    "category": "BIAS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q1.fits",
+    "checksum": "29AFF16F9D00292CF24D75E277BE71AE",
+    "category": "CCD_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q2.fits",
+    "checksum": "ACCC22A062ED8C04E71BC788570C89CB",
+    "category": "CCD_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q3.fits",
+    "checksum": "3896A8B7F1E81DEB602A9422B424ED7E",
+    "category": "CCD_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q4.fits",
+    "checksum": "95C071A5376317F5B3F4E0560946BCD3",
+    "category": "CCD_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_blue_Free.fits",
+    "checksum": "EF776F6B2263ED8796E020D00212BFFF",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_blueh_Free.fits",
+    "checksum": "71292B9718FE03CAF92BD371F0F564FD",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_orange_Free.fits",
+    "checksum": "3B7FDF246D3ACBD2C29F0C5A5AF6388C",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_orange_GG435.fits",
+    "checksum": "3B7FDF246D3ACBD2C29F0C5A5AF6388C",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_orange_GG475.fits",
+    "checksum": "3B7FDF246D3ACBD2C29F0C5A5AF6388C",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_red_GG475.fits",
+    "checksum": "CD6290A6AB52A18C7F44D02DCF57DBE0",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_HR_redh_GG475.fits",
+    "checksum": "7559EC5D6E575C1243F12B5AC31E8C1F",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_LR_blue_Free.fits",
+    "checksum": "A9B2EB4C74EE604E21EF05822380B6E2",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_LR_blue_OS_blue.fits",
+    "checksum": "09B4643DC73118C65A233ED94B833B4C",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_LR_red_Free.fits",
+    "checksum": "02E4E5DD318B0D43B6437CDF8FBFB56A",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_LR_red_GG475.fits",
+    "checksum": "28DF1AA7516AEA25D14A812A5484906C",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_LR_red_OS_red.fits",
+    "checksum": "28DF1AA7516AEA25D14A812A5484906C",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_MR_Free.fits",
+    "checksum": "A9580B187EBE4F7350A494051A1EB580",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_MR_GG475.fits",
+    "checksum": "25441521AF61EFFD5F588F98EB8B4D1F",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_MR_OS_blue.fits",
+    "checksum": "25441521AF61EFFD5F588F98EB8B4D1F",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VIMOS_GRS_MR_OS_red.fits",
+    "checksum": "A9580B187EBE4F7350A494051A1EB580",
+    "category": "CONFIG_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:12:53.176.fits",
+    "checksum": "E3735A55B8249C4E0D7F1AD994538C7D",
+    "category": "EXTINCT_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:51:34.908.fits",
+    "checksum": "667DA242CC060ED43A9EBD02146EB84A",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:52:05.966.fits",
+    "checksum": "FB2E5A848ADCB6FE0556469875B2CCB8",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:52:54.185.fits",
+    "checksum": "7052F8DAF65DAE82009BF9CA17168235",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:53:25.230.fits",
+    "checksum": "6E6BE0EA5BEC6BB78F109D9170ABE3FE",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:54:13.741.fits",
+    "checksum": "5CF6E1B73BF7DDA7618396B1BDA3B24B",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:54:44.783.fits",
+    "checksum": "8C81F0EED26CBF307BB25140276D4A2E",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T07:30:05.035.fits",
+    "checksum": "CE582589021504BB7641493C6D5458A3",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T07:31:15.962.fits",
+    "checksum": "EA4499C96EEFAC1645383E08F2275461",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T07:32:27.601.fits",
+    "checksum": "85A75875D7C16F9C4BE30E0DF7382139",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T08:05:07.041.fits",
+    "checksum": "EAFC6BA04F2007B7F09EC43138ECDB46",
+    "category": "FLAT,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q1.fits",
+    "checksum": "FFCCBA68208FF09ADA483BBDAD92832C",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q2.fits",
+    "checksum": "57931A3E7BFE8DBF4562865E2FF8E2EB",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q3.fits",
+    "checksum": "F5AC668759A10A9C09F0A358F893F5E4",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q4.fits",
+    "checksum": "E3F6965FF9CF010459C2F9D687D80832",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q1.fits",
+    "checksum": "37812A07437FE34BB4BFBF3793C397F8",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q2.fits",
+    "checksum": "775C8AA523CCA92F250D669420F14BA3",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q3.fits",
+    "checksum": "AF512993AD612DE25E118754011DB0F1",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q4.fits",
+    "checksum": "0ECA494C7A29F20BA672B4BB6E2BE684",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q1.fits",
+    "checksum": "1A1DCC975EE1D0C86FE517264EEDEC5A",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q2.fits",
+    "checksum": "8B80770A9A1DC3FF92E934191A898E29",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q3.fits",
+    "checksum": "0B49A0A1E76B92E1E2AE15B638307690",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q4.fits",
+    "checksum": "2A16D00F09D9B89B31B24C0E185D42DD",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q1.fits",
+    "checksum": "341D042B6CB19C45623CD1A2222EE3DD",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q2.fits",
+    "checksum": "B4D149BDB32406891317032F80C391F5",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q3.fits",
+    "checksum": "937EB6EE47ECB88976E91ED1970DFE03",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q4.fits",
+    "checksum": "56FE53ACE4AA0779DA4467822B7C96CB",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q1.fits",
+    "checksum": "10251BBE6E42B57AB34FA5AB134F42B9",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q2.fits",
+    "checksum": "290DABC5152A77241039DA0EE7F561A0",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q3.fits",
+    "checksum": "F5FD317D61901888B58A07917575CBED",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q4.fits",
+    "checksum": "31F4DBCB5D6F4259BC9DFF88EB5A5EF7",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q1.fits",
+    "checksum": "148994D29D1EAD2BE0887E5A2A0FE38B",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q2.fits",
+    "checksum": "61172BBEDEDC947E91CE2569146233D3",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q3.fits",
+    "checksum": "737D7B2E536B9B779DE9A3EBF473FB4B",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q4.fits",
+    "checksum": "EFF12C61D8FAEF3BC00F8381280540C4",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q1.fits",
+    "checksum": "441109927D1228C0A93A81812FB99485",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q2.fits",
+    "checksum": "677830641C41EBF7EB23C1CD7CA071DA",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q3.fits",
+    "checksum": "57FC178B88403B8DCCAA1A27EE105462",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q4.fits",
+    "checksum": "A826904F0308FF0AC843DCDA46ACB31C",
+    "category": "GLOBAL_DISTORTION_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:16:03.380.fits",
+    "checksum": "F9BEF35EFFD1DF01A1AB2D4F420AA57B",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:16:06.327.fits",
+    "checksum": "06C2A44FD654446929DDFE20434E0323",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:16:09.125.fits",
+    "checksum": "50EFD62893B87E4CA0B5231FBA768E29",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:16:12.090.fits",
+    "checksum": "AE674BB3372D4172D28658567E8B0A6B",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:16:21.529.fits",
+    "checksum": "3A5CA78ED9590FD165E19EDC3B493B37",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:16:24.258.fits",
+    "checksum": "EA70D045A253BD5123661A19874418AE",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.1.fits",
+    "checksum": "955EAD46C6CBCC14E8E681B1E91FD815",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.2.fits",
+    "checksum": "00D845B512FF06CFE69C573C34C0A687",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.3.fits",
+    "checksum": "4F30F56AC150F372D6CACDD4BA4AE01B",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.4.fits",
+    "checksum": "9C6A285A0642CB9D8C2B8A2CC0241F5D",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.1.fits",
+    "checksum": "2146987BC4698445A46441FCF06AF6F7",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.2.fits",
+    "checksum": "073E8386A5AB855C8848043C10E79BD3",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.3.fits",
+    "checksum": "5C39C439C8C08987F4C6C1AEEFF63ACB",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.4.fits",
+    "checksum": "7FD41953805949D403E6CA094C68CF7F",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.1.fits",
+    "checksum": "7F2F2C28D385409AE5F9582F43FD1F59",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.2.fits",
+    "checksum": "EE8F8E772E556F49FD6F35BD54735944",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.3.fits",
+    "checksum": "68E12A25B5AFD14FA85FE16DDD6A23C7",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.4.fits",
+    "checksum": "578D1E594AA3EEB45A2EF475D39C27B2",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.1.fits",
+    "checksum": "D50DD6901AEF12FAEA1A3E6DC73DA9A8",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.2.fits",
+    "checksum": "8360A43B665AD9DA78F37F7FD8437D27",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.3.fits",
+    "checksum": "C68BBAAE02A927083718100766006ADE",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.4.fits",
+    "checksum": "58AD6F300C47AD01AA5BE2E302379810",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.1.fits",
+    "checksum": "960C916262732A8247E226EAE229C516",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.2.fits",
+    "checksum": "CFBA28AFA2891712E7C987F633ACD1BD",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.3.fits",
+    "checksum": "C1CC09D7FAC56CA79BB51A388567ABBF",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.4.fits",
+    "checksum": "3B97286A264F4BF80E8A2CD7B06F4387",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.1.fits",
+    "checksum": "96CA0453C2850373315BD46A371D2410",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.2.fits",
+    "checksum": "0A54F8206ADDED401B1B75D200D72665",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.3.fits",
+    "checksum": "2DF66058C6134E23BAE59D94714E79D1",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.4.fits",
+    "checksum": "953A5FB59381F00F48125AD62901E1F8",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.1.fits",
+    "checksum": "25C8373C4633E35C1FBAF0A5BE3E838F",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.2.fits",
+    "checksum": "6B01292D8835C63B8B0AA7A6EAA23C68",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.3.fits",
+    "checksum": "EE93421B93F5A8FD47681D09A33ADD0D",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.1.fits",
+    "checksum": "6ECBA19B0AD1914CC5BDF32AF165C0FF",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.2.fits",
+    "checksum": "17CE939CDEBF3E02FDA9547F4E85F30F",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.3.fits",
+    "checksum": "84FFB1731601316DF28784A03D03EF40",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.4.fits",
+    "checksum": "CFA8A852BE0BD2D327D79D96E1A5EEB4",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.1.fits",
+    "checksum": "B9CAFF93C0880A1D4F2CD465AC364CB4",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.2.fits",
+    "checksum": "9C64E78AAB00A2661B204683C2666A8E",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.3.fits",
+    "checksum": "879FB6941430693697344E85B91AECAB",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.4.fits",
+    "checksum": "C383A9730E3BB623903BF00CBA4A4938",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.1.fits",
+    "checksum": "F4562FEB4BCC3377045F2443D7FB6BF9",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.2.fits",
+    "checksum": "9F2DA0C5D00C73FC02C8EDC1D9727E51",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.3.fits",
+    "checksum": "829F3C48D9A221E08D23FD36AB7CF731",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.4.fits",
+    "checksum": "EAA89FF85EEB9677C7F8595FD6F78672",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits",
+    "checksum": "C02F4E7B831F499C06E17BF7AF0F5E3E",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits",
+    "checksum": "859FA437C3BF861E40AB5394F1AAEF78",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits",
+    "checksum": "5E610CCE69DDB1C69C9D02F8DC117342",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits",
+    "checksum": "B8093636CEB092C869523AA5BFF0C679",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits",
+    "checksum": "BE9BA98BE3BB589085EE72EBE4D179E4",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits",
+    "checksum": "776A5AD54A38853B53B66EECE93BFD47",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits",
+    "checksum": "48B6AB20C88609D279DF3AAE7411A51B",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits",
+    "checksum": "73457DB9B396271308E6F7CE6614F469",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.1.fits",
+    "checksum": "C163851D547EA26877E7A76D02B79DBE",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.2.fits",
+    "checksum": "7CC2EC915BFB98E876FD69B500DB39F4",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.3.fits",
+    "checksum": "41FB33C435D887DB733AA4538DAAC80A",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.4.fits",
+    "checksum": "A0AD907449135EF9861F799A2390491B",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits",
+    "checksum": "A9901C9DEF273028696D1607F0CDD5B5",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits",
+    "checksum": "D9FCEB87D5628839B63D52A34E3F2993",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits",
+    "checksum": "FADD289B538924E821D22EE77EC55E4A",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits",
+    "checksum": "0BCD2F2C69DC43353E4533D47AE97F13",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.1.fits",
+    "checksum": "3F801F14F59DCA331CB8FAC29C0105F6",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.2.fits",
+    "checksum": "13CF957CD5956B730F507F16F808E3B7",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.3.fits",
+    "checksum": "639E0C758A865C35CCB365292B85DD32",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.4.fits",
+    "checksum": "6A72CD68DD77CC6BC1BD2CD925E94F3E",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.1.fits",
+    "checksum": "4AA7A86CB240910AA61553326E92C1C3",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.2.fits",
+    "checksum": "83ADF096EA7A9497D09B7E10EBF5A4BE",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.3.fits",
+    "checksum": "B44033A5BA8FCF12451A431771AF2002",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.4.fits",
+    "checksum": "72E7FC6F8C18081A6C45639B3CABD51C",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.1.fits",
+    "checksum": "801C9628D55CB91555FBE2D65D75158A",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.2.fits",
+    "checksum": "CAB2A18ECBC7540F88580DB174D4B7A3",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.3.fits",
+    "checksum": "1CD298B4528CE26656DA08C4D8FD7449",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.4.fits",
+    "checksum": "C651A6106518ECA3420B5019804D3D38",
+    "category": "IFU_IDENT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:20:40.981.fits",
+    "checksum": "780A3EE4F995BF82676724133C4EA6F2",
+    "category": "IFU_MASTER_RESPONSE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:20:44.067.fits",
+    "checksum": "6B380A26D43C030E1FA6EE4641A79865",
+    "category": "IFU_MASTER_RESPONSE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:20:47.901.fits",
+    "checksum": "D797A8F639431BD35B01F6BF84F0F6A7",
+    "category": "IFU_MASTER_RESPONSE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:20:50.827.fits",
+    "checksum": "79415920DE722BE2DA8687A805243F4A",
+    "category": "IFU_MASTER_RESPONSE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR1.fits",
+    "checksum": "EAAC585687840B4C9C22B6570297C60C",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR2.fits",
+    "checksum": "4BCB05F21A092E547F99ED520C3992ED",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR3.fits",
+    "checksum": "DE8ED2507048DCA5482B97D358F76876",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR4.fits",
+    "checksum": "0B1E7D8EE6AD965C1637D9C280A265BE",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR1.fits",
+    "checksum": "B85581FDD91CDA8F281CC13B4D38423F",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR2.fits",
+    "checksum": "5AF648232343428F23491EA3401793BC",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR3.fits",
+    "checksum": "3BCCC6F4F18A14AC22BF952DA5B8DD85",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR4.fits",
+    "checksum": "2D9D5AA7F045295AE2814675EE49171E",
+    "category": "IFU_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:11:18.672.fits",
+    "checksum": "0B8D2E897251E924CB2F79E0173AA797",
+    "category": "LINE_CATALOG",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:11:23.749.fits",
+    "checksum": "6B7F9C2A73542805362851796CA32776",
+    "category": "LINE_CATALOG",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:11:28.741.fits",
+    "checksum": "C0F16615B066558EC1CAE4855C9DB0B6",
+    "category": "LINE_CATALOG",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:11:31.782.fits",
+    "checksum": "6D38934450B5E4EBA67E6F8DF6000CA8",
+    "category": "LINE_CATALOG",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:11:52.230.fits",
+    "checksum": "A2C3029768ABFB214C314FB279C8AE6E",
+    "category": "LINE_CATALOG",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:11:55.709.fits",
+    "checksum": "9FA015A49F50457A557950107E8B2A9C",
+    "category": "LINE_CATALOG",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:18:42.136.fits",
+    "checksum": "BB60AB56BD7A64EDC8B51ADE23BD1F82",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:18:42.137.fits",
+    "checksum": "13A8F68CD8A108D6EE992AD154B7E231",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:19:13.484.fits",
+    "checksum": "9E80E204445F24A5239543C719EA9DE7",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:19:13.485.fits",
+    "checksum": "0D5D2E2E8AA770FAB391C29B8FABEFB4",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:40:26.085.fits",
+    "checksum": "7A25884D5FEC47BB3D5FD5BAC07441CC",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:40:26.086.fits",
+    "checksum": "BC9A10213CDB4FCA16A20B403C1D92E2",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:40:57.404.fits",
+    "checksum": "E7729523393107D7A772C15218DBD0E9",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T02:40:57.405.fits",
+    "checksum": "5F3860B229B8910516D935DAD47DD920",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:13:50.004.fits",
+    "checksum": "6559CB209F64DFEF5700E080CA01E50B",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:13:50.005.fits",
+    "checksum": "99C5935793701C82A6DE756EE412F369",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:14:21.277.fits",
+    "checksum": "ED864335B8F6AAAD82AF163400B8E5BB",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:14:21.278.fits",
+    "checksum": "F9748282A09E5D80CB59B8E91EB69DA9",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:35:34.035.fits",
+    "checksum": "9ABE112204EDBB5D6775DDC668C99D32",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:35:34.036.fits",
+    "checksum": "05B747B3563E9C6C3620BA81ABDAAEB9",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:36:05.267.fits",
+    "checksum": "9B74A2923946289979F8FE4F3D001E3B",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:36:05.268.fits",
+    "checksum": "E8107F0A4582F97FD3070F53718835E6",
+    "category": "OBJECT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:46:22.319.fits",
+    "checksum": "BFAF71F71C5CBCC4F1F052142F06B8D3",
+    "category": "STD",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:48:24.564.fits",
+    "checksum": "1F25A9FEB4E06673B545D9A7056B0B0C",
+    "category": "STD",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T07:47:37.515.fits",
+    "checksum": "1FCC032572A1A893ABA61EAD1C864FC4",
+    "category": "STD",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T07:55:23.282.fits",
+    "checksum": "9427CD99A578E1ED9349795D023F9C2E",
+    "category": "STD",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/M.VIMOS.2008-06-17T18:13:10.885.fits",
+    "checksum": "62468FAD605B1BFF3334BF27EF924881",
+    "category": "STD_FLUX_TABLE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/usr/share/esopipes/datastatic/vimos-3.2.3/vimos_telluric_regions.fits",
+    "checksum": "D5DD97BC53F52C7750A6BF247EDE80E4",
+    "category": "TELLURIC_CONTAMINATION",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:55:38.877.fits",
+    "checksum": "218686A644748DCF92B4985E968F5B87",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-20T04:56:09.918.fits",
+    "checksum": "7793EA31B5A519C525DC9D8BFD11A84F",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:05:51.792.fits",
+    "checksum": "B483027791A3F515DB0623C45CA99551",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:05:51.793.fits",
+    "checksum": "E10C70DC3D9A597F66AF974DA09485F5",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:06:23.075.fits",
+    "checksum": "320E32597BA548AB0E84590CE28D6D81",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:06:23.076.fits",
+    "checksum": "36EEC756F9EC55B2699BCCF6A6FE1A88",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:59:47.203.fits",
+    "checksum": "87554410BE5B9E4E0E448A9AB61962A7",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T03:59:47.204.fits",
+    "checksum": "43D335103479B3EBC81EBAA65ED93DD4",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T04:00:18.413.fits",
+    "checksum": "263FD6EEE35F8CE8F64F310F032DEE4C",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T04:00:18.414.fits",
+    "checksum": "2DEB3846443CC0ADD674301A5230A142",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": [],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/RawESODATA/data_with_raw_calibs/VIMOS.2003-06-22T07:33:44.864.fits",
+    "checksum": "E693998A39CB9AAA5D932938A083D76A",
+    "category": "WAVE,LAMP",
+    "class": "org.eso.domain.FitsFile"
+  }
+]

@@ -1,0 +1,38 @@
+This is V1.8.1 (October 13 1999). New features include:
+- Optimized handling of oversampled data.
+- Enhanced PSF selection.
+
+/*- Previous notes for V1.6.0 (Mar 14 1999) */
+- Memory leaks removed from the LDACTools.
+- Bug fix in Constant PSF-mode.
+- RESIDUALS check-image now display absolute residuals
+- PSF_CHITHRESH config parameter replaced by PSF_NSUPER,
+  which sets the default number of pixels to super-resolve
+  (defaulted to 64).
+
+/*- Previous notes for V1.5.1 (Mar 8 1999) */
+- Bug fix in PSF Autoselection.
+- SNAPSHOTS check-image bug fixed.
+
+/*- Previous notes for V1.5.0 (Mar 7 1999) */
+- Automatic FWHM finder.
+- Object elongation taken into account.
+- Automatic sampling step.
+- Re-centering of PSF-candidates.
+- Chi2-filtering of PSF-candidates with odd shapes.
+- Optimization of solving routine.
+
+/*- Previous notes for V1.4 (Feb 20 1999) */
+- Solving optimized for sparse matrices.
+- Polynomial ``groups'' for parameters that are linked together.
+- Automatic downsizing of degrees of freedom when not enough PSF
+  candidates are available.
+- Works with SExtractor 2.0.20 and later.
+
+/*- Previous notes for V1.3 (Dec 27 1998) */
+- PSF_MINSN config parameter setting the minimum S/N for PSF candidates.
+- PSF super-resolution for aliased pixels.
+
+Please report all bugs to bertin@iap.fr. Thanks!
+
+						Emmanuel Bertin.

@@ -1,0 +1,78 @@
+# source this file to use the completions
+if [[ -n ${ZSH_VERSION-} ]]; then
+    autoload -Uz bashcompinit && bashcompinit
+fi
+
+_esorex()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    # recipe list with appended space
+    local recipes="$(esorex --recipes 2>/dev/null | grep -E "^  \w"  | sed -e 's/[ ]*//g'| awk -F: '{print $1" "}')"
+
+    local mode=""
+    # check in commandline if a recipe was specified
+    for i in "${COMP_WORDS[@]}"; do
+        [ "$cur" = "$i" ] && break
+        if [[ ${recipes} == *${i}* ]]; then
+            mode=$(echo "$i" | sed -e 's/[ ]*//g')
+            break
+        fi
+    done
+
+    if [ -z $mode ]; then
+        # no recipe, complete esorex options or recipes
+        if [[ ${cur} == --* ]]; then
+            local opts=$(esorex --help 2>/dev/null | grep -E "^  --" | awk '{print $1}')
+            COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+            return 0
+        else
+            # -o nospace, so change separator to space on recipes
+            local IFS=$'\t\n'
+            COMPREPLY=( $(compgen -o default  -W "$recipes" -- $cur) )
+            return 0
+        fi
+    else
+        # complete recipe options: --name=value
+        local opts="";
+        # folder for parameter json, no stdout output option :(
+        local tmpd=$(mktemp -d /tmp/tmp.XXXXXX)
+        local prev=${COMP_WORDS[COMP_CWORD - 1]}
+        # store option name in prev
+        if [ "$prev" = "=" ]; then
+            prev=${COMP_WORDS[COMP_CWORD - 2]}
+        fi
+        # option completed, complete values (bool/enum)
+        if [[ ${prev} == --* ]]; then
+          if python -V &> /dev/null && esorex --create-config=$tmpd/file.json $mode &>/dev/null; then
+            opts=`cat <<EOF | python -
+import json;
+for d in json.load(open("$tmpd/file.json")):
+    if d['name'].endswith("$prev"[2:]):
+        if d['valtype'] == 'bool':
+            print "TRUE \tFALSE \t"
+        elif 'valenum' in d:
+            print " \t".join(d['valenum']) + " \t"
+EOF
+`
+          fi
+          cur=$(echo $cur | sed -e 's/^=//')
+          local IFS=$'\t\n'
+          COMPREPLY=( $(compgen -W "${opts}" -- $cur) )
+        else
+          # complete options
+          if python -V &> /dev/null && esorex --create-config=$tmpd/file.json $mode &>/dev/null; then
+            opts=`cat <<EOF | python -
+import json;
+d=json.load(open("$tmpd/file.json"));
+print " ".join(["--%s\=" % x["display_name"] for x in d])
+EOF
+`
+          fi
+          COMPREPLY=( $(compgen -f -W "${opts}" -- ${cur}) )
+        fi
+        rm -rf $tmpd
+        return 0
+    fi
+
+}
+complete -o default -o nospace -F _esorex esorex

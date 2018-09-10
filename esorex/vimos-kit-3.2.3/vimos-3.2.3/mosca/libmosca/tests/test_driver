@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ ! -d test-reports ] ; then
+	mkdir -p test-reports
+fi
+
+MALLOC_PERTURB_=231 MALLOC_CHECK_=2 BOOST_TEST_CATCH_SYSTEM_ERROR=yes BOOST_TEST_REPORT_LEVEL=detailed BOOST_TEST_LOG_SINK=test-reports/$1.xml BOOST_TEST_LOG_LEVEL=all BOOST_TEST_LOG_FORMAT=XML exec ./$1 > $1.stdout

@@ -1,0 +1,738 @@
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%BIAS%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "BIAS";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%BIAS%" and DPR.TYPE like "%DETCHECK%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "DETMON_LAMP_OFF";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TYPE like "%DETCHECK%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "DETMON_LAMP_ON";
+}
+if DPR.CATG like "%ACQUISITION%" and DPR.TECH like "%IMAGE%" and DPR.TYPE like "%OBJECT%" and DPR.TYPE like "%SLIT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "ACQUISITION_SLIT_IMG";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%SLIT%" and DPR.TYPE like "%OBJECT%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "TEST_THROUGH_SLIT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and ( DPR.TECH like "%IMAGE%" or DPR.TECH like "%MOS%" ) and ( TPL.ID like "%VIMOS_img_tec_DetLin%" or TPL.ID like "%VIMOS_mos_tec_DetLin%" ) and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "DETECTOR_PROPERTIES";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%OTHER%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IFU%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_FOCUS";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%OTHER%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_img_tec_Center%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_CENTER";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_LAMP_TEST";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%LAMP%" and DPR.TYPE like "%WAVE%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_ARC_TEST";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%FOCUS%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_FOCUS";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%OTHER%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_img_tec_FocusCheck%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_FOCUS_CHECK";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%OTHER%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%MOS%" and TPL.ID like "%VIMOS_img_tec_FocusCheck%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_FOCUS";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%OTHER%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_img_tec_Flex_Pinhole%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "PINHOLE_FLEX";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%OTHER%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_img_tec_MaskToCcd%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MASK_TO_CCD";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%BIAS%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "TEST_BIAS";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%DARK%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "DARK";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%SKY%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_SKY_FLAT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_mos_tec_ScreenFlat%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_IMAGE_FLAT_TEC";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_mos_cal_NightCalib%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_IMAGE_FLAT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_ifu_cal_NightCalib%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_IMAGE_FLAT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and TPL.ID like "%VIMOS_img_cal_ScreenFlat%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_SCREEN_FLAT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%STD%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_STANDARD";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%ASTROMETRY%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_ASTROMETRY";
+}
+if DPR.CATG like "%SCIENCE%" and DPR.TYPE like "%OBJECT%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_SCIENCE";
+}
+if DPR.CATG like "%SCIENCE%" and DPR.TYPE like "%OBJECT%" and DPR.TECH like "%IMAGE%" and DPR.TECH like "%PRE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_PREIMAGING";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%OBJECT%" and DPR.TECH like "%IMAGE%" and DPR.TECH like "%PRE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_PREIMAGING_TEST";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%MOS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SCREEN_FLAT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%MOS%" and TPL.ID like "%VIMOS_mos_tec_ScreenFlat%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SCREEN_FLAT_TEC";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%MOS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_ARC_SPECTRUM_TEST";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%MOS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SCREEN_FLAT_TEST";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%WAVE%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IMAGE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_ARC_SPECTRUM";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%WAVE%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%MOS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_ARC_SPECTRUM";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%STD%" and DPR.TECH like "%MOS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_STANDARD";
+}
+if DPR.CATG like "%SCIENCE%" and DPR.TYPE like "%OBJECT%" and DPR.TECH like "%MOS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SCIENCE";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%FLAT%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IFU%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_SCREEN_FLAT";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%WAVE%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IFU%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_ARC_SPECTRUM";
+}
+if DPR.CATG like "%TEST%" and DPR.TYPE like "%WAVE%" and DPR.TYPE like "%LAMP%" and DPR.TECH like "%IFU%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_ARC_SPECTRUM_TEST";
+}
+if DPR.CATG like "%CALIB%" and DPR.TYPE like "%STD%" and DPR.TECH like "%IFU%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_STANDARD";
+}
+if DPR.CATG like "%SCIENCE%" and DPR.TYPE like "%OBJECT%" and DPR.TECH like "%IFU%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_SCIENCE";
+}
+if DPR.CATG like "%TEST%" and INSTRUME=="FORS2" then
+{
+  DO.CATG = "TEST";
+}
+if DPR.CATG like "%ACQUISITION%" and INSTRUME=="FORS2" then
+{
+  DO.CATG = "ACQUISITION";
+}
+
+if PRO.CATG like "%CCD_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "CCD_TABLE";
+}
+if PRO.CATG like "GLOBAL_DISTORTION_TABLE" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "GLOBAL_DISTORTION_TABLE";
+}
+if PRO.CATG like "MOS_DISP_COEFF" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_DISP_COEFF";
+}
+if PRO.CATG like "MOS_CURV_COEFF" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_CURV_COEFF";
+}
+if PRO.CATG like "MOS_SLIT_LOCATION" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SLIT_LOCATION";
+}
+if PRO.CATG like "%CONFIG_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "CONFIG_TABLE";
+}
+if PRO.CATG like "%GRISM_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "GRISM_TABLE";
+}
+if PRO.CATG like "%IFU_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_TABLE";
+}
+if PRO.CATG like "%ASTROMETRIC_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "ASTROMETRIC_TABLE";
+}
+if PRO.CATG like "%PHOTOMETRIC_CATALOG%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "PHOTOMETRIC_CATALOG";
+}
+if PRO.CATG like "%PHOTOMETRIC_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "PHOTOMETRIC_TABLE";
+}
+if PRO.CATG like "%PHOT_COEFF_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "PHOT_COEFF_TABLE";
+}
+if PRO.CATG like "%LINE_CATALOG%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "LINE_CATALOG";
+}
+if PRO.CATG like "%STD_FLUX_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "STD_FLUX_TABLE";
+}
+if PRO.CATG like "%EXTINCT_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "EXTINCT_TABLE";
+}
+if PRO.CATG like "%MOS_SPECPHOT_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SPECPHOT_TABLE";
+}
+if PRO.CATG like "%IFU_SPECPHOT_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_SPECPHOT_TABLE";
+}
+if PRO.CATG like "%MASTER_BIAS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MASTER_BIAS";
+}
+if PRO.CATG like "%MASTER_DARK%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MASTER_DARK";
+}
+if PRO.CATG like "%IMG_MASTER_SCREEN_FLAT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_MASTER_SCREEN_FLAT";
+}
+if PRO.CATG like "%IMG_MASTER_SKY_FLAT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_MASTER_SKY_FLAT";
+}
+if PRO.CATG like "%IMG_SCIENCE_REDUCED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_SCIENCE_REDUCED";
+}
+if PRO.CATG like "%IMG_STANDARD_REDUCED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_STANDARD_REDUCED";
+}
+if PRO.CATG like "%IMG_GALAXY_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_GALAXY_TABLE";
+}
+if PRO.CATG like "%IMG_STAR_MATCH_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IMG_STAR_MATCH_TABLE";
+}
+if PRO.CATG like "%MOS_MASTER_SCREEN_FLAT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_MASTER_SCREEN_FLAT";
+}
+if PRO.CATG like "%MOS_COMBINED_SCREEN_FLAT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_COMBINED_SCREEN_FLAT";
+}
+if PRO.CATG like "%MOS_STANDARD_REDUCED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_STANDARD_REDUCED";
+}
+if PRO.CATG like "%MOS_SCIENCE_REDUCED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_SCIENCE_REDUCED";
+}
+if PRO.CATG like "%MOS_RESPONSE_FUNCTION%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "MOS_RESPONSE_FUNCTION";
+}
+if PRO.CATG like "%IFU_MASTER_SCREEN_FLAT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_MASTER_SCREEN_FLAT";
+}
+if PRO.CATG like "%IFU_RESPONSE_FUNCTION%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_RESPONSE_FUNCTION";
+}
+if PRO.CATG like "%IFU_FOV%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_FOV";
+}
+if PRO.CATG like "%IFU_SCIENCE_SKY%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_SCIENCE_SKY";
+}
+if PRO.CATG like "%IFU_STANDARD_EXTRACTED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_STANDARD_EXTRACTED";
+}
+if PRO.CATG like "%IFU_STANDARD_REDUCED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_STANDARD_REDUCED";
+}
+if PRO.CATG like "%IFU_SCIENCE_REDUCED%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_SCIENCE_REDUCED";
+}
+if PRO.CATG like "%IFU_IDENT%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_IDENT";
+}
+if PRO.CATG like "%IFU_IDS%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_IDS";
+}
+if PRO.CATG like "%IFU_TRACE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_TRACE";
+}
+if PRO.CATG like "%IFU_TRANSMISSION%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_TRANSMISSION";
+}
+if PRO.CATG like "%IFU_TABLE%" and INSTRUME=="VIMOS" then
+{
+  DO.CATG = "IFU_TABLE";
+}
+
+select execute(vmImObsStare) from inputFiles where SIG.FRAME == 1 and DO.CATG == "IMG_SCIENCE";
+select execute(vmImPreimaging) from inputFiles where SIG.FRAME == 1 and DO.CATG == "IMG_PREIMAGING";
+select execute(vmImStandard) from inputFiles where SIG.FRAME == 1 and DO.CATG == "IMG_STANDARD";
+select execute(vmmosscience) from inputFiles where SIG.FRAME == 1 and DO.CATG == "MOS_SCIENCE";
+select execute(vmmosscience) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "MOS_SCIENCE";
+select execute(vmSkyCCD) from inputFiles where SIG.FRAME == 1 and DO.CATG == "IMG_ASTROMETRY";
+select execute(vmIfuScience) from inputFiles where SIG.FRAME == 1 and DO.CATG == "IFU_SCIENCE";
+select execute(vmMosStandard) from inputFiles where SIG.FRAME == 1 and DO.CATG == "MOS_STANDARD";
+select execute(vmmoscalib) from inputFiles where SIG.TEMPLATE == 1 and LF.DO.CATG == "MOS_SCREEN_FLAT";
+select execute(vmmoscalib) from inputFiles where SIG.TEMPLATE == 1 and LF.DO.CATG == "MOS_ARC_SPECTRUM";
+select execute(vmIfuStandard) from inputFiles where SIG.FRAME == 1 and DO.CATG == "IFU_STANDARD";
+select execute(vmMaskToCcd) from inputFiles where SIG.FRAME == 1 and DO.CATG == "MASK_TO_CCD";
+select execute(vmImObsJitter) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "IMG_SCIENCE";
+select execute(vmImFlatSky) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "IMG_SKY_FLAT";
+select execute(vmDet) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "DETECTOR_PROPERTIES";
+select execute(vmImFlatScreen) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "IMG_SCREEN_FLAT";
+select execute(vmBias) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "BIAS";
+select execute(vmIfuCalib) from inputFiles where SIG.TEMPLATE == 1 and (DO.CATG == "IFU_SCREEN_FLAT" or DO.CATG == "IFU_ARC_SPECTRUM");
+select execute(vmDark) from inputFiles where SIG.TEMPLATE == 1 and DO.CATG == "DARK";
+select execute(detmon_opt_lg) from inputFiles where SIG.TEMPLATE == 1 and LF.DO.CATG == "DETMON_LAMP_ON";
+select execute(detmon_opt_lg) from inputFiles where SIG.TEMPLATE == 1 and LF.DO.CATG == "DETMON_LAMP_OFF";
+
+action detmon_opt_lg
+{
+  recipe detmon_opt_lg
+  {
+    "--tolerance=0.1" ;
+    "--pix2pix=TRUE" ;
+  }
+}
+
+action vmMaskToCcd
+{
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 0;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as IMG_MASTER_SKY_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SKY_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+  recipe vmmasktoccd;
+}
+
+action vmSkyCCD
+{
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IMG_MASTER_SKY_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SKY_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as PHOTOMETRIC_TABLE from calibFiles where DO.CATG == "PHOTOMETRIC_TABLE"
+   and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as ASTROMETRIC_TABLE from calibFiles where DO.CATG == "ASTROMETRIC_TABLE"
+   and inputFile.OBS.TARG.NAME==OBS.TARG.NAME and inputFile.INSTRUME==INSTRUME;
+  recipe vmskyccd;
+}
+
+action vmImObsStare
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IMG_MASTER_SKY_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SKY_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as PHOTOMETRIC_TABLE from calibFiles where DO.CATG == "PHOTOMETRIC_TABLE"
+   and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmimobsstare;
+}
+
+action vmImStandard
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IMG_MASTER_SKY_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SKY_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as PHOTOMETRIC_CATALOG from calibFiles where DO.CATG == "PHOTOMETRIC_CATALOG"
+   and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as PHOTOMETRIC_TABLE from calibFiles where DO.CATG == "PHOTOMETRIC_TABLE"
+   and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmimstandard;
+}
+
+action vmImPreimaging
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IMG_MASTER_SKY_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SKY_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as PHOTOMETRIC_TABLE from calibFiles where DO.CATG == "PHOTOMETRIC_TABLE"
+   and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmimpreimaging;
+}
+
+action vmmoscalib
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 0;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MOS_MASTER_SCREEN_FLAT from calibFiles where DO.CATG == "MOS_MASTER_SCREEN_FLAT"
+   and inputFile.INS.MSHU4.MODE?=INS.MSHU4.MODE and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.MSHU3.MODE?=INS.MSHU3.MODE and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.MSHU2.MODE?=INS.MSHU2.MODE and inputFile.DET.NAME==DET.NAME and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.MASK4.ID?=INS.MASK4.ID and inputFile.INS.MSHU1.MODE?=INS.MSHU1.MODE and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 1; maxRet = 1;
+select file as LINE_CATALOG from calibFiles where DO.CATG == "LINE_CATALOG"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as CONFIG_TABLE from calibFiles where DO.CATG == "CONFIG_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and inputFile.INSTRUME==INSTRUME;
+  recipe vmmoscalib;
+}
+
+action vmmosscience
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as EXTINCT_TABLE from calibFiles where DO.CATG == "EXTINCT_TABLE"
+   and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MOS_SPECPHOT_TABLE from calibFiles where DO.CATG == "MOS_SPECPHOT_TABLE"
+   and inputFile.INS.MODE==INS.MODE and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 0; maxRet = 1;
+select file as MOS_MASTER_SCREEN_FLAT from calibFiles where DO.CATG == "MOS_MASTER_SCREEN_FLAT"
+   and inputFile.INS.MSHU4.MODE?=INS.MSHU4.MODE and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.MSHU3.MODE?=INS.MSHU3.MODE and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.MSHU2.MODE?=INS.MSHU2.MODE and inputFile.DET.NAME==DET.NAME and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.MASK4.ID?=INS.MASK4.ID and inputFile.INS.MSHU1.MODE?=INS.MSHU1.MODE and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 1; maxRet = 1;
+select file as GLOBAL_DISTORTION_TABLE from calibFiles where DO.CATG == "GLOBAL_DISTORTION_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as CONFIG_TABLE from calibFiles where DO.CATG == "CONFIG_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and inputFile.INSTRUME==INSTRUME;
+  recipe vmmosscience
+  {
+    "--flatfield=false";
+  }
+}
+
+action vmDet
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+  recipe vmdet;
+}
+
+action vmBias
+{
+minRet = 0; maxRet = 0;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+  recipe vmbias;
+}
+
+action vmDark
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+  recipe vmdark;
+}
+
+action vmImFlatScreen
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+  recipe vmimflatscreen;
+}
+
+action vmImFlatSky
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as IMG_MASTER_SCREEN_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SCREEN_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+  recipe vmimflatsky;
+}
+
+action vmImObsJitter
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IMG_MASTER_SKY_FLAT from calibFiles where DO.CATG == "IMG_MASTER_SKY_FLAT"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as PHOTOMETRIC_TABLE from calibFiles where DO.CATG == "PHOTOMETRIC_TABLE"
+   and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT3.ID?=INS.FILT3.ID and inputFile.INS.FILT4.ID?=INS.FILT4.ID and inputFile.INS.FILT2.ID?=INS.FILT2.ID and inputFile.INS.FILT1.ID?=INS.FILT1.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmimobsjitter;
+}
+
+action vmSpFlat
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 0;
+select file as IFU_TABLE from calibFiles where DO.CATG == "IFU_TABLE"
+   and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as GRISM_TABLE from calibFiles where DO.CATG == "GRISM_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmspflat;
+}
+
+action vmMosObsJitter
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as EXTINCT_TABLE from calibFiles where DO.CATG == "EXTINCT_TABLE"
+   and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MOS_SPECPHOT_TABLE from calibFiles where DO.CATG == "MOS_SPECPHOT_TABLE"
+   and inputFile.INS.MODE==INS.MODE and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 0; maxRet = 1;
+select file as MOS_MASTER_SCREEN_FLAT from calibFiles where DO.CATG == "MOS_MASTER_SCREEN_FLAT"
+   and inputFile.INS.MSHU4.MODE?=INS.MSHU4.MODE and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.MSHU3.MODE?=INS.MSHU3.MODE and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.MSHU2.MODE?=INS.MSHU2.MODE and inputFile.DET.NAME==DET.NAME and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.MASK4.ID?=INS.MASK4.ID and inputFile.INS.MSHU1.MODE?=INS.MSHU1.MODE and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 1; maxRet = 1;
+select file as CCD_TABLE from calibFiles where DO.CATG == "CCD_TABLE"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as GRISM_TABLE from calibFiles where DO.CATG == "GRISM_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmmosobsjitter;
+}
+
+action vmIfuCalib
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as LINE_CATALOG from calibFiles where DO.CATG == "LINE_CATALOG"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as IFU_IDENT from calibFiles where DO.CATG == "IFU_IDENT"
+   and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and  inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and 
+((inputFile.MJD-OBS < 55459.0 and MJD-OBS < 55459.0) or 
+((inputFile.MJD-OBS >= 55459.0 and inputFile.MJD-OBS < 55682.0) and (MJD-OBS >= 55459.0 and MJD-OBS < 55682.0)) or 
+(inputFile.MJD-OBS >= 55682.0  and MJD-OBS >= 55682.0) ) and 
+inputFile.INSTRUME==INSTRUME;
+
+  recipe vmifucalib;
+}
+
+action vmIfuScience
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as EXTINCT_TABLE from calibFiles where DO.CATG == "EXTINCT_TABLE"
+   and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as IFU_SPECPHOT_TABLE from calibFiles where DO.CATG == "IFU_SPECPHOT_TABLE"
+   and inputFile.INS.MODE==INS.MODE and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 1; maxRet = 1;
+select file as IFU_IDS from calibFiles where DO.CATG == "IFU_IDS"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IFU_TRACE from calibFiles where DO.CATG == "IFU_TRACE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IFU_TRANSMISSION from calibFiles where DO.CATG == "IFU_TRANSMISSION"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmifuscience;
+}
+
+action vmIfuStandard
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as STD_FLUX_TABLE from calibFiles where DO.CATG == "STD_FLUX_TABLE"
+   and inputFile.OBS.TARG.NAME==OBS.TARG.NAME and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as EXTINCT_TABLE from calibFiles where DO.CATG == "EXTINCT_TABLE"
+   and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IFU_IDS from calibFiles where DO.CATG == "IFU_IDS"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IFU_TRACE from calibFiles where DO.CATG == "IFU_TRACE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as IFU_TRANSMISSION from calibFiles where DO.CATG == "IFU_TRANSMISSION"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+  recipe vmifustandard;
+}
+
+action vmMosStandard
+{
+minRet = 1; maxRet = 1;
+select file as MASTER_BIAS from calibFiles where DO.CATG == "MASTER_BIAS"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MASTER_DARK from calibFiles where DO.CATG == "MASTER_DARK"
+   and inputFile.DET.READ.SPEED==DET.READ.SPEED and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.DET.READ.MODE==DET.READ.MODE and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as STD_FLUX_TABLE from calibFiles where DO.CATG == "STD_FLUX_TABLE"
+   and inputFile.OBS.TARG.NAME==OBS.TARG.NAME and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as EXTINCT_TABLE from calibFiles where DO.CATG == "EXTINCT_TABLE"
+   and inputFile.INSTRUME==INSTRUME;
+minRet = 0; maxRet = 1;
+select file as MOS_MASTER_SCREEN_FLAT from calibFiles where DO.CATG == "MOS_MASTER_SCREEN_FLAT"
+   and inputFile.INS.MSHU4.MODE?=INS.MSHU4.MODE and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.DET.WIN1.NY==DET.WIN1.NY and inputFile.INS.MSHU3.MODE?=INS.MSHU3.MODE and inputFile.INSTRUME==INSTRUME and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.MSHU2.MODE?=INS.MSHU2.MODE and inputFile.DET.NAME==DET.NAME and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.MASK4.ID?=INS.MASK4.ID and inputFile.INS.MSHU1.MODE?=INS.MSHU1.MODE and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.DET.WIN1.BINY==DET.WIN1.BINY and inputFile.DET.WIN1.BINX==DET.WIN1.BINX and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME;
+minRet = 1; maxRet = 1;
+select file as GLOBAL_DISTORTION_TABLE from calibFiles where DO.CATG == "GLOBAL_DISTORTION_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and inputFile.INSTRUME==INSTRUME;
+minRet = 1; maxRet = 1;
+select file as CONFIG_TABLE from calibFiles where DO.CATG == "CONFIG_TABLE"
+   and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and inputFile.INSTRUME==INSTRUME;
+  recipe vmmosscience
+  {
+    "--flatfield=false";
+  }
+}

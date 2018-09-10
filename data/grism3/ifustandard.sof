@@ -1,0 +1,7 @@
+../data/grism3/products/master_bias.fits MASTER_BIAS
+../data/grism3/products/ifu_ids.fits IFU_IDS
+../data/grism3/products/ifu_trace.fits IFU_TRACE
+../data/grism3/products/ifu_transmission.fits IFU_TRANSMISSION
+../data/grism1/STD/VIMOS.2003-06-03T09:44:10.439.fits IFU_STANDARD
+../esorex/calibrations/calib/vimos-3.2.3/cal/g158_100.tfits STD_FLUX_TABLE
+../esorex/calibrations/calib/vimos-3.2.3/cal/extinct_table.tfits EXTINCT_TABLE

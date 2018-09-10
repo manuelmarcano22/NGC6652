@@ -1,0 +1,44 @@
+[
+  {
+    "purposes": ["SCI_IFU"],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_arc_spectrum_extracted.fits",
+    "checksum": "399B878D6E1527805D5535CD96ED102F",
+    "category": "IFU_ARC_SPECTRUM_EXTRACTED",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCI_IFU"],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_flat_spectrum_extracted.fits",
+    "checksum": "459A37B03AD4B922F4EF876359FBCEC4",
+    "category": "IFU_FLAT_SPECTRUM_EXTRACTED",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCI_IFU"],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_ids.fits",
+    "checksum": "55B273472E70565DC5D1E1A6E04C2907",
+    "category": "IFU_IDS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCI_IFU"],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_master_screen_flat.fits",
+    "checksum": "D3798D5D35BC221B3C20CAD3F34BA6A9",
+    "category": "IFU_MASTER_SCREEN_FLAT",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCI_IFU"],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_trace.fits",
+    "checksum": "40BE6410AAF060EB9B28F39CFFFAC8E6",
+    "category": "IFU_TRACE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCI_IFU"],
+    "name": "/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_transmission.fits",
+    "checksum": "1317A95738878E56FF2FE8E9870A4A1D",
+    "category": "IFU_TRANSMISSION",
+    "class": "org.eso.domain.FitsFile"
+  }
+]

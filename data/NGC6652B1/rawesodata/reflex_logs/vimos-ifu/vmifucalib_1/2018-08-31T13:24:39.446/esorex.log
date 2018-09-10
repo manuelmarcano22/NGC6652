@@ -1,0 +1,62 @@
+
+Start time     : 2018-08-31T13:24:39
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+13:24:39 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+13:24:39 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.37, WCSLIB = 4.25.1, FFTW (normal precision) = 3.3.3, FFTW (single precision) = 3.3.3, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 201107
+13:24:39 [ INFO  ] : [tid=000] Invocation command line was: esorex --suppress-prefix=TRUE --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_logs/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446 --recipe-config=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_book_keeping/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/vmifucalib.rc --products-sof=products_sof.json vmifucalib /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_book_keeping/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/data.sof
+13:24:39 [ INFO  ] vimos_print_banner: [tid=000] *****************************************
+13:24:39 [ INFO  ] vimos_print_banner: [tid=000] Welcome to VIMOS Pipeline release 3.2.3
+13:24:39 [ INFO  ] vimos_print_banner: [tid=000] *****************************************
+13:24:39 [ INFO  ] vmifucalib: [tid=000] Loading the input frames...
+13:24:40 [ INFO  ] vmifucalib: [tid=000] Processing data from quadrant 2, HR_blue/Free, shutter ON...
+13:24:40 [ INFO  ] vmifucalib: [tid=000] Bias removal...
+13:24:40 [ INFO  ] vmifucalib: [tid=000] Processing spectra in pseudo-slit 2:
+13:24:40 [ INFO  ] vmifucalib: [tid=000]   Identify and trace flat field spectra...
+13:24:41 [ INFO  ] ifuIdentifyUpgrade: [tid=000]   Cross-correlation offset with reference identification: 0.121859
+13:24:41 [ INFO  ] vmifucalib: [tid=000]     360 out of 400 spectra were identified and traced.
+13:24:41 [ INFO  ] vmifucalib: [tid=000]   Extract flat field spectra...
+13:24:43 [ INFO  ] vmifucalib: [tid=000]   Extract arc lamp spectra...
+13:24:45 [ INFO  ] vmifucalib: [tid=000]   Compute the wavelength calibration (blind)...
+13:24:45 [ INFO  ] vmifucalib: [tid=000]     359 out of 360 extracted spectra were wavelength calibrated.
+13:24:45 [ INFO  ] vmifucalib: [tid=000]   Resample flat field spectra at constant wavelength step (0.54 Angstrom)
+13:24:45 [ INFO  ] vmifucalib: [tid=000]   Resample arc lamp spectra at constant wavelength step (0.54 Angstrom)
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Derive the relative transmission correction from extracted flat field spectra...
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Computing QC1 parameters...
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Flux of He 5015.68: 7462.65 +/- 448.80 ADU/fiber/s
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Flux of Ne 5944.83: 18890.38 +/- 1307.55 ADU/fiber/s
+13:24:45 [WARNING] vmifucalib: [tid=000] No Ar lines in HR_blue spectral range: corresponding QC1 parameters are not computed.
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 6030.00: 3140.68 +/- 136.48
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 5015.67: 2767.08 +/- 126.37
+13:24:45 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 4471.48: 2632.10 +/- 85.70
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 4026.19: line not available
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 4471.48: 0.082
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 4713.14: 0.262
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 4921.93: 0.208
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 5015.67: 0.072
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 5764.42: 0.286
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 5852.49: 0.163
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 5875.62: 0.131
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 5944.83: 0.169
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6030.00: 0.211
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6074.34: 0.297
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6096.16: 0.139
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6143.06: 0.263
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6163.59: 0.250
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6217.28: 0.044
+13:24:45 [ INFO  ] distortionsRms: [tid=000] RMS for 6266.50: line not available
+13:24:45 [ INFO  ] vmifucalib: [tid=000] IDS RMS: 0.193 pixel
+13:24:47 [ INFO  ] : [tid=000] Calculating product checksums
+13:24:48 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_arc_spectrum_extracted.fits
+13:24:48 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_flat_spectrum_extracted.fits
+13:24:48 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_ids.fits
+13:24:48 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_master_screen_flat.fits
+13:24:48 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_trace.fits
+13:24:48 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifucalib_1/2018-08-31T13:24:39.446/ifu_transmission.fits
+13:24:48 [ INFO  ] : [tid=000] 6 products created
+13:24:48 [ INFO  ] : [tid=000] Recipe operation(s) took           8.73 seconds to complete.
+13:24:48 [ INFO  ] : [tid=000] Total size of 2 raw input frames  =    35.27 MB
+
+13:24:48 [ INFO  ] : [tid=000] => processing rate of     4.04 MB/sec 
+

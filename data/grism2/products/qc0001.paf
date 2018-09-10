@@ -1,0 +1,37 @@
+PAF.HDR.START;
+PAF.TYPE            "QC1 parameters";        # Type of parameter file
+PAF.ID              "";
+PAF.NAME            "qc0001.paf";            # Name of PAF
+PAF.DESC            "";                      # Short description of PAF
+PAF.CRTE.NAME       "mmarcano";              # Name of creator
+PAF.CRTE.DAYTIM     "2018-07-10T17:36:38";   # Civil time for creation
+PAF.LCHG.NAME       "mmarcano";              # Author of par. file
+PAF.LCHG.DAYTIM     "2018-07-10T17:36:38";   # Timestamp for last change
+PAF.CHCK.NAME       "";                      # Name of appl. checking
+PAF.CHCK.DAYTIM     "";                      # Time for checking
+PAF.CHCK.CHECKSUM   "";                      # Checksum for the PAF
+PAF.HDR.END;
+#------------------------------------------------------------------------------
+QC.DID              "VIMOS_QC-1.0";          # QC1 dictionary [VIMOS]
+PRO.CATG            "IFU_TRACE";             # Product category [VIMOS]
+ARCFILE             "VIMOS.2003-06-04T05:34:05.212.fits"; # Archive File Name [VIMOS]
+TPL.ID              "VIMOS_ifu_cal_NightCalib"; # Template signature ID [VIMOS]
+OCS.CON.QUAD        2;                       # Quadrant [VIMOS]
+INS.GRIS2.NAME      "HR_blue";               # Grism name [VIMOS]
+INS.FILT2.NAME      "Free";                  # Filter name [VIMOS]
+INS.FOCU2.TEMP      9.202618;                # Beam temperature [VIMOS]
+ADA.ABSROT.START    -168.39959;              # Adaptor initial rotator angle [VIMOS]
+ADA.ABSROT.END      -168.39945;              # Adaptor final rotator angle [VIMOS]
+INS.IFUS.MODE       "ON";                    # IFU mode [VIMOS]
+INS.IFUE.MAG        "2:1";                   # IFU magnification [VIMOS]
+PRO.WLEN.CEN        5015.675;                # Reference wavelength (Angstrom) [VIMOS]
+QC.IFU.REFROW2      3388;                    # CCD Y pixel coordinate where the tracing is started (pixel) [VIMOS]
+QC.IFU.LOST2        385;                     # Lost fibers on pseudo-slit [VIMOS]
+QC.IFU.TRACE2.RMS   0.139916927145259;       # Mean RMS of polynomial fits of spectral tracings (pixel) [VIMOS]
+QC.IFU.TRACE2.CENTRAL 200;                   # Fiber closest to central CCD X pixel at the reference row [VIMOS]
+QC.IFU.TRACE2.SLOPE 0.00202098857621991;     # Slope of tracing of the central fiber at reference row [VIMOS]
+QC.IFU.TRACE2.COEFF0 432.391885831952;       # Median coefficient 0 of tracing (pixel) [VIMOS]
+QC.IFU.TRACE2.COEFF1 -0.00223400926915929;   # Median coefficient 1 of tracing (pixel/pixel) [VIMOS]
+QC.IFU.TRACE2.COEFF2 4.18148046454903E-06;   # Median coefficient 2 of tracing (pixel/pixel^2) [VIMOS]
+QC.IFU.TRACE2.COEFF3 -1.78928508424644E-09;  # Median coefficient 3 of tracing (pixel/pixel^3) [VIMOS]
+QC.IFU.TRACE2.COEFF4 2.30491859128979E-13;   # Median coefficient 4 of tracing (pixel/pixel^4) [VIMOS]

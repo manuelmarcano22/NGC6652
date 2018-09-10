@@ -1,0 +1,723 @@
+
+2005-02-23 cizzo
+
+	* recipes/vmifucombine.c: Support different output/input 
+	  categories for IFU FOV
+
+2005-02-23 cizzo
+
+	* recipes/vmifustandard.c: Change category for reconstructed FOV
+
+2005-02-18 cizzo
+
+	* recipes/vmspcaldisp.c: Add possibility to get first guess from 
+	  an input extraction table
+
+2005-02-17 cizzo
+
+	* vimos/vmadf.c: Support for bezier slits added.
+
+2005-02-16 cizzo
+
+	* recipes/vmspflat.c, vmmosobsstare.c, vmmosobsjitter.c, 
+	  vmifuscience.c, vmifustandard.c, vmmosobsjitter.c: Keep the TEL 
+	  keywords in output products
+
+2005-02-16 cizzo
+
+	* recipes/vmspflat.c, vmspcaldisp.c: Add to the QC1 log file for 
+	  the master product the keywords FILTER.NAME, GRISM.NAME, and 
+	  MASK.ID
+
+2005-02-16 cizzo
+
+	* recipes/vmmosobsstare.c, vmmosobsjitter.c: Eliminate dependency 
+	  from the CCD table when bad pixel correction is requested
+
+2005-02-15 cizzo
+
+	* recipes/vmspcaldisp.c: Implementation of 'Blind' method for
+	  arc lamp lines identification.
+
+2005-02-15 cizzo
+
+	* recipes/vmimobsjitter.c: Implement the sky fringing correction
+
+2005-02-01 cizzo
+
+	* recipes/vmmosobsjitter.c: Fringing correction with just two 
+	  images: the minmax rejection 0,1 replaces the median
+
+2005-01-31 cizzo
+
+	* recipes/vmmosobsjitter.c: Ensure that the fringing correction 
+	  is applicable, comparing the offsets between exposures with a 
+	  minimum required offset
+
+2005-01-31 cizzo
+
+	* recipes/vmmosobsstare.c, vmmosobsjitter.c: Add K-sigma rejection 
+	  in sky fitting
+
+2005-01-25 cizzo
+
+	* vimos/vmifu.c: Fix wrong computation of rms in fiber tracing 
+	  and wavelength calibration
+
+2005-01-25 cizzo
+
+	* vimos/vmmosextraction.c: Add extra parameter for 1D optimal 
+	  extraction, in the computation of the variance the number of 
+	  frames that were combined is crucial
+
+2005-01-25 cizzo
+
+	* recipes/vmmosobsstare.c, vmmosobsjitter.c: Add new product,
+	  extracted 1D sky
+
+2005-01-24 cizzo
+
+	* recipes/vmmosobsstare.c, vmmosobsjitter.c: Ensure the concept 
+	  of zero-tolerance in the definition of long slits
+
+2005-01-24 cizzo
+
+	* recipes/vmmosobsjitter.c: Allow more frames combinations methods 
+	  other than Median
+
+2005-01-23 cizzo
+
+	* recipes/vmmosobsjitter.c: Add possibility to save intermediate 
+	  products to disk.
+
+2005-01-23 cizzo
+
+	* recipes/vmmosobsjitter.c: Different category for fringing maps 
+	  produced with different methods (Raw or Resampled), and allow to 
+	  input previously created fringing maps
+
+2005-01-22 cizzo
+
+	* recipes/vmmosobsjitter.c: Add sky fringing correction (both 
+	  basic methods)
+
+2004-12-06 cizzo
+
+	* recipes/vmmosobsjitter.c: Eliminate QC1 parameters copied from 
+	  the input extraction table to the output window and object tables
+
+2004-12-06 cizzo
+
+	* recipes/vmmosobsstare.c: Eliminate QC1 parameters copied from 
+	  the input extraction table to the output window and object tables
+
+2004-12-06 cizzo
+
+	* recipes/vmspflat.c, vmspcaldisp.c: QC1 parameter MOS.SLIT.WIDTH 
+	  converted from mm to arcsec.
+
+2004-11-15 cizzo
+
+	* recipes/vmifucalib.c: Widen the correlation radius used in fiber 
+	  identification
+
+2004-10-11 cizzo
+
+	* recipes/vmifucombine.c: Uses the header entry ESO QC IFU FLAT FLUX 
+	  to eliminate the dependency from the normalisation factor used to 
+	  determine the relative transmission correction on each quadrant
+
+2004-10-11 cizzo
+
+	* recipes/vmifuscience.c: Copy the header entry ESO QC IFU FLAT FLUX, 
+	  carrying the normalisation factor used to determine the relative 
+	  transmission correction on each quadrant
+
+2004-09-21 cizzo
+
+	* recipes/vmifucalib.c: Define a better set of arc lines for QC1 
+	  estimation of spectral resolution
+
+2004-09-21 cizzo
+
+	* recipes/vmspcaldisp.c: Avoid segfault when on central slit no 
+	  calibrated spectra are found (avoid computation of one QC1 
+	  parameter)
+
+-------------------------------- Release 1.3 ------------------------------
+
+2004-07-08 Thursday  rpalsa
+
+	* vimos/Makefile.am: Obsolete module vmtelescopetable removed.
+
+2004-07-07 Wednesday  rpalsa
+
+	* recipes/Makefile.am: Prevent vmskyccd from being built in the
+	  public version.
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmmosobsjitter.c: Conditional definition of parameters
+	  SamplingMethod, SlitTolerance, StackMethod, KSigmaLow/High,
+	  RejectionMin/Max, FringingCorrection
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmmosobsstare.c: Conditional definition of parameters
+	  SamplingMethod and SlitTolerance
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmspcaldisp.c: Conditional definition of parameter
+	  ValidateFrames
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmspflat.c: Eliminate definition of unused parameter
+	  OutputModels, and conditional definition of parameters
+	  ValidateFrames, LevelToleranceLow/High, PatternTolerance, ApplyQC
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmimobsjitter.c: Eliminate definition of unused parameter
+	  Quadrants, and conditional definition of parameters SearchRadius,
+	  KsigmaClip
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmimobsstare.c: Eliminate definition of unused parameter
+	  Quadrants, and conditional definition of parameters MagLimit,
+	  MinStars, SearchRadius, MagInitial, MagFinal, KsigmaClip,
+	  RemoteCatalog
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmimpreimaging.c: Conditional definition of parameter
+	  SearchRadius
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmimstandard.c: Eliminate definition of unused parameter
+	  Quadrants, and conditional definition of parameter ReduceAnyFrame
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmimflatsky.c: Conditional definition of parameters
+	  ValidateFrames, LevelToleranceLow/High, PatternTolerance, ApplyQC
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmimflatscreen.c: Conditional definition of parameters
+	  ValidateFrames, LevelToleranceLow/High, PatternTolerance
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmdark.c: Conditional definition of parameters
+	  ValidateFrames, LevelTolerance, PatternTolerance, ApplyQC, and
+	  MaxDeviation
+
+2004-07-07 Wednesday  cizzo
+
+	* recipes/vmbias.c: Conditional definition of parameters
+	  ValidateFrames, LevelTolerance, PatternTolerance, ApplyQC, and
+	  MaxDeviation
+
+2004-07-07 Wednesday  rpalsa
+
+	* vimos/vmtelescopetable.c, vimos/vmtelescopetable.h: Unused.
+
+2004-07-07 Wednesday  rpalsa
+
+	* configure.ac: Change bug report address and add call to
+	  VIMOS_ENABLE_ONLINE
+
+2004-07-07 Wednesday  rpalsa
+
+	* acinclude.m4: Add macro VIMOS_ENABLE_ONLINE
+
+2004-07-07 Wednesday  rpalsa
+
+	* Makefile.am: Copyright updated.
+
+2004-07-07 Wednesday  rpalsa
+
+	* recipes/vmimflatscreen.c, recipes/vmimobsstare.c,
+	  recipes/vmimstandard.c, recipes/vmmosobsstare.c,
+	  recipes/vmskyccd.c, recipes/vmspcaldisp.c, recipes/vmspflat.c:
+	  pilKeyTranslate() replaced by pilTrnGetKeyword().
+
+2004-07-07 Wednesday  rpalsa
+
+	* vimos/vmadf.c, vimos/vmdistmodels.c, vimos/vmextractiontable.c,
+	  vimos/vmifuflat.c, vimos/vmifuimage.c, vimos/vmifuutils.c,
+	  vimos/vmimgphotcalib.c, vimos/vmimgpreprocessing.c,
+	  vimos/vmimgutils.c, vimos/vmmosextraction.c, vimos/vmmosflat.c,
+	  vimos/vmmosfringes.c, vimos/vmmosmodels.c,
+	  vimos/vmmossphotcalib.c, vimos/vmmosutils.c,
+	  vimos/vmmoswavecalib.c, vimos/vmphotometrictable.c,
+	  vimos/vmstarmatchtable.c, vimos/vmstartable.c,
+	  vimos/vmtelescopetable.c, vimos/vmwcsutils.c: pilKeyTranslate()
+	  replaced by pilTrnGetKeyword().
+
+2004-07-05 Monday  cizzo
+
+	* recipes/vmspflat.c: Close still opened FITS files before leaving
+	  the program, and correct memory handling
+
+2004-07-05 Monday  rpalsa
+
+	* README: Links to web pages updated.
+
+2004-07-04 Sunday  rpalsa
+
+	* README: Updated with installation instructions
+
+2004-07-01 Thursday  cizzo
+
+	* vimos/vmifu.c: Adapt sky line search to a less stable instrument
+	  - larger search radius
+
+2004-06-25 Friday  cizzo
+
+	* recipes/vmimflatscreen.c, recipes/vmimflatsky.c,
+	  recipes/vmimobsjitter.c, recipes/vmimobsstare.c,
+	  recipes/vmimpreimaging.c, recipes/vmimstandard.c,
+	  recipes/vmmasktoccd.c, recipes/vmmosobsjitter.c,
+	  recipes/vmmosobsstare.c, recipes/vmskyccd.c,
+	  recipes/vmspcaldisp.c, recipes/vmspflat.c: Set explicitly all the
+	  input calibration frames to CALIB type
+
+2004-06-25 Friday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c, recipes/vmifucombine.c,
+	  recipes/vmifuscience.c, recipes/vmifustandard.c,
+	  recipes/vmimcalphot.c, recipes/vmimflatscreen.c,
+	  recipes/vmimflatsky.c, recipes/vmimobsjitter.c,
+	  recipes/vmimobsstare.c, recipes/vmimpreimaging.c,
+	  recipes/vmmosobsstare.c, recipes/vmskyccd.c,
+	  recipes/vmspcaldisp.c, recipes/vmspflat.c: Fill/upgrade the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-24 Thursday  cizzo
+
+	* recipes/vmimobsjitter.c, recipes/vmimobsstare.c,
+	  recipes/vmimpreimaging.c, recipes/vmimstandard.c,
+	  recipes/vmmasktoccd.c, recipes/vmmosobsjitter.c: Fill/upgrade the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-24 Thursday  rpalsa
+
+	* recipes/Makefile.am, tests/Makefile.am: Copyright updated.
+
+2004-06-23 Wednesday  cizzo
+
+	* recipes/vmimcalphot.c, recipes/vmimobsjitter.c: Fill/upgrade the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-23 Wednesday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c, recipes/vmifucombine.c,
+	  recipes/vmifuscience.c, recipes/vmifustandard.c,
+	  recipes/vmimcalphot.c, recipes/vmimflatscreen.c,
+	  recipes/vmimflatsky.c: Fill/upgrade the description, licence,
+	  author, and email fields of the plugin definition
+
+2004-06-23 Wednesday  cizzo
+
+	* recipes/vmimcalphot.c, recipes/vmimflatscreen.c: Fill/upgrade the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-23 Wednesday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c, recipes/vmifucombine.c,
+	  recipes/vmifuscience.c, recipes/vmifustandard.c,
+	  recipes/vmimcalphot.c: Fill/upgrade the description, licence,
+	  author, and email fields of the plugin definition
+
+2004-06-23 Wednesday  cizzo
+
+	* recipes/vmifuscience.c, recipes/vmifustandard.c: Fill/upgrade the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-23 Wednesday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c, recipes/vmifucombine.c: Fill/upgrade the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-21 Monday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c: Upgrade the description of the plugin
+	  definition
+
+2004-06-21 Monday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c: Fill the
+	  description, licence, author, and email fields of the plugin
+	  definition
+
+2004-06-18 Friday  cizzo
+
+	* vimos/vmifu.c: Skip first spectrum in wavelength calibration: too
+	  close to image border, high risk of bias
+
+2004-06-15 Tuesday  cizzo
+
+	* recipes/vmifustandard.c, recipes/vmimcalphot.c: Set explicitly
+	  all the input calibration frames to CALIB type
+
+2004-06-15 Tuesday  cizzo
+
+	* recipes/vmifuscience.c: Set explicitly all the input calibration
+	  frames to CALIB type
+
+2004-06-15 Tuesday  cizzo
+
+	* recipes/vmdet.c, recipes/vmifucalib.c: Set explicitly all the
+	  input calibration frames to CALIB type
+
+2004-06-15 Tuesday  cizzo
+
+	* recipes/vmdark.c: Set explicitly all the input calibration frames
+	  to CALIB type
+
+2004-06-15 Tuesday  cizzo
+
+	* recipes/vmbias.c: Set explicitly the CCD_TABLE frame to CALIB
+	  type
+
+2004-06-14 Monday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c, recipes/vmifucombine.c,
+	  recipes/vmifuscience.c, recipes/vmifustandard.c,
+	  recipes/vmimcalphot.c, recipes/vmimflatscreen.c,
+	  recipes/vmimflatsky.c, recipes/vmimobsjitter.c,
+	  recipes/vmimobsstare.c, recipes/vmimpreimaging.c,
+	  recipes/vmimstandard.c, recipes/vmmasktoccd.c,
+	  recipes/vmmosobsjitter.c, recipes/vmmosobsstare.c,
+	  recipes/vmskyccd.c, recipes/vmspcaldisp.c, recipes/vmspflat.c:
+	  The plugin_exec now returns a status 1 if the recipe returns a
+	  failure (FIX of the previous delta)
+
+2004-06-14 Monday  cizzo
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	  recipes/vmifucalib.c, recipes/vmifucombine.c,
+	  recipes/vmifuscience.c, recipes/vmifustandard.c,
+	  recipes/vmimcalphot.c, recipes/vmimflatscreen.c,
+	  recipes/vmimflatsky.c, recipes/vmimobsjitter.c,
+	  recipes/vmimobsstare.c, recipes/vmimpreimaging.c,
+	  recipes/vmimstandard.c, recipes/vmmasktoccd.c,
+	  recipes/vmmosobsjitter.c, recipes/vmmosobsstare.c,
+	  recipes/vmskyccd.c, recipes/vmspcaldisp.c, recipes/vmspflat.c:
+	  The plugin_exec now returns a status 1 if the recipe returns a
+	  failure
+
+2004-06-08 Tuesday  rpalsa
+
+	* configure.ac: Package version changed.
+
+2004-06-08 Tuesday  rpalsa
+
+	* recipes/vmmasktoccd.c: Fix problems with hardcoded resource file
+	  locations. Cleanup work.
+
+2004-06-08 Tuesday  rpalsa
+
+	* vimos/vmsextractor.h: Add sextGetFileName() to public API. Remove
+	  PsfEx related prototypes.
+
+2004-06-08 Tuesday  rpalsa
+
+	* vimos/vmsextractor.c: Add sextGetFileName() to public API. Remove
+	  PsfEx related code.
+
+2004-06-08 Tuesday  rpalsa
+
+	* vimos/vmimgutils.c, vimos/vmimgutils.h: Function
+	  createMaskToCcdPAF(): const qualifier added to argument 2
+
+2004-06-08 Tuesday  cizzo
+
+	* vimos/vmifu.c: Add more sky lines for wavecalib alignment
+
+2004-06-02 Wednesday  rpalsa
+
+	* COPYING.LIB: Obsolete.
+
+2004-06-02 Wednesday  rpalsa
+
+	* vimos/VmBias.c, vimos/VmDark.c, vimos/VmDet.c,
+	  vimos/VmIfuCalRel.c, vimos/VmIfuImaSingle.c,
+	  vimos/VmIfuOffSingle.c, vimos/VmIfuTab.c, vimos/VmImCalAstro.c,
+	  vimos/VmImCalOpt.c, vimos/VmImCalPhot.c, vimos/VmImFlatScreen.c,
+	  vimos/VmImFlatSky.c, vimos/VmImObsSeq.c, vimos/VmImObsSingle.c,
+	  vimos/VmImPreimaging.c, vimos/VmMosCalPhot.c,
+	  vimos/VmMosObsSeq.c, vimos/VmMosObsSingle.c, vimos/VmSkyCCD.c,
+	  vimos/VmSpCalDisp.c, vimos/VmSpCalOpt.c, vimos/VmSpFlat.c:
+	  Obsolete.
+
+2004-06-02 Wednesday  rpalsa
+
+	* recipes/vmSpFlat.c, recipes/vmBias.c, recipes/vmDark.c,
+	  recipes/vmDet.c, recipes/vmIfuCalRel.c, recipes/vmIfuImaSingle.c,
+	  recipes/vmIfuOffSingle.c, recipes/vmIfuTab.c,
+	  recipes/vmImAstrometry.c, recipes/vmImCalPhot.c,
+	  recipes/vmImFlatScreen.c, recipes/vmImFlatSky.c,
+	  recipes/vmImObsJitter.c, recipes/vmImObsStare.c,
+	  recipes/vmImPreimaging.c, recipes/vmImStandard.c,
+	  recipes/vmMaskToCcd.c, recipes/vmMosCalPhot.c,
+	  recipes/vmMosObsJitter.c, recipes/vmMosObsStare.c,
+	  recipes/vmMskChk.c, recipes/vmQcBias.c, recipes/vmQcDark.c,
+	  recipes/vmQcImFF.c, recipes/vmQcIma.c, recipes/vmSkyCCD.c,
+	  recipes/vmSkyTel.c, recipes/vmSpCalDisp.c, recipes/vmSpCalOpt.c,
+	  recipes/vmSpCalPlot.c: Obsolete.
+
+2004-05-25  Carlo Izzo  <cizzo@eso.org>
+
+	* recipes/vmbias.c, recipes/vmdark.c, recipes/vmdet.c,
+	recipes/vmimflatscreen.c, recipes/vmimflatsky.c, 
+	recipes/vmimpreimaging.c, recipes/vmmosobsstare.c,
+	recipes/vmmosobsjitter.c, recipes/vmspcaldisp.c,
+	recipes/vmspflat.ci, recipes/vmimobsjitter.c, 
+	recipe/vmimobsstare.c, recipes/vmimstandard.c: 
+	all recipes have been completely reviewed, to
+	improve products FITS headers, QC1 parameters,
+	safety checks, etc..
+
+2004-05-25  Carlo Izzo  <cizzo@eso.org>
+
+	* vimos/vmifu.c, vimos/vmifu.h, recipes/vmifucalib.c,
+	recipes/vmifustandard.c, recipes/vmifuscience.c: IFU
+	mode support has been implemented.
+
+2004-05-25  Ralf Palsa  <rpalsa@eso.org>
+
+        * All recipe implementation has been adapted to the new
+	high level CPL interface (plugins). Code modules have
+	been redefined and the directories tree restructured in
+	a more rational way.
+
+2003-09-16  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmImObsSingle.c, drs/libsrc/vimosdrs/VmImObsSeq.c
+	Add more entries to the heading of the QC1 log file.
+
+2003-09-15  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/VmIm_WCS/Makefile.am: Add path for including 
+	header files.
+
+2003-09-15  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/VmIm_WCS/vmwcsutils.c: Modified function
+	vmGetTemperatureScale(), now based on getBeamTemperature().
+
+2003-09-15  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmUtilities.c: Added function
+	getBeamTemperature().
+
+2003-09-14  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmImObsSingle.c: Add the possibility to 
+	skip the reduction of images not containing a standard star 
+	field (speed-up of the online pipeline).
+
+2003-09-14  Carlo Izzo  <cizzo@eso.org>
+
+	* pil/src/piltranslator.c: Add alias for keyword ESO TPL NEXP.
+
+2003-09-14  Carlo Izzo  <cizzo@eso.org>
+
+	* rec/src/vmImStandard.c, rec/config/vmImStandard.ini: Added
+	new parameter ReduceAnyFrame, and set its default to "false".
+
+2003-09-09  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmMosObsSingle.c, 
+	drs/libsrc/vimosdrs/VmMosObsSeq.c: Add the DO category to 
+	the Object and Window tables headers.
+
+2003-09-09  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpFlat.c: Use the optical model first 
+	guess when the internal fit fails.
+
+2003-07-10  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalShifts.c: Add missing out-of-boundary 
+	check.
+
+2003-06-24  Carlo Izzo  <cizzo@eso.org>
+
+	* pil/src/piltranslator.c: Add alias for WINDOW_TABLE category
+
+2003-06-24  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimos/spExtract.c: replace horneExtract()
+
+2003-06-24  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmMosObsSingle.c, 
+	drs/libsrc/vimosdrs/VmMosObsSeq.c: Add PROG.ID to output object 
+	and window tables.
+
+2003-06-24  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmMosObsSingle.c, 
+	drs/libsrc/vimosdrs/VmMosObsSeq.c: Add product WINDOW_TABLE
+
+2003-06-04  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpFlat.c: Avoid curvature+optical models 
+	computation in case data are inadequate or insufficient.
+
+2003-06-04  Carlo Izzo  <cizzo@eso.org>
+
+	* rec/config/vmMosObsJitter.ini, rec/src/vmMosObsJitter.c,
+	drs/libsrc/vimosdrs/VmMosObsSingle.c, drs/libsrc/vimosdrs/VmMosObsSeq.c,
+	rec/config/vmMosObsStare.ini, rec/src/vmMosObsStare.c: 
+	Add new parameter UseSkylines, to make optional the alignment
+	of the IDS to the positions of the skylines (flexures correction).
+
+2003-05-29  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimos/spExtract.c: Avoid processing of empty 2D 
+	extracted image portions
+
+2003-05-29  Carlo Izzo  <cizzo@eso.org>
+
+	* rec/src/vmMosObsStare.c, rec/src/vmMosObsJitter.c, 
+	rec/config/vmMosObsStare.ini, rec/config/vmMosObsJitter.ini: 
+	Set default SlitTolerance to 0.0 (all slits are classified as 
+	long).
+
+2003-05-29  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimos/spExtract.c: Avoid processing of empty 2D 
+	extracted image portions
+
+2003-05-27  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Remove too strict 
+	criterion against fitting IDS
+
+2003-05-26  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Even more prudent model 
+	fit failure handling
+
+2003-05-24  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimos/spExtract.c: In specExtract2D(), fix 
+	zero-filling of image not occupied by spectra: it tended 
+	to destroy data
+
+2003-05-20  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Add some more information 
+	to extraction table header (requested by DFO)
+
+2003-05-19  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Avoid crash if curvature 
+	model cannot be fitted - use first guess instead
+
+2003-05-18  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Avoid computation of OPT 
+	if not enough slits available, and slits coordinates are not 
+	covering a reasonable range; refuse OPT fits with bad residuals.
+
+2003-05-08  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Fix uninitialized variable
+
+2003-05-08  VIMOS Pipeline Administrator  <vimosp@eso.org>
+
+	* configure.in: Update package version
+
+2003-05-06  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpUtilities.c,
+	drs/libsrc/vimosdrs/VmSpUtilities.h: Add new functions getGrism()
+	and alignWavePattern()
+
+2003-05-06  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpFlat.c: Add new product,
+	MOS_COMBINED_SCREEN_FLAT
+
+2003-05-06  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpDerDisp.c,
+	drs/libsrc/vimosdrs/VmSpFlat.c: Avoid false line detections at
+	spectra Y edges
+
+2003-05-06  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpCalDisp.c: Compute OPT and CRV, before
+	IDS
+
+2003-05-06  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmImObsSeq.c,
+	drs/libsrc/vimosdrs/VmImObsSingle.c: Filter bad detection from
+	stars
+
+2003-04-30  Carlo Izzo  <cizzo@eso.org>
+
+	* rec/src/vmImObsStare.c: Change window to avoid image edges.
+
+2003-04-30  Carlo Izzo  <cizzo@eso.org>
+
+	* rec/config/vmImObsJitter.ini, rec/src/vmImObsJitter.c: Add
+	StarIndex parameter
+
+2003-04-29  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimos/spExtract.c: Fix incorrect handling of
+	wavelength step (cumulative error)
+
+2003-04-25  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpNormSmooth.c: Avoid too short slits
+
+2003-04-25  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmSpDerCurves.c: Rough patch to an awful
+	problem with curvature modeling of slits that are too close to X
+	image margins
+
+2003-04-25  Carlo Izzo  <cizzo@eso.org>
+
+	* drs/libsrc/vimosdrs/VmImFlatScreen.c: Use translator for getting
+	combined flat category
+
+2003-04-25  Carlo Izzo  <cizzo@eso.org>
+
+	* pil/src/piltranslator.c: Add IMG_COMBINED_SCREEN_FLAT and 
+	MOS_COMBINED_SCREEN_FLAT aliases.
+
+2003-04-14  Ralf Palsa  <rpalsa@eso.org>
+
+	* drs/libsrc/vimosdrs/VmFlex.c, drs/libsrc/vimosdrs/VmFompu.c,
+	drs/libsrc/vimosdrs/VmImRegrid.c,
+	drs/libsrc/vimosdrs/VmImStarCat.c: Obsolete.
+
+2003-04-14  Ralf Palsa  <rpalsa@eso.org>
+
+	* ChangeLog: maintenance of ChangeLog file started.
+	

@@ -1,0 +1,23 @@
+This distribution contains:
+
+README                              This file
+install_pipeline                    Install script
+gasgano-2.4.8.tar.gz                gasgano 2.4.8
+gsl-2.1.tar.gz                      gsl 2.1
+esorex-3.13.1.tar.gz                esorex 3.13.1
+wcslib-4.24.tar.bz2                 wcslib 4.24
+fftw-3.3.4.tar.gz                   fftw 3.3.4
+cpl-7.1.tar.gz                      cpl 7.1
+cfitsio3360.tar.gz                  cfitsio 3360
+vimos-3.2.3.tar.gz                  VIMOS 3.2.3 recipes
+vimos-calib-3.2.3.tar.gz            VIMOS calibration files 3.2.3
+vimos-config-3.2.3.tar.gz           VIMOS configuration files 3.2.3
+vimos-ifu-reflex-tutorial-2.4.pdf   VIMOS Additional Document
+vimos-mos-reflex-tutorial-2.1.pdf   VIMOS Additional Document
+vimos-pipeline-manual-7.2.pdf       VIMOS pipeline manual 7.2
+
+Installation
+------------
+
+See the above listed manual(s) for installation instructions
+

@@ -1,0 +1,3 @@
+pilerrno.lo: pilerrno.c ../config.h
+
+../config.h:

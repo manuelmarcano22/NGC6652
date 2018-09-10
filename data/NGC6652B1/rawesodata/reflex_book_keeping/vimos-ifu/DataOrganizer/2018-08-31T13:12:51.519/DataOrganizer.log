@@ -1,0 +1,496 @@
+2018-08-31 13:12:51,692 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,693 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,694 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,700 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,701 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,702 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,703 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,703 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,704 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,705 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,706 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,722 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,723 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,723 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,729 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,730 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,731 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,732 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,733 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,733 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,734 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,735 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,762 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,763 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,764 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,769 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,770 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,771 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,772 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,773 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,773 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,774 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:51,775 WARN  [FITSHandler] duplicated keywords found: HIERARCH.ESO.PRO.CATG
+2018-08-31 13:12:52,062 WARN  [ASTSelectAssociateStatement] Could not find enough products of type MASTER_BIAS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,064 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_IDS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,066 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRACE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,068 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRANSMISSION for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,070 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.627.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,072 WARN  [ASTSelectAssociateStatement] Could not find enough products of type MASTER_BIAS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,074 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_IDS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,076 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRACE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,077 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRANSMISSION for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,080 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.285.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,089 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:07.256.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,091 WARN  [ASTSelectAssociateStatement] Could not find enough products of type MASTER_BIAS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,093 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_IDS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,095 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRACE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,097 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRANSMISSION for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,099 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:52.286.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,108 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:22.788.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,117 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T05:39:22.789.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,119 WARN  [ASTSelectAssociateStatement] Could not find enough products of type MASTER_BIAS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,121 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_IDS for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,124 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRACE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,125 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_TRANSMISSION for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,128 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:36.626.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,136 WARN  [ASTSelectAssociateStatement] Could not find enough products of type IFU_SPECPHOT_TABLE for /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/VIMOS.2003-06-04T06:01:07.255.fits. Requested 1. Found 0.
+2018-08-31 13:12:52,158 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,158 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,158 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.6.tfits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,182 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,182 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,185 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:06.327.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,185 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:06.327.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,189 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,189 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,189 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T05:39:22.788 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,388 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,389 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,389 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.7.tfits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,413 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:09.125.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,413 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:09.125.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,414 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T05:39:22.789 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,431 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.5.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,431 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.5.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,431 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.5.tfits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,431 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T05:39:52.285 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,450 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.8.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,450 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.8.tfits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,450 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/badpixel.8.tfits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,450 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T05:39:52.286 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,458 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T06:01:07.255 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,467 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T06:01:07.256 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,475 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T06:01:36.626 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,481 ERROR [FileSystemDatasetCreator] Association VIMOS.2003-06-04T06:01:36.627 is incomplete, look at the OCA output on the console for more information
+2018-08-31 13:12:52,623 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,624 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:23.749.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,626 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:28.741.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,626 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:28.741.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,631 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:46.360.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,631 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:46.360.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,634 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:52.230.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,634 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:11:52.230.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,637 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,637 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:12:53.176.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,639 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:13:17.157.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,639 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:13:17.157.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,641 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:06.327.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,642 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:06.327.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,644 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:09.125.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,644 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:09.125.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,646 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:18.569.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,647 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:18.569.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,649 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:21.529.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,649 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:16:21.529.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,652 WARN  [FITSHandler] duplicated keywords found: EXTNAME
+2018-08-31 13:12:52,652 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:20:44.067.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,652 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:20:44.067.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,654 WARN  [FITSHandler] duplicated keywords found: EXTNAME
+2018-08-31 13:12:52,654 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:20:47.901.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,655 WARN  [Util] /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/M.VIMOS.2008-06-17T18:20:47.901.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,811 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,811 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,811 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,814 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,814 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,814 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,817 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,817 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,817 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,820 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,820 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,820 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,824 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,824 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,824 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRb_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,827 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,827 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,827 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,830 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,830 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,830 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,834 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,834 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,834 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,835 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,835 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,836 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,837 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,837 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,837 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,838 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,838 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,838 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GBPM_100801A_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,840 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,840 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,840 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,842 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,842 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,842 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,844 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,844 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,845 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,846 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,847 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,847 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110203A_HRr_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,848 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,848 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,849 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,850 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,850 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,851 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,852 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,852 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,852 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,854 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,854 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,854 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRb_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,856 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,856 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,856 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,859 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,859 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,859 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,861 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,861 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,861 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,863 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,863 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,863 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_LRr_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,865 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,865 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,866 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,868 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,868 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,868 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110407A_HRbh_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,870 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,870 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,870 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,872 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,872 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,872 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,874 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,874 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,874 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,876 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,876 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,876 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110530A_MR_Q4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,877 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,877 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,878 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,879 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,879 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,879 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,881 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,881 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,881 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/VI_GDIS_110604A_HRo_Q3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,882 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,882 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,882 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,882 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,883 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,883 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,883 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,883 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,883 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,884 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,884 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,884 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,885 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,885 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,885 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,885 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,885 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,885 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,886 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,886 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,886 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,887 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,887 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,887 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,888 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,888 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,888 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,888 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,888 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,888 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,889 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,889 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,889 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,890 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,890 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,890 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_blue_2011.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,890 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,890 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,890 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,891 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,891 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,891 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,892 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,892 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,892 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,892 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,893 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,893 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,893 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,893 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,893 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,894 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,894 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,894 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,894 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,895 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,895 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,895 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,895 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,895 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,896 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,896 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,896 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,897 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,897 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,897 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,897 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,897 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,897 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,898 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,898 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,898 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_orange_2011.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,899 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,899 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,899 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,899 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,899 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,899 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,900 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,900 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,900 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_red_2005.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,901 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,901 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,901 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,902 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,902 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,902 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,902 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,902 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,902 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,903 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,903 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,903 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,904 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,904 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,904 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,904 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,904 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,904 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,905 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,905 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,905 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,906 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,906 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,906 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,906 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,906 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,907 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,907 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,907 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,907 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,908 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,908 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,908 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,909 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,909 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,909 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_HR_redh_2011.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,909 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,909 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,910 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,911 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,912 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,913 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,914 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,915 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,916 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,917 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,918 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,918 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,918 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,919 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,919 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,919 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,919 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,920 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,920 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,920 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,920 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,920 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_blue_on.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,921 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,922 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,923 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,924 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,924 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,924 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,924 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,924 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,924 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,925 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_LR_red.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,926 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,926 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,926 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,926 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,926 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,927 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,927 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,927 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,927 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,928 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,928 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,928 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,929 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,929 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,929 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,930 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,930 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,930 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,931 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,931 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,931 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,932 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,932 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,932 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2010.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,932 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,932 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,933 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,933 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,933 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,933 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,934 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,934 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,934 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,935 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,935 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,935 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifu_ident_MR_2011.4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,936 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,936 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,937 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,937 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,937 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,937 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,938 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,938 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableHR4.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,939 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR1.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,939 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR1.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,939 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR2.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,939 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR2.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,940 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR3.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,940 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR3.fits contains neither DATASUM nor DATAMD5 keyword
+2018-08-31 13:12:52,940 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR4.fits doesn't contain the CHECKSUM keyword
+2018-08-31 13:12:52,941 WARN  [Util] /usr/share/esopipes/datastatic/vimos-3.2.3/ifutableLR4.fits contains neither DATASUM nor DATAMD5 keyword

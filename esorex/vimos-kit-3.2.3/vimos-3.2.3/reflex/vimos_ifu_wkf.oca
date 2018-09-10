@@ -1,0 +1,169 @@
+///Original file: DFO rules provided by Burkhard by e-mail on 25.04.2012
+///
+/// Replaced DO.CLASS with REFLEX.CATG throughout
+if (DPR.CATG=="CALIB" or DPR.CATG=="SCIENCE") and DPR.TYPE=="LAMP,AFC" and INS.MODE=="IMG" then 
+{
+  RAW.TYPE = "ACQ_IMG";
+  REFLEX.CATG = "ACQ_IMG";
+  CATG = "ACQUISITION";
+}
+if DPR.CATG=="CALIB" and DPR.TYPE=="BIAS" and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "BIAS";
+  REFLEX.CATG = "BIAS";
+  CATG = "CALIB";
+}
+if DPR.CATG=="CALIB" and DPR.TYPE=="FLAT,LAMP" and INS.MODE=="IFU" and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "IFU_CAL";
+  REFLEX.CATG = "IFU_SCREEN_FLAT";
+  CATG = "CALIB";
+}
+if DPR.CATG=="CALIB" and DPR.TYPE=="WAVE,LAMP" and INS.MODE=="IFU" and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "IFU_CAL";
+  REFLEX.CATG = "IFU_ARC_SPECTRUM";
+  CATG = "CALIB";
+}
+
+if DPR.CATG=="CALIB" and DPR.TYPE=="STD" and INS.MODE=="IFU" and OCS.CON.QUAD==TPL.EXPNO and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "STD_IFU";
+  REFLEX.CATG = "IFU_STANDARD";
+  CATG = "CALIB";
+}
+if DPR.CATG=="SCIENCE" and DPR.TYPE=="OBJECT" and INS.MODE=="IFU" and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "SCI_IFU";
+  REFLEX.CATG = "IFU_SCIENCE";
+  CATG = "SCIENCE";
+  REFLEX.TARGET = "T"; /// Needed for Reflex use.
+}
+
+if PRO.CATG=="CCD_TABLE"  and PRO.TABLE=="CCD" and (INS.MODE=="IFU" or INS.MODE=="MOS") and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "CCD_TABLE";
+}
+
+if PRO.CATG=="IFU_IDENT" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "IFU_IDENT";
+}
+
+if PRO.CATG=="EXTINCT_TABLE" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "EXTINCT_TABLE";
+}
+
+if PRO.CATG=="LINE_CATALOG" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "LINE_CATALOG";
+}
+
+if PRO.CATG=="STD_FLUX_TABLE" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "STD_FLUX_TABLE";
+}
+
+select execute(BIAS) from inputFiles where RAW.TYPE=="BIAS"
+  group by DET.READ.CLOCK,TPL.START,OCS.CON.QUAD as (TPL_D,tpl);
+select execute(IFU_CAL) from inputFiles where RAW.TYPE=="IFU_CAL"
+  group by INS.GRIS1.ID,INS.GRIS2.ID,INS.GRIS3.ID,INS.GRIS4.ID,INS.FILT1.NAME,INS.FILT2.NAME,INS.FILT3.NAME,INS.FILT4.NAME,INS.IFUE.MAG,INS.IFUS.MODE,TPL.ID,TPL.START,OCS.CON.QUAD as (TPL_D,tpl);
+select execute(STD_IFU) from inputFiles where RAW.TYPE=="STD_IFU"
+  group by ARCFILE;
+select execute(SCI_IFU) from inputFiles where RAW.TYPE=="SCI_IFU"
+  group by ARCFILE;
+action BIAS
+{
+/// include CCD_TABLE 
+  minRet = 0; maxRet = 1;
+  select file as CCD_TABLE from calibFiles where PRO.CATG=="CCD_TABLE" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INSTRUME==INSTRUME
+  ;
+  recipe vmbias
+  {
+  }
+  product MASTER_BIAS { PRO.CATG="MASTER_BIAS"; PRO.EXT="tpl_0000.fits";}
+}
+action IFU_CAL
+{
+/// include CCD_TABLE 
+  minRet = 1; maxRet = 1;
+  select file as CCD_TABLE from calibFiles where PRO.CATG=="CCD_TABLE" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MASTER_BIAS from calibFiles where PRO.CATG=="MASTER_BIAS" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as LINE_CATALOG from calibFiles where PRO.CATG=="LINE_CATALOG" and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INSTRUME==INSTRUME
+  ;
+ minRet = 1; maxRet = 1;
+  select file as IFU_IDENT from calibFiles where PRO.CATG=="IFU_IDENT" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INSTRUME==INSTRUME and (inputFile.INS.GRIS1.NAME?=INS.GRIS1.NAME and inputFile.INS.GRIS2.NAME?=INS.GRIS2.NAME and inputFile.INS.GRIS3.NAME?=INS.GRIS3.NAME and inputFile.INS.GRIS4.NAME?=INS.GRIS4.NAME) and MJD-OBS < inputFile.MJD-OBS
+  ;
+  recipe vmifucalib {
+  }
+  product IFU_IDS { PRO.CATG="IFU_IDS"; PRO.EXT="tpl_0002.fits";}
+  product IFU_TRACE { PRO.CATG="IFU_TRACE"; PRO.EXT="tpl_0004.fits";}
+  product IFU_TRANSMISSION { PRO.CATG="IFU_TRANSMISSION"; PRO.EXT="tpl_0005.fits";}
+}
+action SCI_IFU
+{
+/// include CCD_TABLE 
+  minRet = 1; maxRet = 1;
+  select file as CCD_TABLE from calibFiles where PRO.CATG=="CCD_TABLE" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MASTER_BIAS from calibFiles where PRO.CATG=="MASTER_BIAS" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_IDS from calibFiles where PRO.CATG=="IFU_IDS" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and (MJD-OBS <= 55336.0 or (MJD-OBS > 55336.0 and OBS.ID==inputFile.OBS.ID)) and MJD-OBS > inputFile.MJD-OBS and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_TRACE from calibFiles where PRO.CATG=="IFU_TRACE" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and (MJD-OBS <= 55336.0 or (MJD-OBS > 55336.0 and OBS.ID==inputFile.OBS.ID)) and MJD-OBS > inputFile.MJD-OBS and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_TRANSMISSION from calibFiles where PRO.CATG=="IFU_TRANSMISSION" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and (MJD-OBS <= 55336.0 or (MJD-OBS > 55336.0 and OBS.ID==inputFile.OBS.ID)) and MJD-OBS > inputFile.MJD-OBS and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as EXTINCT_TABLE from calibFiles where PRO.CATG=="EXTINCT_TABLE" and (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_SPECPHOT_TABLE from calibFiles where PRO.CATG=="IFU_SPECPHOT_TABLE" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INSTRUME==INSTRUME
+  ;
+  recipe vmifuscience {
+    "--CalibrateFlux=true";
+  } 
+  product IFU_FOV { PRO.CATG="IFU_FOV"; PRO.EXT="tpl_0000.fits";}
+  product IFU_SCIENCE_FLUX_REDUCED { PRO.CATG="IFU_SCIENCE_FLUX_REDUCED"; PRO.EXT="tpl_0001.fits";}
+  product IFU_SCIENCE_REDUCED { PRO.CATG="IFU_SCIENCE_REDUCED"; PRO.EXT="tpl_0002.fits";}
+  product IFU_SKY_IDS { PRO.CATG="IFU_SKY_IDS "; PRO.EXT="tpl_0003.fits";}
+  product IFU_SKY_TRACE { PRO.CATG="IFU_SKY_TRACE "; PRO.EXT="tpl_0004.fits";}
+}
+action STD_IFU
+{
+/// include CCD_TABLE 
+  minRet = 1; maxRet = 1;
+  select file as CCD_TABLE from calibFiles where PRO.CATG=="CCD_TABLE" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MASTER_BIAS from calibFiles where PRO.CATG=="MASTER_BIAS" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_IDS from calibFiles where PRO.CATG=="IFU_IDS" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and (MJD-OBS <= 55336.0 or (MJD-OBS > 55336.0 and OBS.ID==inputFile.OBS.ID)) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_TRACE from calibFiles where PRO.CATG=="IFU_TRACE" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and (MJD-OBS <= 55336.0 or (MJD-OBS > 55336.0 and OBS.ID==inputFile.OBS.ID)) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as IFU_TRANSMISSION from calibFiles where PRO.CATG=="IFU_TRANSMISSION" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.DET.CHIP1.ID==DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INS.IFUE.MAG==INS.IFUE.MAG and inputFile.INS.IFUS.MODE==INS.IFUS.MODE and (MJD-OBS <= 55336.0 or (MJD-OBS > 55336.0 and OBS.ID==inputFile.OBS.ID)) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as EXTINCT_TABLE from calibFiles where PRO.CATG=="EXTINCT_TABLE" and (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as STD_FLUX_TABLE from calibFiles where PRO.CATG=="STD_FLUX_TABLE" and inputFile.OBS.TARG.NAME==OBS.TARG.NAME and MJD-OBS > 56931.0 and inputFile.INSTRUME==INSTRUME
+  ;
+  recipe vmifustandard;
+  product IFU_STD_FOV { PRO.CATG="IFU_STD_FOV"; PRO.EXT="0000.fits";}
+  product IFU_SPECPHOT_TABLE { PRO.CATG="IFU_SPECPHOT_TABLE"; PRO.EXT="0004.fits";}
+  product IFU_STANDARD_REDUCED { PRO.CATG="IFU_STANDARD_REDUCED"; PRO.EXT="0003.fits";}
+}

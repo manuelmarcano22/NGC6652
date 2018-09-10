@@ -1,0 +1,7 @@
+
+#define CPL_VERSION_STRING "7.1"
+#define CPL_VERSION_CODE 459008
+
+#define CPL_VERSION(major, minor, micro) \
+(((major) * 65536) + ((minor) * 256) + (micro))
+

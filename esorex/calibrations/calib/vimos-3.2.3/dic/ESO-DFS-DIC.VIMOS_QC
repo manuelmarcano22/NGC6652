@@ -1,0 +1,1739 @@
+# "$Id: ESO-DFS-DIC.VIMOS_QC,v 1.2 2011-10-28 11:29:23 cgarcia Exp $"
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# COPYRIGHT (c) 2002 European Southern Observatory (ESO)
+# LICENSE: GNU General Public License version 2 or later
+#
+# PROJECT:   VLT Data Flow System
+# AUTHOR:    Carlo Izzo -- ESO/DMD/DPG
+# SUBSYSTEM: Instrument pipelines
+#
+# PURPOSE:
+#   Define the VIMOS Quality control parameters.
+#
+# DESCRIPTION:
+#   Data Interface Dictionary for VIMOS Quality control parameters.
+#
+# $Name: not supported by cvs2svn $
+# $Revision: 1.2 $
+#                            
+Dictionary Name:   ESO-DFS-DIC.VIMOS_QC
+Scope:             QC
+Source:            ESO DFS/DMD
+Version Control:   "@(#) $Id: ESO-DFS-DIC.VIMOS_QC,v 1.2 2011-10-28 11:29:23 cgarcia Exp $"
+Revision:          1.1
+Date:              2003-09-17
+Status:            draft
+Description:       Implementation
+
+
+# QC Category
+
+Parameter Name:    QC DID
+Class:             header|qc-log
+Context:           process
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Field:     Data dictionary for QC
+Description:       Name/version of ESO DID to which QC keywords comply.
+
+Parameter Name:    QC MASK CCD X0
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Mask to CCD transformation coefficient.
+Description:       X position on the CCD of (0,0) position on the mask.
+
+Parameter Name:    QC MASK CCD XX
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/mm
+Comment Field:     Mask to CCD transformation coefficient.
+Description:       XX component of the rotation matrix.
+
+Parameter Name:    QC MASK CCD XY
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/mm
+Comment Field:     Mask to CCD transformation coefficient.
+Description:       XY component of the rotation matrix.
+
+Parameter Name:    QC MASK CCD Y0
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Mask to CCD transformation coefficient.
+Description:       Y position on the CCD of (0,0) position on the mask.
+
+Parameter Name:    QC MASK CCD YX
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/mm
+Comment Field:     Mask to CCD transformation coefficient.
+Description:       YX component of the rotation matrix.
+
+Parameter Name:    QC MASK CCD YY
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              pixel/mm
+Comment Field:     Mask to CCD transformation coefficient.
+Description:       YY component of the rotation matrix.
+
+Parameter Name:    QC PINHOLE COUNT
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              
+Comment Field:     Number of pinholes for CCD transformation
+Description:       Number of pinholes used to compute
+		   the CCD transformation.
+
+Parameter Name:    QC IMAGE QUALITY MEAN
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Mean image quality
+Description:       Mean image quality
+
+Parameter Name:    QC IMAGE QUALITY RMS
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Image quality RMS
+Description:       Image quality RMS
+
+Parameter Name:    QC ELLIPTICITY MEAN
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              
+Comment Field:     Mean image ellipticity
+Description:       Mean image ellipticity
+
+Parameter Name:    QC ELLIPTICITY RMS
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              
+Comment Field:     Image ellipticity RMS
+Description:       Image ellipticity RMS
+
+Parameter Name:    QC ORIENTATION MEAN
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              degree
+Comment Field:     Mean image orientation
+Description:       Mean image orientation
+
+Parameter Name:    QC ORIENTATION RMS
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              degree
+Comment Field:     Image orientation RMS
+Description:       Image orientation RMS
+
+Parameter Name:    QC SHUTTER DELAY
+Class:             qc-log
+Context:           process 
+Type:              double
+Value Format:      %e
+Unit:              s
+Comment Field:     Shutter delay.
+Description:       The shutter delay is computed analysing the linearity
+                   curve obtained from a sequence of flat field exposures
+                   at different exposure times. If t is the exposure time
+                   reported in the data header, then the true exposure 
+                   time is a quantity (t - s), where s is the shutter 
+                   delay. If the lamp intensity remains constant during 
+                   the observation, and the detector response is perfectly
+                   linear, and the shutter delay never changes, then the 
+                   measured count rate L / (t - s) = C must be constant 
+                   for all the illumination levels L. Linear fitting of
+                   the observed table of t and L permits to determine C,
+                   and consequently s. In practice, in order to keep into
+                   account (at least partially) possible non-linearities
+                   of the system or possible lamp variability, a first-order
+                   non-linearity term is added to the relation. This
+                   computation is performed four times on four different
+                   CCD regions, in order to get independent determinations
+                   of the shutter delay, that are then averaged.
+
+Parameter Name:    QC SHUTTER DELAY ERROR
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              s
+Comment Field:     Shutter delay.
+Description:       The error on the shutter delay is defined as the sigma
+                   of the four independent determinations of the shutter 
+                   delay.
+
+Parameter Name:    QC BIAS MEDIAN
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Median bias level (ADU)
+Description:       Median value of the 1600x1800 central pixels of first 
+                   raw bias in the input set of frames. No overscan 
+                   correction is applied.
+
+Parameter Name:    QC BIAS MEAN
+Class:             qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Mean bias level (ADU)
+Description:       Mean value of the 1600x1800 central pixels of the first 
+                   raw bias in the input set of frames. No overscan
+                   correction is applied.
+
+Parameter Name:    QC BIAS RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Sigma of bias (ADU)
+Description:       Population standard deviation of all 1600x1800 central
+                   pixel values of the first bias in input set of frames.
+
+Parameter Name:    QC DET OUTi RON
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Readout noise per port from overscan (ADU)
+Description:       Readout noise is computed using a robust variance
+                   (from quantiles) in the overscan region of detector port i.
+
+Parameter Name:    QC RON
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Average read out noise over all the ports (ADU)
+Description:       Population standard deviation of the 1600x1800 central 
+                   pixels of the difference between the first and the second 
+                   raw biases of the input set of frames, divided by the 
+                   square root of 2.
+
+Parameter Name:    QC BIAS FPN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Bias fixed pattern noise (ADU)
+Description:       The population standard deviation of the 1600x1800 central
+                   pixels of the difference between the first raw bias and 
+                   the second raw bias shifted by 10x10 pixels, is computed.
+                   This is the combination of fixed pattern noise and read
+                   out noise (scaled by sqrt(2)). The read out noise 
+                   contribution is then quadratically subtracted from the
+                   total noise.
+
+Parameter Name:    QC BIAS STRUCT
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Bias structure (ADU)
+Description:       The population standard deviation of the 1600x1800 central
+                   pixels of the first raw bias is computed. This is the 
+                   combination of structure, fixed pattern noise, and read
+                   out noise. The read out noise and the fixed pattern noise
+                   contributions are then quadratically subtracted.
+
+Parameter Name:    QC BIAS MASTER MEDIAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Median bias level (ADU)
+Description:       Median value of the 1600x1800 central pixels of the 
+                   product master bias.
+
+Parameter Name:    QC BIAS MASTER MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Mean bias level (ADU)
+Description:       Mean value of the 1600x1800 central pixels of the product 
+                   master bias.
+
+Parameter Name:    QC BIAS MASTER RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Sigma of master bias (ADU)
+Description:       Population standard deviation of all 1600x1800 central
+                   pixel values of the product master bias.
+
+Parameter Name:    QC BIAS MASTER NOISE
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Noise of master bias (ADU)
+Description:       The expected noise is computed as the value of QC RON,
+                   divided by the square root of the number of raw bias
+                   frames used in the construction of the master bias.
+                   Next, the population standard deviation of the 1600x1800 
+                   central pixel values of the master bias is determined,
+                   excluding from the computation all values differing
+                   from QC BIAS MASTER MEDIAN more than three times the
+                   expected noise.
+
+Parameter Name:    QC BIAS MASTER FPN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Master bias fixed pattern noise (ADU)
+Description:       The population standard deviation of the difference 
+                   between the central 1600x1800 pixels of the master
+                   bias, and the region of the master bias shifted
+                   10x10 pixels from the central one, is computed.
+                   This is the combination of fixed pattern noise and 
+                   white noise (scaled by sqrt(2)). The white noise
+                   contribution is then quadratically subtracted from 
+                   the total noise.
+
+Parameter Name:    QC BIAS MASTER STRUCT
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Master bias structure (ADU)
+Description:       The population standard deviation of the 1600x1800 
+                   central pixels of the master bias is computed. This 
+                   is the combination of structure, fixed pattern noise, 
+                   and white noise. The white noise and the fixed pattern 
+                   noise contributions are then quadratically subtracted.
+
+Parameter Name:    QC DARK MASTER MEDIAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Median of master dark (ADU/s)
+Description:       Median value of the 1600x1800 central pixels of the 
+                   product master dark.
+
+Parameter Name:    QC DARK MASTER MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Mean of master dark (ADU/s)
+Description:       Mean value of the 1600x1800 central pixels of the 
+                   product master dark.
+
+Parameter Name:    QC DARK MASTER RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Sigma of master dark (ADU/s)
+Description:       Population standard deviation of all 1600x1800 central 
+                   pixel values of the product master dark.
+
+Parameter Name:    QC DARK CURRENT
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              e-/pix/h
+Comment Field:     Dark current (e-/pix/h)
+Description:       Simple conversion of QC DARK MASTER MEDIAN to the new
+                   unit.
+
+Parameter Name:    QC DARK CURRENT RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              e-/pix/h
+Comment Field:     Dark current rms (e-/pix/h)
+Description:       Simple conversion of QC DARK MASTER RMS to the new
+                   unit.
+
+Parameter Name:    QC SKY FLAT RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of master sky flat field
+Description:       The population standard deviation of the 1600x1800
+                   central pixels of the normalized master sky flat field
+                   is computed.
+
+Parameter Name:    QC SKY FLAT STRUCT
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              
+Comment Field:     Structure of master sky flat field
+Description:       The population standard deviation of the 1600x1800 
+                   central pixels of the normalized master flat field 
+                   is computed. This is the combination of large scale 
+                   structure with noise sources. Then the difference 
+                   between the master and the master itself shifted by 
+                   10x10 pixels is computed, and the variance of the
+                   1600x1800 central pixels of the result is computed 
+                   and corrected by a factor 2. This evaluation of
+                   other noise sources is then quadratically subtracted 
+                   from the total standard deviation.
+
+Parameter Name:    QC SKY FLAT FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Mean flux of raw sky flat field (ADU/s)
+Description:       Mean value of the 1600x1800 central pixels of an input
+                   bias corrected sky flat field, divided by the exposure 
+                   time.
+
+Parameter Name:    QC FLAT EFFICIENCY
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Signal per unit of exposure (ADU/s)
+Description:       The median level of the 1600x1800 central pixels of 
+                   the first input screen flat field is divided by the
+                   exposure time.
+
+Parameter Name:    QC FLAT MASTER RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     RMS of not normalized master screen flat field (ADU)
+Description:       RMS of the 1600x1800 central pixels of the product 
+                   non-normalized screen master flat.
+
+Parameter Name:    QC FLAT MASTER MEDIAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Median of not normalized master screen flat field (ADU)
+Description:       Median value of the 1600x1800 central pixels of the
+                   product non-normalized screen master flat.
+
+Parameter Name:    QC CONAD
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              e-/ADU
+Comment Field:     Conversion factor from ADU to electrons (e-/ADU)
+Description:       If the exposure time of the first two raw screen flat
+                   fields in the input set of frames is the same (within 4%), 
+                   the difference frame is computed. Then the 1600x1800 
+                   central region of the image is divided into 16x18 100x100 
+                   boxes. For each one of these boxes, the median signal 
+                   level from the first raw frame is divided by the variance 
+                   in the difference frame scaled by 2. The median value of 
+                   the 16x18 values obtained is the accepted value for the 
+                   conversion factor.
+
+Parameter Name:    QC CONAD RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              e-/ADU
+Comment Field:     Error on conversion factor from ADU to electrons (e-/ADU)
+Description:       If the exposure time of the first two raw screen flat
+                   fields in the input set of frames is the same (within 4%), 
+                   the difference frame is computed. Then the 1600x1800
+                   central chip region are divided into 16x18 100x100 boxes. 
+                   For each one of these boxes, the median signal level 
+                   in the first raw frame is divided by the rms in the 
+                   difference frame scaled by the square root of 2.
+                   The rms of the 16x18 values obtained is then computed,
+                   and divided by sqrt(16x18).
+
+Parameter Name:    QC FLAT PHN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Photon noise (ADU)
+Description:       If the exposure time of the first two raw screen flat
+                   fields in the input set of frames is the same (within 4%), 
+                   the difference frame is computed. The rms of the 1600x1800 
+                   pixel central region of the difference is computed and 
+                   then scaled by the square root of 2.
+
+Parameter Name:    QC FLAT FPN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Fixed pattern noise (ADU)
+Description:       If the exposure time of the first two raw screen 
+                   flat fields in the input set of frames is the same
+                   (within 4%), the difference between the 1600x1800
+                   central pixels of the first frame, and the same
+                   region shifted by 10x10 pixels in the second frame, 
+                   is computed. This is the combination of fixed pattern 
+                   noise and photon noise (scaled by sqrt(2)). The photon 
+                   noise is then quadratically subtracted.
+
+Parameter Name:    QC FLAT STRUCT
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU
+Comment Field:     Screen flat field structure (ADU)
+Description:       If the photon noise and the fixed pattern noise are
+                   available, the population standard deviation of the 
+                   1600x1800 central pixels of the first raw frame is 
+                   computed. This is the combination of structure, fixed 
+                   pattern noise, and photon noise. The photon noise and 
+                   the fixed pattern noise are then quadratically subtracted.
+
+Parameter Name:    QC IMAGE QUALITY
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              arcsec
+Comment Field:     Image quality (arcsec)
+Description:       Median of Sextractor FWHM of all objects classified
+                   as stars.
+
+Parameter Name:    QC IMAGE QUALITY ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              arcsec
+Comment Field:     Error on image quality (arcsec)
+Description:       Sigma of Sextractor FWHM of all objects classified
+                   as stars. The sigma is computed iteratively, excluding 
+                   from the distribution outliers at more than 3 sigma.
+
+Parameter Name:    QC STAR COUNT
+Class:             header|qc-log
+Context:           process
+Type:              int
+Value Format:      %e
+Unit:              
+Comment Field:     Number of stars in image
+Description:       Number of detected object that were classified by 
+                   Sextractor as stars. The image quality parameters are
+                   calculated only if at least 10 stars are detected.
+
+Parameter Name:    QC STELLARITY MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean stellarity index
+Description:       Mean stellarity index of all objects in image.
+
+Parameter Name:    QC STELLARITY RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Stellarity index sigma.
+Description:       Stellarity index sigma of all objects in image.
+
+Parameter Name:    QC STAR STELLARITY MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean stellarity index of stars
+Description:       Mean stellarity index of objects in image classified
+                   by Sextractor as stars.
+
+Parameter Name:    QC STAR STELLARITY RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Stellarity index of stars sigma
+Description:       Stellarity index sigma of objects in image classified
+                   by Sextractor as stars.
+
+Parameter Name:    QC STAR ELLIPTICITY MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean ellipticity of stars
+Description:       Mean ellipticity of objects in image classified by 
+                   Sextractor as stars.
+
+Parameter Name:    QC STAR ELLIPTICITY RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Sigma of ellipticity of stars
+Description:       Sigma of ellipticity of objects in image classified by 
+                   Sextractor as stars.
+
+Parameter Name:    QC STAR ORIENTATION MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              degree
+Comment Field:     Mean orientation of star ellipses (degree)
+Description:       Mean orientation of star ellipses (from -90 to +90,
+                   counted counterclockwise, with 0 corresponding to
+                   the image X axis). This is determined by a peak 
+                   detection algorithm run on an histogram of all
+                   objects orientations. Initially, an approximate 
+                   position of the most probable orientation is
+                   determined. Then a new histogram is built, centered 
+                   on this position and with a number of bins dependent
+                   on the number of objects available, and a more
+                   accurate peak detection algorithm is run again.
+                   If no peak is detected, this parameter is assigned
+                   the value zero, associated to an error of +/- 90
+                   degrees (this is good for plots).
+
+Parameter Name:    QC STAR ORIENTATION RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              degree
+Comment Field:     Sigma on mean orientation of star ellipses (degree)
+Description:       Sigma of mean orientation of star ellipses. This is
+                   the uncertainty on the position of the maximum of
+                   a gaussian fit to the detected peak. If no peak
+                   were detected, this parameter would be assigned the
+                   value 90.
+
+Parameter Name:    QC IMAGE QUALi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              arcsec
+Comment Field:     Image quality in image cell i (arcsec)
+Description:       Median of Sextractor FWHM of all objects classified
+                   as stars on image cell i. There are 3x3 cells, counted 
+                   from 1 to 9, starting from image bottom from left to
+                   right. Cell 1 begins at image pixel (73,80). All cells 
+                   have size 634x760.
+
+Parameter Name:    QC IMAGE QUALi ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              arcsec
+Comment Field:     Error on image quality in image cell i (arcsec)
+Description:       Sigma of Sextractor FWHM of all objects classified
+                   as stars in cell i. The sigma is computed 
+                   iteratively, excluding from the distribution 
+                   outliers at more than 3 sigma.
+
+Parameter Name:    QC STAR COUNT CELLi
+Class:             header|qc-log
+Context:           process
+Type:              int
+Value Format:      %e
+Unit:              
+Comment Field:     Number of stars in image cell i
+Description:       Number of detected object that were classified by 
+                   Sextractor as stars in cell i. The image quality 
+                   parameters for one cell are calculated only if at 
+                   least 10 stars are detected within that cell.
+
+Parameter Name:    QC STELLARi MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean stellarity index in cell i.
+Description:       Mean stellarity index of all objects in image cell i.
+
+Parameter Name:    QC STELLARi RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Stellarity index sigma in cell i.
+Description:       Stellarity index sigma of all objects in image cell i.
+
+Parameter Name:    QC STAR STELLARi MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean stellarity index of stars in cell i.
+Description:       Mean stellarity index of objects in image cell i classified
+                   by Sextractor as stars.
+
+Parameter Name:    QC STAR STELLARi RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Stellarity index of stars in cell i sigma
+Description:       Stellarity index sigma of objects in image cell i classified
+                   by Sextractor as stars.
+
+Parameter Name:    QC STAR ELLIPTICi MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean ellipticity of stars in cell i.
+Description:       Mean ellipticity of objects in image cell i classified by 
+                   Sextractor as stars.
+
+Parameter Name:    QC STAR ELLIPTICi RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Sigma of ellipticity of stars in cell i.
+Description:       Sigma of ellipticity of objects in image cell i classified 
+                   by Sextractor as stars.
+
+Parameter Name:    QC STAR ORIENTATi MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              degree
+Comment Field:     Mean orientation of star ellipses in cell i (degree)
+Description:       Mean orientation of star ellipses (from -90 to +90,
+                   counted counterclockwise, with 0 corresponding to
+                   the image X axis). This is determined by a peak 
+                   detection algorithm run on an histogram of all
+                   objects orientations. Initially, an approximate 
+                   position of the most probable orientation is
+                   determined. Then a new histogram is built, centered 
+                   on this position and with a number of bins dependent
+                   on the number of objects available, and a more
+                   accurate peak detection algorithm is run again.
+                   If no peak is detected, this parameter is assigned
+                   the value zero, associated to an error of +/- 90
+                   degrees (this is good for plots).
+
+Parameter Name:    QC STAR ORIENTATi RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              degree
+Comment Field:     Sigma on mean orientation of ellipses in cell i (degree)
+Description:       Sigma of mean orientation of star ellipses in image cell i. 
+                   This is the uncertainty on the position of the maximum 
+                   of a gaussian fit to the detected peak. If no peak were 
+                   detected, this parameter would be assigned the value 90.
+
+Parameter Name:    QC SKYBACK
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Sky background level (ADU/s)
+Description:       The sky background is evaluated dividing the central
+                   1600x1800 region of the chip into 10x10 regions 160x180
+                   pixels each. For each region the median level is computed.
+                   The mean of the 10 lowest values obtained is the estimation
+                   of the sky background level. This value is scaled to the
+                   unit of time.
+
+Parameter Name:    QC SKYBACK ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Sky background level error (ADU/s)
+Description:       The sky background is evaluated dividing the central
+                   1600x1800 region of the chip into 10x10 regions 160x180
+                   pixels each. For each region the median level is computed.
+                   The rms of the 10 lowest values obtained is the estimation
+                   of the error on the sky background level.
+
+Parameter Name:    QC MAGLIM
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag
+Comment Field:     Limiting magnitude.
+Description:       Limiting magnitude level determined from source detection
+                   on image. Stars are selected, and a histogram of their 
+                   magnitudes is built. Binsizes from 0.1 up to 1.0 magnitudes
+                   are tried, until the most populated bin contains at least
+                   20 stars. The position of the most populated bin is taken
+                   as the limiting magnitude. If the 20 stars level for the
+                   highest bin is never reached, the limiting magnitude value
+                   is set to 0.0.
+
+Parameter Name:    QC MAGLIM ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag
+Comment Field:     Error on limiting magnitude (mag)
+Description:       The error is assigned the value of the binsize of the
+                   histogram used in the determination of the limiting
+                   magnitude. If no limiting magnitude were found, the
+                   error is set to 0.0.
+
+Parameter Name:    QC ZEROPOINT
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag
+Comment Field:     Photometric frame zeropoint (mag)
+Description:       Photometric frame zeropoint Z determined from one standard 
+                   star observation: 
+
+                       Z = E_o*A + C*color + mag_cat - mag_instr
+
+                   E_o is the extinction term used, which is not a QC parameter
+                   but is read from the reference photometric table and is
+                   reported at the head of the same QC1 log file section, 
+                   together with the color term C, the color index used, 
+                   and the airmass. The values obtained for Z for each 
+                   detected standard star are then averaged. If no standard 
+                   star is detected, the frame zeropoint is set to 0.0.
+
+Parameter Name:    QC ZEROPOINT ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag
+Comment Field:     Photometric frame zeropoint error (mag)
+Description:       Photometric frame zeropoint error, determined as the
+                   rms of the single zeropoints computed for each standard
+                   star used in the zeropoint determination. If only one
+                   star was used, no error is given. If no standard star 
+                   were detected, the error is set to 0.0.
+
+Parameter Name:    QC ZEROPOINT RAW
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag
+Comment Field:     Photometric frame raw zeropoint (mag)
+Description:       Photometric frame raw zeropoint Z determined from standard
+                   star observations, without correction for extinction and
+                   color term:
+
+                       mag_instr - mag_cat = Z
+
+                   The values obtained for Z for each detected standard star 
+                   are then averaged.
+
+Parameter Name:    QC ZEROPOINT RAW ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag
+Comment Field:     Photometric frame raw zeropoint error (mag)
+Description:       Photometric frame raw zeropoint error, determined as 
+                   the rms of the single raw zeropoints computed for each 
+                   standard star used in the zeropoint determination. If 
+                   only one star was used, no error is given.
+
+Parameter Name:    QC ZEROPOINT NSTARS
+Class:             header|qc-log
+Context:           process
+Type:              int
+Value Format:      %e
+Unit:
+Comment Field:     Number of standard stars
+Description:       Number of standard stars used in frame zeropoint 
+                   computation.
+
+Parameter Name:    QC EXTINCTION
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag/airmass
+Comment Field:     Estimated atmospheric extinction (mag/airmass)
+Description:       Atmospheric extinction determined from one standard
+                   star observation:
+
+                       E = E_o + (Z_o - Z) / A
+
+                   E_o is the extinction term which was used in the computation
+                   of the zeropoint Z (QC ZEROPOINT), and Z_o is the known
+                   instrument zeropoint: both terms are read from the 
+                   reference photometric table. If no standard star is 
+                   detected, the extinction is set to 0.0.
+
+Parameter Name:    QC EXTINCTION ERROR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              mag/airmass
+Comment Field:     Error on estimated atmospheric extinction (mag/airmass)
+Description:       Error on estimated atmospheric extinction, propagating
+                   uncertainties from E_o, Z_o, and Z (QC EXTINCTION).
+                   If only one star was used, or no standard star were 
+                   detected, the error is set to 0.0.
+
+Parameter Name:    QC MOS RESOLUTION1 LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Wavelength at red end of spectrum (Angstrom)
+Description:       Wavelength of arc lamp line chosen for determining 
+                   the spectral resolution at the red end of spectrum.
+
+Parameter Name:    QC MOS RESOLUTION2 LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Wavelength at center of spectrum (Angstrom)
+Description:       Wavelength of arc lamp line chosen for determining 
+                   the spectral resolution at about the center of spectrum.
+
+Parameter Name:    QC MOS RESOLUTION3 LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Wavelength at blue end of spectrum (Angstrom)
+Description:       Wavelength of arc lamp line chosen for determining 
+                   the spectral resolution at the blue end of spectrum.
+
+Parameter Name:    QC MOS RESOLUTION1
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean spectral resolution at red end of spectrum
+Description:       Spectral resolution at red end of spectrum, averaged
+                   on all slits, evaluated on an arc lamp spectrum line
+                   dependent on the used grism. The spectral resolution 
+                   is computed as the ratio between the arc lamp line 
+                   wavelength, and its FWHM.
+
+Parameter Name:    QC MOS RESOLUTION2
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean spectral resolution at center of spectrum
+Description:       Spectral resolution at spectrum center, averaged
+                   on all slits, evaluated on an arc lamp spectrum line
+                   dependent on the used grism. The spectral resolution 
+                   is computed as the ratio between the arc lamp line 
+                   wavelength, and its FWHM.
+
+Parameter Name:    QC MOS RESOLUTION3
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean spectral resolution at blue end of spectrum
+Description:       Spectral resolution at blue end of spectrum, averaged
+                   on all slits, evaluated on an arc lamp spectrum line
+                   dependent on the used grism. The spectral resolution 
+                   is computed as the ratio between the arc lamp line 
+                   wavelength, and its FWHM.
+
+Parameter Name:    QC MOS RESOLUTION1 RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of spectral resolution at red end of spectrum
+Description:       RMS of spectral resolution determined at the red end 
+                   of each slit spectrum.
+
+Parameter Name:    QC MOS RESOLUTION2 RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of spectral resolution at center of spectrum
+Description:       RMS of spectral resolution determined at the center
+                   of each slit spectrum.
+
+Parameter Name:    QC MOS RESOLUTION3 RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of spectral resolution at blue end of spectrum
+Description:       RMS of spectral resolution determined at the blue end
+                   of each slit spectrum.
+
+Parameter Name:    QC MOS IDS RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Inverse dispersion solution RMS
+Description:       RMS of the IDS residuals, evaluated on a 2D extracted
+                   arc lamp frame.
+
+Parameter Name:    QC MOS REFWAVE MEAN
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Mean position of reference wavelength (pixel)
+Description:       Applying the inverse dispersion solution local to each 
+                   slit, the reference wavelength is transformed into CCD 
+                   pixels corrected for the slit position. The mean of 
+                   the reference wavelength position for each slit is then
+                   computed.
+
+Parameter Name:    QC MOS REFWAVE RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     RMS of positions of reference wavelength (pixel)
+Description:       Applying the inverse dispersion solution local to each
+                   slit, the reference wavelength is transformed into CCD 
+                   pixels corrected for the slit position. The RMS of
+                   the reference wavelength position for each slit is then
+                   computed.
+
+Parameter Name:    QC MOS SLIT WIDTH
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              arcsec
+Comment Field:     Width of slit closest to mask center (arcsec)
+Description:       Width of slit closest to mask center.
+
+Parameter Name:    QC MOS WAVECAL COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/Angstrom^i
+Comment Field:     Median i-th IDS coef. for slit closest to center (pixel/A^i)
+Description:       Median i-th coefficient of the inverse dispersion solution 
+                   local to the slit closest to the mask center, with 
+                   i = 1, 2, ..., n (where n is the degree of the polynomial
+                   used).
+
+Parameter Name:    QC MOS FLAT FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Flux at ref.wavel. for slit closest to center (ADU/mm^2/s)
+Description:       The position of the slit closest to the mask center is
+                   determined in an input raw flat field frame. For this 
+                   slit the position of the reference wavelength is determined 
+                   applying the available spectral distorsion models. The 
+                   total counts in the rectangular region long as the slit
+                   length in pixels, and wide 5 CCD pixels, centered at the 
+                   reference wavelength position, are then bias subtracted 
+                   and divided by the area of the slit and by the exposure 
+                   time.
+
+Parameter Name:    QC MOS FLAT FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Error on QC MOS FLAT FLUX (ADU/mm^2/s)
+Description:       The total counts in the rectangular region where the flux
+                   is determined are square-rooted, and then normalized to 
+                   the unit of area and time.
+
+Parameter Name:    QC IFU HE LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen He arc lamp line for flux determination (Angstrom)
+Description:       Line of the He arc lamp, chosen for flux measurement,
+                   depending on the grism in use.
+
+Parameter Name:    QC IFU HE FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/fiber/s
+Comment Field:     Mean flux at a He wavel. in all spectra (ADU/fiber/s)
+Description:       The mean total counts along a 11 pixel interval centered
+                   at the specified wavelength for each extracted spectrum,
+                   are averaged on all extracted spectra, and normalised to
+                   the total exposure time.
+
+Parameter Name:    QC IFU HE FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/fiber/s
+Comment Field:     Error on QC IFU HE FLUX (ADU/fiber/s)
+Description:       Population standard deviation from the mean of all
+                   the flux values for each extracted spectrum used for
+                   deriving QC IFU HE FLUX, normalized to the unit of 
+                   time.
+
+Parameter Name:    QC IFU NE LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen Ne arc lamp line for flux determination (Angstrom)
+Description:       Line of the Ne arc lamp, chosen for flux measurement,
+                   depending on the grism in use.
+
+Parameter Name:    QC IFU NE FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/fiber/s
+Comment Field:     Mean flux at a Ne wavel. in all spectra (ADU/fiber/s)
+Description:       The mean total counts along a 11 pixel interval centered
+                   at the specified wavelength for each extracted spectrum,
+                   are averaged on all extracted spectra, and normalised to
+                   the total exposure time.
+
+Parameter Name:    QC IFU NE FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/fiber/s
+Comment Field:     Error on QC IFU NE FLUX (ADU/fiber/s)
+Description:       Population standard deviation from the mean of all 
+                   the flux values for each extracted spectrum used for
+                   deriving QC IFU NE FLUX, normalized to the unit of 
+                   time.
+
+Parameter Name:    QC IFU AR LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen Ar arc lamp line for flux determination (Angstrom)
+Description:       Line of the Ar arc lamp, chosen for flux measurement,
+                   depending on the grism in use.
+
+Parameter Name:    QC IFU AR FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/fiber/s
+Comment Field:     Mean flux at a He wavel. in all spectra (ADU/fiber/s)
+Description:       The mean total counts along a 11 pixel interval centered
+                   at the specified wavelength for each extracted spectrum,
+                   are averaged on all extracted spectra, and normalised to
+                   the total exposure time.
+
+Parameter Name:    QC IFU AR FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/fiber/s
+Comment Field:     Error on QC IFU AR FLUX (ADU/fiber/s)
+Description:       Population standard deviation from the mean of all 
+                   the flux values for each extracted spectrum used for
+                   deriving QC IFU AR FLUX, normalized to the unit of 
+                   time.
+
+Parameter Name:    QC MOS HE LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen He arc lamp line for flux determination (Angstrom)
+Description:       Line of the He arc lamp, chosen for flux measurement,
+                   depending on the grism in use.
+
+Parameter Name:    QC MOS HE FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Flux at a He wavel. in slit closest to center (ADU/mm^2/s)
+Description:       The position of the slit closest to the mask center is
+                   determined in an input arc lamp frame. The position of
+                   the chosen He arc lamp line is determined and its signal 
+                   integrated. The total counts are then bias corrected and 
+                   divided by the area of the slit and by the exposure time.
+
+Parameter Name:    QC MOS HE FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Error on QC MOS HE FLUX (ADU/mm^2/s)
+Description:       The total counts in the rectangular region where the flux
+                   is determined are square-rooted, and then normalized to 
+                   the unit of area and time.
+
+Parameter Name:    QC MOS NE LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen Ne arc lamp line for flux determination (Angstrom)
+Description:       Line of the Ne arc lamp, chosen for flux measurement,
+                   depending on the grism in use.
+
+Parameter Name:    QC MOS NE FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Flux at a Ne wavel. in slit closest to center (ADU/mm^2/s)
+Description:       The position of the slit closest to the mask center is
+                   determined in an input arc lamp frame. The position of
+                   the chosen Ne arc lamp line is determined and its signal 
+                   integrated. The total counts are then bias corrected and 
+                   divided by the area of the slit and by the exposure time.
+
+Parameter Name:    QC MOS NE FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Error on QC MOS HE FLUX (ADU/mm^2/s)
+Description:       The total counts in the rectangular region where the flux
+                   is determined are square-rooted, and then normalized to 
+                   the unit of area and time.
+
+Parameter Name:    QC MOS AR LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen Ar arc lamp line for flux determination (Angstrom)
+Description:       Line of the Ar arc lamp, chosen for flux measurement,
+                   depending on the grism in use.
+
+Parameter Name:    QC MOS AR FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Flux at a Ar wavel. in slit closest to center (ADU/mm^2/s)
+Description:       The position of the slit closest to the mask center is 
+                   determined in an input arc lamp frame. The position of
+                   the chosen Ar arc lamp line is determined and its signal 
+                   integrated. The total counts are then bias corrected and 
+                   divided by the area of the slit and by the exposure time.
+
+Parameter Name:    QC MOS AR FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Error on QC MOS HE FLUX (ADU/mm^2/s)
+Description:       The total counts in the rectangular region where the flux
+                   is determined are square-rooted, and then normalized to 
+                   the unit of area and time.
+
+Parameter Name:    QC MOS EFFICIENCYi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              e-/photon
+Comment Field:     Value of efficiency at given wavelength (e-/photon)
+Description:       The efficiency curve is computed as the ratio between
+                   the standard star catalog fluxes converted to photons 
+                   (per second per Angstrom), and the observed standard 
+                   star spectrum converted to electrons (per second per 
+                   Angstrom). This curve is then smoothed by a heavy
+                   median filter and then fitted by a high degree 
+                   polynomial, to obtain a smooth efficiency curve
+                   unaffected by local atmospheric absorbtions and
+                   by uncertainties around the absorbtion lines in the
+                   standard star spectral continuum. The values of the 
+                   efficiency at different wavelengths are read from 
+                   this smoothed curve.
+
+Parameter Name:    QC MOS EFFICIENCYi LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Value of efficiency at given wavelength (Angstrom)
+Description:       Wavelength at which the efficiency was measured.
+
+Parameter Name:    QC IFU EFFICIENCYi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              e-/photon
+Comment Field:     Value of efficiency at given wavelength (e-/photon)
+Description:       The efficiency curve is computed as the ratio between
+                   the standard star catalog fluxes converted to photons
+                   (per second per Angstrom), and the observed standard
+                   star spectrum converted to electrons (per second per
+                   Angstrom). This curve is then smoothed by a heavy
+                   median filter and then fitted by a high degree
+                   polynomial, to obtain a smooth efficiency curve
+                   unaffected by local atmospheric absorbtions and
+                   by uncertainties around the absorbtion lines in the
+                   standard star spectral continuum. The values of the 
+                   efficiency at different wavelengths are read from 
+                   this smoothed curve.
+
+Parameter Name:    QC IFU EFFICIENCYi LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Value of efficiency at given wavelength (Angstrom)
+Description:       Wavelength at which the efficiency was measured.
+
+Parameter Name:    QC OH LINEi LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Chosen sky line for flux determination (Angstrom)
+Description:       Sky line for flux measurement.
+
+Parameter Name:    QC OH LINEi FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Flux at OH skyline i (ADU/mm^2/s)
+Description:       The position of the slit closest to the mask center 
+                   is determined in an input science frame. The position 
+                   of the chosen sky line is determined and its signal
+                   integrated. The total counts are then bias corrected 
+                   and divided by the area of the slit and by the exposure 
+                   time. The choice of skylines depends on the grism in 
+                   use.
+
+Parameter Name:    QC OH LINEi FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/mm^2/s
+Comment Field:     Error on QC OH LINEi FLUX (ADU/mm^2/s)
+Description:       The total counts in the rectangular region where the flux
+                   is determined are square-rooted, and then normalized to
+                   the unit of area and time.
+
+Parameter Name:    QC IFU LOSTi
+Class:             header|qc-log
+Context:           process
+Type:              int
+Value Format:      %d
+Unit:
+Comment Field:     Lost fibers on IFU pseudo-slit i
+Description:       Number of fibers that could not be traced on pseudo-slit i.
+
+Parameter Name:    QC IFU TRACEi RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Mean RMS of polynomial fits of spectral tracings (pixel)
+Description:       Mean value of the RMS of the polynomial fitting
+                   obtained on each traced IFU spectrum on pseudo-slit i.
+
+Parameter Name:    QC IFU IDS RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel
+Comment Field:     Inverse dispersion solution RMS (pixel)
+Description:       RMS of the IDS residuals, evaluated on a 2D extracted
+                   arc lamp frame.
+
+Parameter Name:    QC IFU RESOLUTION1 LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Wavelength at red end of spectrum (Angstrom)
+Description:       Wavelength of arc lamp line chosen for determining
+                   the spectral resolution at the red end of spectrum.
+
+Parameter Name:    QC IFU RESOLUTION2 LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Wavelength at center of spectrum (Angstrom)
+Description:       Wavelength of arc lamp line chosen for determining
+                   the spectral resolution at about the center of spectrum.
+
+Parameter Name:    QC IFU RESOLUTION3 LAMBDA
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Wavelength at blue end of spectrum (Angstrom)
+Description:       Wavelength of arc lamp line chosen for determining
+                   the spectral resolution at the blue end of spectrum.
+
+Parameter Name:    QC IFU RESOLUTION1
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean spectral resolution at red end of spectrum
+Description:       Spectral resolution at red end of spectrum, averaged
+                   on all spectra, evaluated on an arc lamp spectrum line
+                   dependent on the used grism. The spectral resolution
+                   is computed as the ratio between the arc lamp line
+                   wavelength, and its FWHM.
+
+Parameter Name:    QC IFU RESOLUTION2
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean spectral resolution at center of spectrum
+Description:       Spectral resolution at spectrum center, averaged
+                   on all spectra, evaluated on an arc lamp spectrum line
+                   dependent on the used grism. The spectral resolution
+                   is computed as the ratio between the arc lamp line
+                   wavelength, and its FWHM.
+
+Parameter Name:    QC IFU RESOLUTION3
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Mean spectral resolution at blue end of spectrum
+Description:       Spectral resolution at blue end of spectrum, averaged
+                   on all spectra, evaluated on an arc lamp spectrum line
+                   dependent on the used grism. The spectral resolution
+                   is computed as the ratio between the arc lamp line
+                   wavelength, and its FWHM.
+
+Parameter Name:    QC IFU RESOLUTION1 RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of spectral resolution at red end of spectrum
+Description:       RMS of spectral resolution determined at the red end
+                   of each fiber spectrum.
+
+Parameter Name:    QC IFU RESOLUTION2 RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of spectral resolution at center of spectrum
+Description:       RMS of spectral resolution determined at the center
+                   of each fiber spectrum.
+
+Parameter Name:    QC IFU RESOLUTION3 RMS
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     RMS of spectral resolution at blue end of spectrum
+Description:       RMS of spectral resolution determined at the blue end
+                   of each fiber spectrum.
+
+Parameter Name:    QC IFU WAVECAL1 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/Angstrom^i
+Comment Field:     Median i-th IDS coeff. for pseudo-slit 1 (pixel/A^i)
+Description:       Median i-th coefficient of the inverse dispersion
+                   solutions on pseudo-slit 1, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used). This
+                   parameter is not computed for MR and HR observations.
+
+Parameter Name:    QC IFU WAVECAL2 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/Angstrom^i
+Comment Field:     Median i-th IDS coeff. for pseudo-slit 2 (pixel/A^i)
+Description:       Median i-th coefficient of the inverse dispersion
+                   solutions on pseudo-slit 2, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used).
+
+Parameter Name:    QC IFU WAVECAL3 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/Angstrom^i
+Comment Field:     Median i-th IDS coeff. for pseudo-slit 3 (pixel/A^i)
+Description:       Median i-th coefficient of the inverse dispersion
+                   solutions on pseudo-slit 3, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used). This
+                   parameter is not computed for MR and HR observations.
+
+Parameter Name:    QC IFU WAVECAL4 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/Angstrom^i
+Comment Field:     Median i-th IDS coeff. for pseudo-slit 4 (pixel/A^i)
+Description:       Median i-th coefficient of the inverse dispersion
+                   solutions on pseudo-slit 4, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used). This
+                   parameter is not computed for MR and HR observations.
+
+Parameter Name:    QC IFU TRACE1 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/pixel^i
+Comment Field:     Median i-th tracing coeff. for pseudo-slit 1 (pixel/pixel^i)
+Description:       Median i-th coefficient of the fiber spectra tracing
+                   solutions on pseudo-slit 1, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used). This
+                   parameter is not computed for MR and HR observations.
+
+Parameter Name:    QC IFU TRACE2 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/pixel^i
+Comment Field:     Median i-th tracing coeff. for pseudo-slit 2 (pixel/pixel^i)
+Description:       Median i-th coefficient of the fiber spectra tracing
+                   solutions on pseudo-slit 2, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used).
+
+Parameter Name:    QC IFU TRACE3 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/pixel^i
+Comment Field:     Median i-th tracing coeff. for pseudo-slit 3 (pixel/pixel^i)
+Description:       Median i-th coefficient of the fiber spectra tracing
+                   solutions on pseudo-slit 3, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used). This
+                   parameter is not computed for MR and HR observations.
+
+Parameter Name:    QC IFU TRACE4 COEFFi
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              pixel/pixel^i
+Comment Field:     Median i-th traceing coeff. for pseudo-slit 4 (pixel/pixel^i)
+Description:       Median i-th coefficient of the fiber spectra tracing
+                   solutions on pseudo-slit 4, with i = 1, 2, ..., n
+                   (where n is the degree of the polynomial used). This
+                   parameter is not computed for MR and HR observations.
+
+Parameter Name:    QC IFU REFROWi
+Class:             header|qc-log
+Context:           process
+Type:              int
+Value Format:      %d
+Unit:              pixel
+Comment Field:     CCD Y pixel coordinate where the tracing is started.
+Description:       The reference row is the Y pixel position on the CCD
+                   where, for a given pseudo-slit i, each fiber spectrum
+                   is detected, identified, and conventionally begun to
+                   be traced. This parameter is reported here, because
+                   referenced by other IFU QC1 parameters.
+
+Parameter Name:    QC IFU TRACEi CENTRAL
+Class:             header|qc-log
+Context:           process
+Type:              int
+Value Format:      %d
+Unit:
+Comment Field:     Number of active fiber closest to central CCD X pixel.
+Description:       On pseudo-slit i, this is the sequence number of the
+                   active fiber closest to the central CCD X pixel at the
+                   reference row (see QC IFU REFROWi).
+
+Parameter Name:    QC IFU TRACEi SLOPE
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:
+Comment Field:     Slope of the tracing of the central fiber at reference row.
+Description:       On pseudo-slit i, a linear fit is made to the tracing of
+                   the central spectrum (see QC IFU TRACEi CENTRAL), 400
+                   pixels centered on the reference row (see QC IFU REFROWi).
+                   In absence of optical distortions, a perfect grism alignment
+                   would correspond to a zero slope.
+
+Parameter Name:    QC IFU FLUX LAMBDA1
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     Start wavelength in flat field flux determination (A)
+Description:       The flat field flux (see QC IFU FLUX MEAN) is measured
+                   on a wavelength interval starting at the specified
+                   value.
+
+Parameter Name:    QC IFU FLUX LAMBDA2
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              Angstrom
+Comment Field:     End wavelength in flat field flux determination (A)
+Description:       The flat field flux (see QC IFU FLUX MEAN) is measured
+                   on a wavelength interval ending at the specified value.
+
+Parameter Name:    QC IFU FLAT FLUX
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Mean flat field signal within given spectral range (ADU/s)
+Description:       The mean integrated signal, per fiber, per second,
+                   within the specified wavelength range, is computed
+                   on all active pseudo-slits.
+
+Parameter Name:    QC IFU FLAT FLUXERR
+Class:             header|qc-log
+Context:           process
+Type:              double
+Value Format:      %e
+Unit:              ADU/s
+Comment Field:     Statistical error on mean flat field signal (ADU/s)
+Description:       Error on the mean integrated signal, per fiber, per 
+                   second, within the specified wavelength range.
+

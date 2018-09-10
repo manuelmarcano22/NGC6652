@@ -1,0 +1,24 @@
+# PSFEx Configuration file
+# E. Bertin October 1999
+
+PSF_ACCURACY	0.01		# Accuracy to expect from the PSF "pixel" values
+PSF_NSUPER	64		# Max number of super-resolved pixels
+PSF_AUTOSELECT	Y		# Automatically select the FWHM
+PSF_FWHMRANGE	1.0,3.0		# Allowed FWHM range
+PSF_VARIABILITY	0.6		# Allowed PSF variability (1.0 = 100%)
+PSF_MINSN	500		# Minimum S/N for a source to be used
+PSF_MAXELONG	2.0		# Maximum A/B for a source to be used
+PSF_SAMPLING	0.0		# Sampling step in pixel units (0.0 = automatic)
+PSF_SIZE	25,25		# Size of sensitive area
+PSF_NAME	default.psf	# Name of the file containing the NN weights
+PSF_RECENTER	Y		# Allow recentering of PSF-candidates Y/N ?
+
+CONTEXT_KEYS	X_IMAGE,Y_IMAGE,:CRVAL2
+CONTEXT_GROUPS	1,1,2
+GROUP_DEGREES   3,2
+
+CHECKIMAGE_TYPE	PROTOTYPES,SAMPLES,RESIDUALS,RAWDATA,SNAPSHOTS		# Type of check-image
+CHECKIMAGE_NAME	proto.fits,samp.fits,resi.fits,raw.fits,snap.fits	# File name of the check-image
+
+PC_INCLUDE	N
+PC_NAME		default.pc

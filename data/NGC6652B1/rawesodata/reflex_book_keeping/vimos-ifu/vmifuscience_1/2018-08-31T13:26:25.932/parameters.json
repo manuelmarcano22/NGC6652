@@ -1,0 +1,76 @@
+[
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.apply.transmission",
+    "recipe": "vmifuscience",
+    "description": "Apply transmission correction to extracted scientific spectra",
+    "display_name": "ApplyTransmission",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.badpixel.clean",
+    "recipe": "vmifuscience",
+    "description": "Bad pixel correction on master flat field.",
+    "display_name": "CleanBadPixel",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valenum": [
+      "Zmaster",
+      "Master"
+    ],
+    "valtype": "string",
+    "partype": "enum",
+    "name": "vimos.Parameters.bias.removing.method",
+    "recipe": "vmifuscience",
+    "description": "Bias removal method.",
+    "display_name": "BiasMethod",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "Zmaster"
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.flux.calibration",
+    "recipe": "vmifuscience",
+    "description": "Extracted spectra are flux calibrated.",
+    "display_name": "CalibrateFlux",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.quality.enable",
+    "recipe": "vmifuscience",
+    "description": "Compute QC1 parameters",
+    "display_name": "ComputeQC",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.sky.align",
+    "recipe": "vmifuscience",
+    "description": "Use sky lines to refine the wavelength calibration",
+    "display_name": "UseSkylines",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": true
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "vimos.Parameters.sky.individual",
+    "recipe": "vmifuscience",
+    "description": "Use sky lines to refine the wavelength calibration individually for each spectrum",
+    "display_name": "UseSkyIndividual",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  }
+]

@@ -1,0 +1,26 @@
+\form#0:$\frac{(1*1.0+2*2.0+3*3.0+4*4.0+5*5.0+6*6.0+7*7.0+8*8.0+9*9.0)} {1+2+3+4+5+6+7+8+9}$
+\form#1:$1*1.0+2*2.0+3*3.0+4*4.0+5*5.0+6*6.0+7*7.0+8*8.0+9*9.0$
+\form#2:$\chi^2$
+\form#3:\[ z = B + \frac{A}{2 \pi \sigma_x \sigma_y \sqrt{1-\rho^2}} \exp\left({-\frac{1}{2\left(1-\rho^2\right)} \left(\left(\frac{x - \mu_x}{\sigma_x}\right)^2 -2\rho\left(\frac{x - \mu_x}{\sigma_x}\right) \left(\frac{y - \mu_y}{\sigma_y}\right) + \left(\frac{y - \mu_y}{\sigma_y}\right)^2\right)}\right) \]
+\form#4:$B$
+\form#5:$A$
+\form#6:\begin{eqnarray*} \mathrm{parameters[0]} &=& B \\ \mathrm{parameters[1]} &=& A \\ \mathrm{parameters[2]} &=& \rho \\ \mathrm{parameters[3]} &=& \mu_x \\ \mathrm{parameters[4]} &=& \mu_y \\ \mathrm{parameters[5]} &=& \sigma_x \\ \mathrm{parameters[6]} &=& \sigma_y \end{eqnarray*}
+\form#7:$a, b$
+\form#8:$\theta$
+\form#9:\begin{eqnarray*} \theta &=& \frac{1}{2} \arctan \left(2 \rho \frac{\sigma_x \sigma_y} {\sigma_x^2 - \sigma_y^2}\right) \\ a &=& \sigma_x \sigma_y \sqrt{2(1-\rho^2) \frac{\cos 2\theta} {\left(\sigma_x^2 + \sigma_y^2\right) \cos 2\theta + \sigma_y^2 - \sigma_x^2}} \\ b &=& \sigma_x \sigma_y \sqrt{2(1-\rho^2) \frac{\cos 2\theta} {\left(\sigma_x^2 + \sigma_y^2\right) \cos 2\theta - \sigma_y^2 + \sigma_x^2}} \end{eqnarray*}
+\form#10:$x$
+\form#11:$-\pi/2$
+\form#12:$+\pi/2$
+\form#13:$\rho = 0$
+\form#14:$\sigma_x \geq \sigma_y$
+\form#15:\begin{eqnarray*} \theta &=& 0 \\ a &=& \sigma_x \\ b &=& \sigma_y \end{eqnarray*}
+\form#16:$\sigma_x < \sigma_y$
+\form#17:$y$
+\form#18:\begin{eqnarray*} \theta &=& \frac{\pi}{2} \\ a &=& \sigma_y \\ b &=& \sigma_x \end{eqnarray*}
+\form#19:\[ \mathrm{G} = \mathrm{J} \mathrm{C} \mathrm{J}^\mathrm{T} \]
+\form#20:$ (B, A, \rho, \mu_x, \mu_y, \sigma_x, \sigma_y) \rightarrow (\theta, a, b) $
+\form#21:$x_{max} = w/2 + k * \sigma,$
+\form#22:$w$
+\form#23:$\sigma = w_{FWHM}/(2\sqrt(2\log(2))),$
+\form#24:$w_{FWHM}$
+\form#25:$k$

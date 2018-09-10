@@ -1,0 +1,11 @@
+
+Start time     : 2018-08-31T13:24:56
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+13:24:56 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+13:24:56 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.37, WCSLIB = 4.25.1, FFTW (normal precision) = 3.3.3, FFTW (single precision) = 3.3.3, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 201107
+13:24:56 [ INFO  ] : [tid=000] Invocation command line was: esorex --suppress-prefix=TRUE --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_tmp_products/vimos-ifu/vmifustandard_1/2018-08-31T13:24:56.233 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_logs/vimos-ifu/vmifustandard_1/2018-08-31T13:24:56.233 --recipe-config=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_book_keeping/vimos-ifu/vmifustandard_1/2018-08-31T13:24:56.233/vmifustandard.rc --products-sof=products_sof.json vmifustandard /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B1/rawesodata/reflex_book_keeping/vimos-ifu/vmifustandard_1/2018-08-31T13:24:56.233/data.sof
+13:24:56 [ ERROR ] vmifustandard: [tid=000] No input atmospheric extinction table found
+13:24:56 [ ERROR ] : [tid=000] Execution of recipe 'vmifustandard' failed, status = 1
+13:24:56 [WARNING] : [tid=000] Writing of output sof omitted due to previous errors

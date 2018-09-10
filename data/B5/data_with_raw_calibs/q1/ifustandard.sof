@@ -1,0 +1,7 @@
+./VIMOS.2003-06-24T10:26:46.402.fits	IFU_STANDARD
+master_bias.fits	MASTER_BIAS
+ifu_ids.fits	IFU_IDS
+ifu_trace.fits	IFU_TRACE
+ifu_transmission.fits	IFU_TRANSMISSION
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/calibrations/calib/vimos-3.2.3/cal/extinct_table.tfits	EXTINCT_TABLE
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/calibrations/calib/vimos-3.2.3/cal/ltt4816.tfits	STD_FLUX_TABLE

@@ -1,0 +1,422 @@
+================
+EsoRex ChangeLog
+================
+
+The following summarises the major changes and bugfixes to the EsoRex
+package. The changes are grouped by major-version number, with the
+most recent first. Within each grouping, the changes are listed
+sequentially.
+
+
+---------------
+ EsoRex v3.13.x
+---------------
+
+The 3.13 series introduces extensions to EsoRex to support Python based recipes.
+The following gives a summary of changes and bug fixes since the 3.12.3.
+
+- Extended EsoRex to support Python based recipe plugins (DFS-12777).
+  The support is optional, and only available when a Python interpreter is
+  installed.
+- Added Bash completions for esorex (requires Python to be installed).
+- Fixed a bug in creation of symbolic link file names in cases where the
+  requested output name does not contain a directory part, i.e. at least one
+  slash.
+- Overhauled and updated the build system related files, which now requires
+  libtool >= 2.2.6 and Doxygen >= 1.8.
+
+
+---------------
+ EsoRex v3.12.x
+---------------
+
+The JSON output format for parameters has been changed. There is a new filed
+called 'partype' which can be value, range or enum. The output of integers and
+floats uses now native JSON representation. Note that this change is not 
+backwards compatible, since the previous JSON file used quoted values for
+integers and floats.
+
+---------------
+ EsoRex v3.11.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.9.5.
+
+
+v3.11 -- 24-September-2014
+
+Updated for CPL 6.5.
+Update standard FITS checksum keywords for all product FITS files.
+Options added to disable the update of individual checksum updates.
+
+
+
+---------------
+ EsoRex v3.10.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.9.5.
+
+
+v3.10 -- 25-February-2013
+
+Option added to write a product SOF in a machine readable format (JSON)
+
+
+
+---------------
+ EsoRex v3.9.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.8.3.
+
+
+v3.9.5 -- 20-March-2012
+
+Version of Esorex ready for CPL 6.0.0.
+ 
+
+v3.9.0 -- 11-January-2011
+
+Version of Esorex ready for CPL 5.3.0, no more direct calls of
+functions from CFITSIO
+
+ 
+
+---------------
+ EsoRex v3.8.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.7.3.
+
+
+v3.8.3 -- 18-May-2010
+
+Version of Esorex ready for CPL 5.2.0 with expanded option:
+create-config
+
+use 
+$ esorex --help
+for details.
+
+
+v3.8.2 -- 21-April-2010
+
+Version of Esorex ready for CPL 5.2.0 with new option:
+time
+
+
+v3.8.1 -- 18-Febr-2010
+
+Version of Esorex ready for CPL 5.1.0 with new options:
+unload-plugin
+paf-config 
+check-sof-exist
+
+use 
+$ esorex --help
+for details.
+
+
+
+---------------
+ EsoRex v3.7.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.6.12.
+
+
+v3.7.3 -- 01-November-2009
+
+Version of Esorex ready for CPL 5.1
+
+
+v3.7.0 -- 01-February-2009
+
+Take out dependency on libtool version 1.5.6 - should now work with any
+version of libtool.
+
+
+
+---------------
+ EsoRex v3.6.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.5.0.
+
+
+v3.6.12 -- 01-October-2008
+
+Min, max values of parameter ranges are displayed correctly.
+The return status is set correctly with problems in the final copy step of products.
+
+
+v3.6.9 -- 17-July-2008
+
+Environment variables can be used also inside SOFs, e.g. lines like
+$MYDATA/ISAAC.2006-06-19T13:50:54.801.fits   SP_FLAT
+are now supported in an SOF file.
+
+v3.6.8 -- 14-Feb-2008
+
+Invalid input files specified in a SOF are now ignored (only announced if message
+level set to debug), esorex does not stop anymore. So, it's now entirely the 
+responsibility of the recipe to check for that.
+For this version of EsoRex, CPL 4.1.0 is required.
+
+v3.6.0 -- 23-May-2006
+
+Move from cx data types to plain C types. A few (plain) string related
+utilities (e.g. cx_strdup) are still used.
+
+
+
+---------------
+ EsoRex v3.5.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.5.0.
+
+v3.5.0 -- 25-July-2005
+
+Just a single addition: use the new function cpl_end() to terminate all 
+CPL related activity in EsoRex main code.
+
+---------------
+ EsoRex v3.4.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.4.0.
+
+v3.4.0 -- 16-Jun-2005
+
+This version has one small, but important change. Previously, when 
+EsoRex moved a product, it would rename the suffix of the file to 
+reflect the frame type. This would mean that images would be forced to 
+".fits", tables to ".tfits", etc.. This feature has been disabled, so 
+that now the suffix, as supplied by the recipe, is preserved.
+
+---------------
+ EsoRex v3.3.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.3.0.
+
+v3.3.0 -- 09-Jun-2005
+
+This version addresses outstanding bugs from the public release of
+version 3.2.1. Fixed problem with some options not supporting the
+environment-variable equivalent. Also modified the "--help" output to
+indicate what the name of the associated environment variable is. Fixed
+the problem with the "source environment variable" not being reported
+correctly, when the "--msg-leve=debug" option is used. Fixed error
+message reported when an output-script fails. Fixed the incorrect
+behaviour of reporting of multiple instances of a given recipe. Under
+"debug", additional information is given hinting at possible causes of
+the problem. Also removed a memory leak associated with the provision of
+an output-script. 
+
+---------------
+ EsoRex v3.2.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.2.0.
+
+v3.2.0 -- 10-Mar-2005
+
+Beta-release of Version 3.2. The major change is the addition of a new 
+configuration parameter "mem-check". This replaces the need to run 
+EsoRex at DEBUG level, in order to activate the memory status report at 
+the end of EsoRex execution. Additionally, the parameter handling 
+mechanism has been improved and there is now better error checking. 
+Under DEBUG level, EsoRex will now report the source of a given 
+parameter, either stating that it was a default or command line 
+generated value, or by reporting the name of the configuration file from 
+which the value was obtained.
+
+v3.2.1 -- 27-Mar-2005
+
+Stable-release of Version 3.2. Only one minor correction made (misleading
+error message).
+
+---------------
+ EsoRex v3.1.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.1.0.
+
+v3.1.0 -- 04-Feb-2005
+
+Beta-release of Version 3.1. The major change is an overhaul to the 
+internals of the parameter and plugin handling, in order to match the 
+changes in the 02-Feb-2005 build of the CPL. Functionally, there should 
+be little change, but until exhaustive testing has been performed, this 
+version cannot be labelled as stable.
+
+v3.1.1 -- 18-Feb-2005
+
+No major changes. This release was made to coincide with internal beta-
+releases of QFITS and CPL.
+
+---------------
+ EsoRex v3.0.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 3.0.0.
+
+v3.0.0 -- 27-Jan-2005
+
+Beta-release of Version 3. The major change is in the additional 
+output of EsoRex in the event of multiple recipes with the same name. 
+Additionally, EsoRex now makes a reasonable assumption about which of 
+them to use, namely the one with the highest version number, and for 
+cases where it it equal, then the first occurrence of the recipe in the 
+'recipe-dir' path. In addition to these changes, the code has been 
+further streamlined, and even stricter error checking has been 
+implemented for the recipe-handling functions. This version also is the 
+first to "officially" use the new vresions CPL and QFITS.
+
+v3.0.1 -- 28-Jan-2005
+
+Internal changes only. The cpl_error handling calls were modified to 
+make the setting of error codes and error locations to be uniform.
+
+v3.0.2 -- 28-Jan-2005
+
+Fixed two bugs. The first was the incorrect reporting of the range of 
+parameters that take double precision numbers. The second was a memory 
+leak that occured during the creation of a configuration file.
+
+v3.0.3 -- 31-Jan-2005
+
+Fixed a remaining bug with the handling of double-precision parameter 
+ranges.
+
+v3.0.4 -- 02-Feb-2005
+
+Fixed a memory leak which occurred when an invalid command-line
+parameter was given to a recipe.
+
+---------------
+ EsoRex v2.0.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex
+package since the release of EsoRex 2.0.0.
+
+v2.0.0 -- 01-Sep-2004
+
+Beta-release of Version 2. This change removes the --output-overwrite
+option and replaces it with the --output-readonly option. The new
+option satisfies the requirements of Paranal, to generate read-only
+(umask = oct(444)) products for archiving purposes. Additionally, it
+changes the default behaviour to allow EsoRex to overwrite existing
+products by default (the typical case for users) when re-running a
+recipe.
+
+v2.0.1 -- 23-Sep-2004
+
+Minor fix to the formatting of double precision numbers that appear in
+the "help" text or "configuration" files. In the case of integer values
+that are stored as a double, the output still appends a ".0", so that
+the user is not confused by the value that is written (that is, in
+some way misleading them that the value is an integer, when it is not).
+
+v2.0.2 -- 05-Oct-2004
+
+This patch removes several memory leaks. EsoRex should now run though 
+valgrind (http://valgrind.kde.org/) without any errors from the EsoRex 
+code itself.
+
+v2.0.3 -- 01-Dec-2004
+
+This patch fixes some problems with error messages not being clear. 
+Message reporting has been standardised somewhat too. It also has
+improved accompanying text-file documentation. This version requires
+the "beta-release" of CPL version 2.0 and qfits version 5.0.
+
+v2.0.4 -- 10-Jan-2005
+
+When "--msg-level" is set to "debug", EsoRex will report (via xmemory)
+any still-allocated pointers at the conclusion of operation. This may
+prove helpful in indicating problems with recipes during development.
+Also in this version, a small memory leak was fixed, and a missing
+header file was included to avoid compiler warnings on some systems.
+
+v2.0.5 -- 18-Jan-2005
+
+This version replaces two of the deprecated functions from the 
+conversion to CPL 2.0. The change is internal only.
+
+
+---------------
+ EsoRex v1.0.x
+---------------
+
+The following summarises the major changes and bugfixes to the EsoRex 
+package since the release of EsoRex 1.0.0.
+
+v1.0.0 -- 25-Jun-2004
+
+Public release version of EsoRex.
+
+v1.0.1 -- 29-Jun-2004
+
+Minor fix to correct the sequence order output of the man-page content
+generated for a recipe.
+
+v1.0.2 -- 09-Jul-2004
+
+Bug fix to the handling of ranged input parameters, so that the minima
+and maxima themselves are not excluded. Also, some minor improvement to
+man-page output, to better describe available recipe options.
+
+v1.0.3 -- 20-Jul-2004
+
+Changed EsoRex to use the CPL messsaging system for all error, warning
+and status messages. Normal output is still used for generated
+documentary output (for example, man-pages).
+
+v1.0.4 -- 21-Jul-2004
+
+Fixed a bug in the handling of floating-point numbers. Now the minimum
+precision is used in order to maintain numerical integrity. Should the
+precision exceed the maximum that can be handled by EsoRex, then a
+warning will be printed.
+
+v1.0.5 -- 02-Aug-2004
+
+Added handling of environment variables. This requires the WORDEXP 
+package, but the program will continue to function, even in its absence.
+
+v1.0.6 -- 23-Aug-2004
+
+Improved the handling of floating-point numbers. EsoRex now handles a
+greater range of precision without loss of accuracy, and warns the user
+if a conversion occurs where accuracy is lost. Also removed the hard-
+coded CPL messaging width (80); EsoRex now adopts the terminal width for
+output, and only defaults to 80 characters in the event that it can not
+be determined. Also, the error messages for failure of the options
+'--recipe-dir', '--log-dir' and '--log-file' have now been improved.
+
+v1.0.7 -- 25-Aug-204
+
+Corrected a problem with the CPL messaging domain not being set back to 
+EsoRex at the end of recipe initialisation, execution and destruction. 
+Additionally, a minor problem with newline handling was fixed for the 
+case when a single product is created.
+
+================
+

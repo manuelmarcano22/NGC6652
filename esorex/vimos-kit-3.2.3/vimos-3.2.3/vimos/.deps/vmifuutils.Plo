@@ -1,0 +1,125 @@
+vmifuutils.lo: vmifuutils.c ../config.h /usr/include/math.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h ../libpil/pil/pilmessages.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h \
+ ../libpil/pil/pilmacros.h ../libpil/pil/pilutils.h /usr/include/stdlib.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h \
+ ../libpil/pil/piltranslator.h ../libpil/pil/pilkeymap.h \
+ ../libpil/pil/pildictionary.h ../libpil/kazlib/dict.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h \
+ /usr/include/limits.h ../libpil/pil/pilalias.h ../libpil/pil/pilcatmap.h \
+ vmimage.h /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h \
+ /usr/include/stdio.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h \
+ /home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/longnam.h \
+ vmtypes.h vmtable.h vmmath.h vmmatrix.h vmtable.h vmextractiontable.h \
+ vmifutable.h vmdistmodels.h
+
+../config.h:
+
+/usr/include/math.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+../libpil/pil/pilmessages.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h:
+
+../libpil/pil/pilmacros.h:
+
+../libpil/pil/pilutils.h:
+
+/usr/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h:
+
+../libpil/pil/piltranslator.h:
+
+../libpil/pil/pilkeymap.h:
+
+../libpil/pil/pildictionary.h:
+
+../libpil/kazlib/dict.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h:
+
+/usr/include/limits.h:
+
+../libpil/pil/pilalias.h:
+
+../libpil/pil/pilcatmap.h:
+
+vmimage.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/fitsio.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/include/longnam.h:
+
+vmtypes.h:
+
+vmtable.h:
+
+vmmath.h:
+
+vmmatrix.h:
+
+vmtable.h:
+
+vmextractiontable.h:
+
+vmifutable.h:
+
+vmdistmodels.h:

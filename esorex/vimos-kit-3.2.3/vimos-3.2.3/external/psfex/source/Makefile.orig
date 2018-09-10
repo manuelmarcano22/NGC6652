@@ -1,0 +1,23 @@
+include Macrodefs.$(SEXMACHINE)
+DEST  = ${HOME}/bin		# where to put the executable
+LIBS  = -lm
+FITSO = fitscat.o fitsconv.o fitsfield.o fitshead.o fitskey.o fitsmisc.o \
+	fitsread.o fitstab.o fitsutil.o fitswrite.o
+FITSH =	fitscat.h fitscat_defs.h poly.h psf.h
+OBJ   =	basis.o check.o fft.o main.o makeit.o misc.o poly.o prefs.o pc.o \
+	psf.o random.o sample.o vignet.o
+H     =	define.h fft.h globals.h types.h prefs.h psf.h check.h vignet.h
+
+psfex:	$(FITSO) $(OBJ)
+	$(CC) $(FITSO) $(OBJ) -o psfex $(LIBS) $(COPTS)
+	-cp psfex $(DEST)
+
+$(FITSO): $(FITSH)
+
+$(OBJ):	$(H)
+
+.c.o:
+	$(CC) $(COPTS) -c $*.c
+
+clean:
+	$(RM) *.o psfex

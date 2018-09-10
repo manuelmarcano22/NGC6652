@@ -1,0 +1,1346 @@
+#
+# "@(#) $Id: ESO-VLT-DIC.VIMOS_OS,v 1.1 2012-09-26 12:47:51 cgarcia Exp $"
+#
+Dictionary Name:   ESO-VLT-DIC.VIMOS_OS
+Scope:             OS
+Source:            marty@ira.bo.cnr.it
+Date:              $Date: 2012-09-26 12:47:51 $
+Version Control:   $Revision: 1.1 $
+Revision:          0.2
+Status:            Development
+Description:       -------------------
+
+
+
+#
+# World Coordinate System keywords
+#
+
+Parameter Name:    CTYPE1
+Class:             header|wcs
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     pixel coordinate system
+Description:	   Type of projection used. The value must be 
+		   'RA---TAN' for tangential projection or be built 
+		   according to Greisen & Calabretta, 1994.
+
+Parameter Name:    CTYPE2
+Class:             header|wcs
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     pixel coordinate system
+Description:	   Type of projection used. The value must be 
+		   'DEC--TAN' for tangential projection or be built 
+		   according to Greisen & Calabretta, 1994.
+
+Parameter Name:    CRVALi
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:
+Comment Format:    value of ref pixel
+Description:       Value of pixel CRPIXi
+
+Parameter Name:    CRVAL1
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:              deg
+Comment Field:     %HOURANG, RA at ref pixel
+Description:	   Coordinate value at reference pixel expressed in
+		   decimal degrees. The comment field include the 
+		   value expressed in hours, minutes and seconds.
+
+Parameter Name:    CRVAL2
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:              deg
+Comment Field:     %DEGREE, DEC at ref pixel
+Description:	   Coordinate value at reference pixel expressed in
+		   decimal degrees. The comment field include the 
+		   value expressed in degrees, minutes and seconds.
+
+
+Parameter Name:    CROTA1
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:              deg
+Comment Field:     Rotation in degrees
+Description:	   Rotation
+
+Parameter Name:    CROTA2
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:              deg
+Comment Field:     Rotation in degrees
+Description:	   Rotation
+
+Parameter Name:    CRPIXi
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.7f
+Unit:
+Comment Format:    Ref. pixel of center of rotation
+Description:       Reference pixel in the coordinate frame given by CTYPEi.
+                   The reference pixel is defined as the pixel
+                   (possibly with fraction if the accuracy is achieved)
+                   through which the center of rotation of the adapter
+                   intersects the detector
+
+Parameter Name:    CRPIX1
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.7f
+Unit:              
+Comment Field:     Reference pixel in X
+Description:	   Pixel position of the reference point. By
+		   convention the center of the pixel is pix.0,
+		   pix.5 gives the right edge of the pixel and
+		   (pix-1).6 its left edge. Reference pixel is
+                   also used to identify the pointing centre.
+
+Parameter Name:    CRPIX2
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.7f
+Unit:              
+Comment Field:     Reference pixel in Y
+Description:	   Pixel position of the reference point. By
+		   convention the center of the pixel is pix.0,
+		   pix.5 gives the bottom edge of the pixel and
+		   (pix-1).6 its top edge.Reference pixel is
+                   also used to identify the pointing centre.
+
+Parameter Name:    CDELT1
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.8f
+Unit:              deg
+Comment Field:     SS arcsec per pixel in RA
+Description:	   Increment of RA for each pixel step
+		   expressed in decimal degrees. The comment field 
+		   include the value expressed in seconds of arc (SS).
+
+Parameter Name:    CDELT2
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.8f
+Unit:              deg
+Comment Field:     SS arcsec per pixel in DEC
+Description:	   Increment of DEC for each pixel step
+		   expressed in decimal degrees. The comment field 
+		   include the value expressed in seconds of arc (SS).
+
+Parameter Name:    CD1_1
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.9f
+Unit:              
+Comment Field:     Translation matrix element
+Description:	   Transformation matrix from pixel coordinates to world coordinates
+	           (see Greisen & Calabretta, 1999)
+
+Parameter Name:    CD1_2
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.9f
+Unit:              
+Comment Field:     Translation matrix element
+Description:	   Transformation matrix from pixel coordinates to world coordinates
+	           (see Greisen & Calabretta, 1999)
+
+Parameter Name:    CD2_1
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.9f
+Unit:              
+Comment Field:     Translation matrix element
+Description:	   Transformation matrix from pixel coordinates to world coordinates
+	           (see Greisen & Calabretta, 1999)
+
+Parameter Name:    CD2_2
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.9f
+Unit:              
+Comment Field:     Translation matrix element
+Description:	   Transformation matrix from pixel coordinates to world coordinates
+	           (see Greisen & Calabretta, 1999)
+
+#
+#
+#
+
+Parameter Name:    DATE
+Class:             header
+Context:           FITS
+Type:              string
+Value Format:      %8s
+Unit:              
+Comment Field:     Date this file was written (dd/mm/yyyy)
+Description:	   UT date in which this file was written.
+
+Parameter Name:    MJD-OBS
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.8f
+Unit:              mjd
+Comment Field:     Obs start %DAYTIM
+Description:       Modified Julian Day of the start of the exposure.
+                   The MJD is related to the Julian Day (JD) via the
+                   formula: MJD = JD-2400000.5
+                   The comment includes a civil representation of 
+                   the date and time. 8 decimals are required 
+                   for a precision of one millisecond, 5 decimals 
+                   for a precision of one second.
+
+Parameter Name:    UTC
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.3f
+Unit:              s
+Comment Field:     %TIME UT at start
+Description:       Universal Time at start of the exposure in seconds
+                   elapsed since midnight.
+                   The comment includes a civil representation of the value.
+
+Parameter Name:    EXPTIME
+Class:             header|setup
+Context:           FITS
+Type:              double
+Value Format:      %.3f
+Unit:              s
+Comment Field:     Total integration time. %TIME
+Description:	   Total exposure time, possibly the sum of 
+		   sub-integrations.
+
+
+Parameter Name:    INSTRUME
+Class:             header|setup|os
+Context:           FITS
+Type:              string
+Value Format:      %10s
+Unit:              
+Comment Field:     Instrument used
+Description:	   ESO acronym for the instrument used.
+
+Parameter Name:    TELESCOP
+Class:             header|os
+Context:           FITS
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     ESO <TEL>
+Description:	   ESO telescope code as defined in GEN-SPE-ESO-00000-0794
+
+Parameter Name:    OBJECT
+Class:             header|setup|os
+Context:           FITS
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     Original target
+Description:	   Identification of target observed. 
+
+Parameter Name:    OBSERVER
+Class:             header|setup|os
+Context:           FITS
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     Name of observer
+Description:	   Initials, family name of observer. 
+
+Parameter Name:    PI-COI
+Class:             header|os
+Context:           FITS
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     Name of PI and COI
+Description:	   Initials, family name of PI and COI. 
+
+Parameter Name:    ORIGIN
+Class:             header|os
+Context:           FITS
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     European Southern Observatory
+Description:	   Observatory source of this file.
+		   The value is either 'ESO-LASILLA' or
+		   'ESO-VLT'.
+
+Parameter Name:    RA
+Class:             header|setup
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              deg
+Comment Field:     %HOURANG RA (J2000) pointing
+Description:	   Telescope pointing in mean places of equinox J2000,
+		   expressed in decimal degrees. The comment
+		   field include the value expressed in hours, minutes
+		   and seconds.
+
+Parameter Name:    DEC
+Class:             header|setup
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:              deg
+Comment Field:     %DEGREE  DEC (J2000) pointing
+Description:	   Telescope pointing in mean places of equinox J2000,
+		   expressed in decimal degrees. The comment
+		   field include the value expressed in degrees, minutes
+		   and seconds.
+
+Parameter Name:    AIRMASS
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.5f
+Unit:              
+Comment Field:     Averaged air mass
+Description:	   Average airmass for the optical axis during the
+		   exposure computed for the time while the shutter is
+		   open as described in GEN-SPE-ESO-00000-0794.
+
+Parameter Name:    LST
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.3f
+Unit:              s
+Comment Field:     %TIME LST at start
+Description:	   Local Sidereal Time at start of the exposure in
+		   seconds ellapsed since midnight.
+		   The comment includes a civil representation of the value.
+
+Parameter Name:    UT
+Class:             header
+Context:           FITS
+Type:              double
+Value Format:      %.3f
+Unit:              s
+Comment Field:     %TIME UT at start
+Description:	   Universal Time at start of the exposure in seconds
+                   elapsed since midnight.
+		   The comment includes a civil representation of the value.
+
+Parameter Name:    BLANKi
+Class:             header
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Dummy string (used in RTD)
+Description:	   This keyword is inserted when storing a image file in rtd.
+                   It's presence is needed when OS is asked to add ICS/DCS/TCS
+                   status to an image stored directly in RTD.
+
+#------------------------------------------------------------------------------
+#
+# OS public keywords
+#  
+Parameter Name:    OCS DID
+Class:             header|os
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:              
+Comment Field:     Data dictionary for OCS
+Description:	   Name and version of ESO DID to which INS keywords
+		   comply to.
+
+Parameter Name:    OCS COMP ID
+Class:             header|os
+Context:           Header
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     OS Software Version Id
+Description:	   The OS Software version used to generate the image.
+
+Parameter Name:    OCS EXP ID
+Class:             setup
+Context:           Setup
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     OS Exposure identification
+Description:	   A identifier that characterises the exposure. The value set
+                   will be used to store the image file name.
+
+Parameter Name:    OCS CON EXP ID
+Class:             setup
+Context:           Setup
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     OS Exposure identification
+Description:	   A identifier that characterises the exposure. The value set
+                   will be used to store the image file name.
+
+Parameter Name:    OCS CON EXP SEQNAMEING
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable sequence naming
+Description:	   Keyword to toggle sequnce file naming i.e. T = enable 
+                   sequence naming. The filename will be appended a sequence
+                   number: <expo id>_<seq no>.fits .
+
+Parameter Name:    OCS EXP SEQNAMEING
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable sequence naming
+Description:	   Keyword to toggle sequnce file naming i.e. T = enable 
+                   sequence naming. The filename will be appended a sequence
+                   number: <expo id>_<seq no>.fits .
+
+Parameter Name:    OCS CON EXP ARCHIVE
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable archiving by olac
+Description:	   Keyword to toggle archivings by olac i.e. T = enable archiving 
+                   by default archiving is set to T for exposure category SCIENCE
+                   and CALIB this keyword is used to change this feature .
+
+Parameter Name:    OCS EXP ARCHIVE
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable archiving by olac
+Description:	   Keyword to toggle archivings by olac i.e. T = enable archiving 
+                   by default archiving is set to T for exposure category SCIENCE
+                   and CALIB this keyword is used to change this feature .
+
+Parameter Name:    OCS CON EXP SAVEFILE
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable writing of fits file on disk
+Description:	   Keyword to toggle writing of fits file on disk i.e. T = enable writing 
+                   By default writing is set to T 
+                   This keyword is used to change this feature .
+
+Parameter Name:    OCS EXP SAVEFILE
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable writing of fits file on disk
+Description:	   Keyword to toggle writing of fits file on disk i.e. T = enable writing 
+                   By default writing is set to T 
+                   This keyword is used to change this feature .
+
+
+Parameter Name:    OCS CON EXP SEQCNT
+Class:             setup
+Context:           Setup
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Sequence counter
+Description:	   Set the sequence naming counter to the value passed.
+
+Parameter Name:    OCS EXP SEQCNT
+Class:             setup
+Context:           Setup
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Sequence counter
+Description:	   Set the sequence naming counter to the value passed.
+
+
+Parameter Name:    OCS VERIFY-INS ST
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Enable/Disable check for instrument setting
+Description:	   Keyword to toggle the check of wheter the instrument is set
+                   correctly e.g. according to the DPR.TECH keyword.
+
+Parameter Name:    OCS RTD-DRAW ST
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Drawing of slit/mask elements in RTD
+Description:	   Keyword to toggle drawing of slit/mask objects of the 
+                   aperture wheel. When enabled the drawing is performed 
+                   automatically in RTD e.g. when a slit is selected.
+
+Parameter Name:    OCS WCS-RTD ST
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     Update RTD with WCS info.
+Description:	   Keyword to toggle that RTD is updated with WCS information.
+                   If enabled i.e. T then OS sends WCS information to DCS
+                   which then updates the images for RTD.
+                   of the pixel coordinates.
+
+#------------------------------------------------------------------------------
+#
+# OS privat keywords (used for configuration)
+#
+Parameter Name:    OCS CON EXTRA-DIC
+Class:             private
+Context:           configuration
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Additional dictionary loaded
+Description:       Additional dictionary loaded
+
+Parameter Name:    OCS CON WCS ST
+Class:             private
+Context:           configuration
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     WCS inserted in FITS header.
+Description:	   Keyword to configure the insertion of WCS in the FITS header.
+                   If enabled i.e. T then OS insertes world coordinates instead
+                   of the pixel coordinates.
+
+Parameter Name:    OCS WCS ST
+Class:             private
+Context:           configuration
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     WCS inserted in FITS header.
+Description:	   Keyword to configure the insertion of WCS in the FITS header.
+                   If enabled i.e. T then OS insertes world coordinates instead
+                   of the pixel coordinates.
+
+
+#-----------------------------------------------------------------
+# TCS interface 
+Parameter Name:    OCS CON TCS ACCESS
+Class:             private
+Context:           telescope
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     TCS Access
+Description:       Access to TCS: T=accepted F=denied
+
+Parameter Name:    OCS CON TCS DIC
+Class:             private
+Context:           telescope
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     TCS subsystem dictionary
+Description:       The dictionary name used for TCS subsystem
+
+Parameter Name:    OCS CON TCS ALIAS
+Class:             private
+Context:           telescope
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     TCS subsystem alias
+Description:       The alias name used for TCS subsystem
+
+
+Parameter Name:    OCS CON TCS PROC
+Class:             private
+Context:           telescope
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     TCS subsystem server
+Description:       The server process name used for controlling/interfacing
+                   to the TCS subsystem
+
+Parameter Name:    OCS CON TCS TIMEOUT
+Class:             setup
+Context:           telescope
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Timeout value for TCS interface
+Description:       Timeout value for TCS interface
+
+Parameter Name:    OCS CON TCS ENV
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     TCS subsystem environment
+Description:       The CCS environment name of the TCS subsystem
+
+
+#-----------------------------------------------------------------
+# ICS interface 
+
+Parameter Name:    OCS CON ICS ACCESS
+Class:             private
+Context:           instrument
+Type:              logical
+Value Format:      %c
+Unit:           
+Comment Field:     ICS Access
+Description:       Access to ICS: T=accepted F=denied   
+
+Parameter Name:    OCS CON ICS DIC
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     ICS subsystem dictionary
+Description:       The dictionary name used for ICS subsystem
+
+
+Parameter Name:    OCS CON ICS ALIAS
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     ICS subsystem alias
+Description:       The alias name used for ICS subsystem
+
+Parameter Name:    OCS CON ICS PROC
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     ICS subsystem server
+Description:       The server process name used for controlling/interfacing
+                   to the ICS subsystem
+
+Parameter Name:    OCS CON ICS TIMEOUT
+Class:             setup
+Context:           instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Timeout value for ICS interface
+Description:       Timeout value for ICS interface
+
+#-----------------------------------------------------------------
+# DCS1 interface 
+
+Parameter Name:    OCS CON DCS1 ACCESS
+Class:             private
+Context:           detector
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     DCS1 Access
+Description:       Access to DCS: T=accepted F=denied
+
+Parameter Name:    OCS CON DCS1 DIC
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS1 subsystem dictionary
+Description:       The dictionary name used for DCS1 subsystem
+
+Parameter Name:    OCS CON DCS1 ALIAS
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS1 subsystem alias
+Description:       The alias name used for DCS1 subsystem
+
+Parameter Name:    OCS CON DCS1 PROC
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS1 subsystem server
+Description:       The server process name used for controlling/interfacing
+                   to the DCS1 subsystem
+
+Parameter Name:    OCS CON DCS1 TIMEOUT
+Class:             setup
+Context:           detector
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Timeout value for DCS1 interface
+Description:       Timeout value for DCS1 interface
+
+
+Parameter Name:    OCS CON DCS1 DETCONF
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS1 subsystem setup file name
+Description:       The name of the Setup File used by the default initialization
+
+
+#------------------------------------------------------------------------------
+# DCS2 interface 
+#
+
+Parameter Name:    OCS CON DCS2 ACCESS
+Class:             private
+Context:           detector
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     DCS2 Access
+Description:       Access to DCS: T=accepted F=denied
+
+Parameter Name:    OCS CON DCS2 DIC
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS2 subsystem dictionary
+Description:       The dictionary name used for DCS2 subsystem
+
+Parameter Name:    OCS CON DCS2 ALIAS
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS2 subsystem alias
+Description:       The alias name used for DCS2 subsystem
+
+Parameter Name:    OCS CON DCS2 PROC
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS2 subsystem server
+Description:       The server process name used for controlling/interfacing
+                   to the DCS2 subsystem
+
+Parameter Name:    OCS CON DCS2 TIMEOUT
+Class:             setup
+Context:           detector
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Timeout value for DCS2 interface
+Description:       Timeout value for DCS2 interface
+
+
+Parameter Name:    OCS CON DCS2 DETCONF
+Class:             private
+Context:           detector
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     DCS2 subsystem setup file name
+Description:       The name of the Setup File used by the default initialization
+
+#------------------------------------------------------------------------------
+Parameter Name:    OCS CON QUAD
+Class:             header|os
+Context:           instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Quadrant Number
+Description:       Quadrant number written in fits file
+
+Parameter Name:    OCS CON PROF MODE
+Class:             private
+Context:           instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Operational Mode Profile
+Description:       The Operational Mode profile at startup.
+
+
+Parameter Name:    OCS CON PROF INSTRUME
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Instrument Profile
+Description:       The instrument name for which OS is configured to.
+
+Parameter Name:    OCS CON PROF TELESCOP
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Telescope Name
+Description:       The Telescope Name where the OS is installed.
+
+Parameter Name:    OCS CON PROF TELMODE
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Telescope Mode Profile
+Description:       The Telescope Mode profile at startup. Configuration values
+                   are: NO-TCS and TCS.
+
+Parameter Name:    OCS CON PROF PI-COI
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     PI-COI Profile
+Description:       The full name of PI/COI to be stored when writing FITS
+                   header.
+
+Parameter Name:    OCS CON PROF ORIGIN
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     ORIGIN Profile
+Description:       The origin name to be stored when writing FITS header.
+
+
+Parameter Name:    OCS CON PROF OBSERVER
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:  
+Comment Field:     Observer Profile
+Description:       The full name of PI/COI to be stored when writing FITS
+                   header.
+
+Parameter Name:    OCS CON PROF INS_USER
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     INS User Profile
+Description:       The name of the INS_USER i.e. data directory used at 
+                   startup.
+
+
+Parameter Name:    OCS CON PROF ALIGN
+Class:             private
+Context:           instrument
+Type:              logical
+Value Format:      T
+Unit:              
+Comment Field:     Align subsystem states
+Description:       Specifies if OS should align with subsystem states. If value
+                   = T then the OS state is aligned with the state of the 
+                   subsystems ICS/DCS. Unalignment should only be used for
+                   maintenance and test purposes.
+
+Parameter Name:    OCS CON PROF OBSTYPE
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Observer Type
+Description:       Observer Type: Oberver, Operator
+
+Parameter Name:    OCS CON PROF OPMODE
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Operative Mode
+Description:       Operative Mode: SERVICE, INTERACTIVE
+
+Parameter Name:    OCS CON PROF SIMUL
+Class:             private
+Context:           instrument
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     OS Simulation
+Description:       OS Simulation: 1 = all subsystems simulated, 0=normal
+
+#------------------------------------------------------------------------------
+
+Parameter Name:    OCS CON LOG VERBOSE
+Class:             private
+Context:           instrument
+Type:              logical
+Value Format:      %c
+Unit:              
+Comment Field:     verbose
+Description:       verbose: yes, not
+
+Parameter Name:    OCS CON LOG LEVEL
+Class:             private
+Context:           instrument
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Log level
+Description:       Log Level: 0, 1, 2, 3, 4
+
+#------------------------------------------------------------------------------
+
+Parameter Name:    OCS CON WCS MOSXi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              pixels
+Comment Field:     Reference pixel X for MOS
+Description:       Reference pixel X for MOS.
+
+Parameter Name:    OCS CON WCS MOSYi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:               pixels
+Comment Field:     Reference pixel Y for MOS	
+Description:       Reference pixel Y for MOS.
+
+Parameter Name:    OCS CON WCS IMGXi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:               pixels 
+Comment Field:     Reference pixel X for Imaging
+Description:       Reference pixel X for Imaging.
+
+Parameter Name:    OCS CON WCS IMGYi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              pixels
+Comment Field:     Reference pixel Y for Imaging	
+Description:       Reference pixel Y for Imaging.
+
+Parameter Name:    OCS CON WCS TSTXi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              pixels
+Comment Field:     Reference pixel X for TEST
+Description:       Reference pixel X for TEST.
+
+Parameter Name:    OCS CON WCS TSTYi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              pixels
+Comment Field:     Reference pixel Y for TEST	
+Description:       Reference pixel Y for TEST.
+
+Parameter Name:    OCS CON WCS XOPTi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              arcsec
+Comment Field:     X Value of the Optical Axis Center 	
+Description:       X Value of the Optical Axis Center 
+
+Parameter Name:    OCS CON WCS YOPTi
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              arcsec
+Comment Field:     Y Value of the Optical Axis Center  	
+Description:       Y Value of the Optical Axis Center 
+
+Parameter Name:    OCS CON WCS CD11
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              
+Comment Field:     Value of the Coefficent for the Determinant 11 for the CD matrix 	
+Description:       Value of the Coefficent for the Determinant 11 for the CD matrix 	
+
+Parameter Name:    OCS CON WCS CD12
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              
+Comment Field:     Value of the Coefficent for the Determinant 12 for the CD matrix 	
+Description:       Value of the Coefficent for the Determinant 12 for the CD matrix 
+
+Parameter Name:    OCS CON WCS CD21
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              
+Comment Field:     Value of the Coefficent for the Determinant 21 for the CD matrix 	
+Description:       Value of the Coefficent for the Determinant 21 for the CD matrix 
+
+Parameter Name:    OCS CON WCS CD22
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              
+Comment Field:     Value of the Coefficent for the Determinant 22 for the CD matrix 	
+Description:       Value of the Coefficent for the Determinant 22 for the CD matrix 
+
+Parameter Name:    OCS CON WCS IFUCENX
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              arcsec
+Comment Field:     X IFU geometrical center distance from the Instrument Center	
+Description:       X IFU geometrical center distance from the Instrument Center	
+
+Parameter Name:    OCS CON WCS IFUCENY
+Class:             header|wcs
+Context:           FITS
+Type:              double
+Value Format:      %.6f
+Unit:              arcsec
+Comment Field:     X IFU geometrical center distance from the Instrument Center	
+Description:       X IFU geometrical center distance from the Instrument Center	
+
+Parameter Name:    OCS CON WCS OBJ-IDi
+Class:             private
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Objective ID.
+Description:       Objective ID for the measured reference pixel.
+
+Parameter Name:    OCS CON WCS EPOCH
+Class:             private
+Context:           FITS
+Type:              double
+Value Format:      %.1f
+Unit:              
+Comment Field:     Epoch of coordinates (FK4/FK5)
+Description:       Epoch of coordinates, used for FK4/FK5. 
+		   Conversion no effect if 0.
+
+Parameter Name:    OCS CON WCS EQUINOX
+Class:             private
+Context:           FITS
+Type:              integer
+Value Format:      %d
+Unit:              
+Comment Field:     Equinox of coordinates
+Description:       Equinox of coordinates, 1950 and 2000 supported.
+
+Parameter Name:    OCS CON WCS PROJ
+Class:             private
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Projection.
+Description:       Projection: PIXEL.
+
+#------------------------------------------------------------------------------
+Parameter Name:    OCS CON ADM NAME
+Class:             setup
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     ADM base file name
+Description:       ADM base file name
+
+Parameter Name:    OCS ADM NAME
+Class:             setup
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     ADM base file name
+Description:       ADM base file name
+
+Parameter Name:    OCS CON CMF EXT
+Class:             setup
+Context:           Setup
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     Calibration matrix file extension
+Description:       Calibration matrix file extension
+
+Parameter Name:    OCS CMF SAVE
+Class:             setup
+Context:           Setup
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Field:     General flag to include the calibration matrix files
+Description:       General flag to include the calibration matrix files
+
+Parameter Name:    OCS CON CMF RCPCFG
+Class:             setup
+Context:           Setup
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     Recipes configuration file
+Description:       Recipes configuration file
+
+Parameter Name:    OCS CMFi MODE
+Class:             private
+Context:           Configuration
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     CMF supported mode
+Description:       CMF supported mode
+
+Parameter Name:    OCS CMFi MODELi NAME
+Class:             private
+Context:           Configuration
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     CMF mode for the specified mode
+Description:       CMF mode for the specified mode
+
+Parameter Name:    OCS CMFi MODELi SAVE
+Class:             private
+Context:           Configuration
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Field:     CMF save flag for the specified mode and model
+Description:       CMF save flag for the specified mode and model
+
+Parameter Name:    OCS CMFi MODELi CKEY
+Class:             private
+Context:           Configuration
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     CMF conditional keyword for the specified mode and model
+Description:       CMF conditional keyword for the specified mode and model
+
+Parameter Name:    OCS CMFi MODELi KVAL
+Class:             private
+Context:           Configuration
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     CMF conditional keyword value for the specified mode and model
+Description:       CMF conditional keyword value for the specified mode and model
+
+
+Parameter Name:    OCS CMF FILEi NAME
+Class:             header
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:              
+Comment Field:     Calibration matrix file name
+Description:       Calibration matrix file name
+
+Parameter Name:    OCS CMF FILEi CRTEDATE
+Class:             header
+Context:           FITS
+Type:              string
+Value Format:      %s
+Unit:
+Comment Field:     Calibration matrix file creation date
+Description:       Calibration matrix file creation date
+
+#------------------------------------------------------------------------------
+#    Operational log keywords
+#
+#------------------------------------------------------------------------------
+
+Parameter Name:    OCS SOFTW START
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Format:    VIMOS OS started
+Description:       Log startup of OS.
+
+Parameter Name:    OCS FMERG START
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Format:    VIMOS OS FitsMerger started
+Description:       Log startup of OS FitsMerger.
+
+Parameter Name:    OCS SOFTW STOP
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Format:    VIMOS OS shutdown
+Description:       Log shutdown of OS.
+
+Parameter Name:    OCS FMERG STOP
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %30s
+Unit:
+Comment Format:    VIMOS OS fitsMerger shutdown
+Description:       Log shutdown of OS FitsMerger.
+
+Parameter Name:    OCS SETUP
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    OS processing setup
+Description:       The OS logs what setup is requested 
+
+Parameter Name:    OCS MERGING
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    Fits Merging Status
+Description:       The OS logs End of Merging
+
+Parameter Name:    OCS TOFFSET
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    OS telescope offset
+Description:       The OS logs what telescope offset is requested 
+
+Parameter Name:    OCS CONFIG
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %60s
+Unit:
+Comment Format:    OS configuration
+Description:       The OS logs what configuration is requested
+
+
+Parameter Name:    OCS START
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %40s
+Unit:
+Comment Format:    OS Exposure started
+Description:       The OS logs that an exposure was started
+
+Parameter Name:    OCS EXP ABORT 
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %40s
+Unit:
+Comment Format:    OS Exposure aborted
+Description:       The OS logs that an exposure was aborted 
+
+Parameter Name:    OCS EXP DONE
+Class:             ops-log
+Context:           Instrument
+Type:              string
+Value Format:      %40s
+Unit:
+Comment Format:    OS Exposure completed
+Description:       The OS logs that an exposure completed
+
+Parameter Name:    OCS CON SHUL POSi
+Class:             header|setup
+Context:           Setup
+Type:              double
+Value Format:      %f
+Unit:
+Comment Format:    Low shutter ref. position
+Description:       Low shutter ref. position for quadrant i, corresponding to position 0 of vmmcs
+
+Parameter Name:    OCS CON SHUH POSi
+Class:             header|setup
+Context:           Setup
+Type:              double
+Value Format:      %f
+Unit:
+Comment Format:    Up shutter ref. position
+Description:       Up shutter ref. position for quadrant i, corresponding to position 0 of vmmcs
+
+Parameter Name:    OCS CON QUADi ACCESS
+Class:             ops-log
+Context:           instrument
+Type:              logical
+Value Format:      %c
+Unit:
+Comment Format:    Access to quadrant
+Description:       Access to quadrant i, can be T or F

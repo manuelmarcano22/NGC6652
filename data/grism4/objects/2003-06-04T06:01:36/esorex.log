@@ -1,0 +1,16 @@
+
+Start time     : 2018-07-10T17:52:26
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+17:52:26 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+17:52:26 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+17:52:26 [ INFO  ] : [tid=000] Invocation command line was: ../esorex/bin/esorex --output-dir=../data/grism4/objects/2003-06-04T06:01:36/ --log-dir=../data/grism4/objects/2003-06-04T06:01:36/ vmifucombinecube ../data/grism4/objects/2003-06-04T06:01:36/cube.sof
+17:52:26 [ INFO  ] vmifucombinecube: [tid=000] Found 1 input IFU_SCIENCE_REDUCED
+17:52:26 [ INFO  ] vmifucombinecube: [tid=000] Reconstructing cube 20 x 20 x 4259 (IFU head from (40,20) to (60,40))
+17:52:26 [ INFO  ] vmifucombinecube: [tid=000] Loading input frames...
+17:52:27 [ INFO  ] vimos_ifu_combinecube_add_wcs: [tid=000] Adding WCS information to the cube
+17:52:27 [ INFO  ] vmifucombinecube: [tid=000] Saving the cube...
+17:52:27 [ INFO  ] : [tid=000] Calculating product checksums
+17:52:27 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/scripts/../data/grism4/objects/2003-06-04T06:01:36/ifu_science_cube.fits
+17:52:27 [ INFO  ] : [tid=000] 1 product created

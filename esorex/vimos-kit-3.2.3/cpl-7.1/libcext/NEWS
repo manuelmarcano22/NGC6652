@@ -1,0 +1,8 @@
+Release 1.2.1 (2015-07-20):
+---------------------------
+ * cx_deque, cxutils.c: Bug fixes.
+
+Release 1.2 (2015-03-06):
+-------------------------
+ * cx_string: New functions added.
+ * Minor documentation cleanup.  

@@ -1,0 +1,30 @@
+#
+# macro default definitions
+#
+# E.BERTIN 1999
+#
+SEXMACHINE=
+CD    = cd
+CP    = cp
+RM    = rm -f
+
+default:
+	@echo
+	@echo "Please use:    make SEXMACHINE=<machine_type>"
+	@echo
+	@echo "Where:  <machine_type> = aix     (for IBMs RS6000 running AIX)"
+	@echo "                         alpha   (for DEC-ALPHAs with Digital UNIX)"
+	@echo "                         hpux    (for HP/UX systems)"
+	@echo "                         linuxpc (for PCs running LINUX, using gcc)"
+	@echo "                         linuxp2 (for Pentium2 PCs running LINUX, using egcs)"
+	@echo "                         sgi     (for SGI platforms)"
+	@echo "                         solaris (for SUN-Solaris machines)"
+	@echo "                         sunos   (for SUN-OS platforms)"
+	@echo "                         ultrix  (for DEC stations running ULTRIX)"
+	@echo
+	@echo "If your machine doesn't belong yet to the list above,"
+	@echo "please drop me a mail (bertin@iap.fr)"
+	@echo
+	@echo "(Use   make clean   to remove products from a previous compilation)"
+	@echo
+

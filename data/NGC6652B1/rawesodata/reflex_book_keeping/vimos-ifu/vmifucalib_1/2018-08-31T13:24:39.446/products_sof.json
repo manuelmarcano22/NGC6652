@@ -1,0 +1,26 @@
+[
+  {
+    "name": "\/home\/mmarcano\/Documents\/VIMOS\/NGC6652\/data\/NGC6652B1\/rawesodata\/reflex_tmp_products\/vimos-ifu\/vmifucalib_1\/2018-08-31T13:24:39.446\/ifu_arc_spectrum_extracted.fits",
+    "category": "IFU_ARC_SPECTRUM_EXTRACTED"
+  },
+  {
+    "name": "\/home\/mmarcano\/Documents\/VIMOS\/NGC6652\/data\/NGC6652B1\/rawesodata\/reflex_tmp_products\/vimos-ifu\/vmifucalib_1\/2018-08-31T13:24:39.446\/ifu_flat_spectrum_extracted.fits",
+    "category": "IFU_FLAT_SPECTRUM_EXTRACTED"
+  },
+  {
+    "name": "\/home\/mmarcano\/Documents\/VIMOS\/NGC6652\/data\/NGC6652B1\/rawesodata\/reflex_tmp_products\/vimos-ifu\/vmifucalib_1\/2018-08-31T13:24:39.446\/ifu_ids.fits",
+    "category": "IFU_IDS"
+  },
+  {
+    "name": "\/home\/mmarcano\/Documents\/VIMOS\/NGC6652\/data\/NGC6652B1\/rawesodata\/reflex_tmp_products\/vimos-ifu\/vmifucalib_1\/2018-08-31T13:24:39.446\/ifu_master_screen_flat.fits",
+    "category": "IFU_MASTER_SCREEN_FLAT"
+  },
+  {
+    "name": "\/home\/mmarcano\/Documents\/VIMOS\/NGC6652\/data\/NGC6652B1\/rawesodata\/reflex_tmp_products\/vimos-ifu\/vmifucalib_1\/2018-08-31T13:24:39.446\/ifu_trace.fits",
+    "category": "IFU_TRACE"
+  },
+  {
+    "name": "\/home\/mmarcano\/Documents\/VIMOS\/NGC6652\/data\/NGC6652B1\/rawesodata\/reflex_tmp_products\/vimos-ifu\/vmifucalib_1\/2018-08-31T13:24:39.446\/ifu_transmission.fits",
+    "category": "IFU_TRANSMISSION"
+  }
+]

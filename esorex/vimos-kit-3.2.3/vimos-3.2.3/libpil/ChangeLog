@@ -1,0 +1,381 @@
+2004-06-24 Thursday  rpalsa
+
+	* configure.ac: Insert official bugreport address.
+
+2004-06-24 Thursday  rpalsa
+
+	* Makefile.am, cfitsio/Makefile.am, kazlib/Makefile.am,
+	  pil/Makefile.am, tests/Makefile.am: Copyright updated.
+
+2004-06-24 Thursday  rpalsa
+
+	* pil/pilframeset.c: Copyright updated
+
+2004-06-24 Thursday  rpalsa
+
+	* pil/pilalias.c, pil/pilastroutils.c, pil/pilcatmap.c,
+	  pil/pilcdb.c, pil/pildate.c, pil/pildfsconfig.c,
+	  pil/pildictionary.c, pil/pilerrno.c, pil/pilfileutils.c,
+	  pil/pilfits.c, pil/pilframe.c, pil/pilkeymap.c, pil/pilkeyword.c,
+	  pil/pillist.c, pil/pilmemory.c, pil/pilmessages.c, pil/pilpaf.c,
+	  pil/pilqc.c, pil/pilrecipe.c, pil/piltask.c, pil/piltimer.c,
+	  pil/piltranslator.c: Copyright updated
+
+2004-06-24 Thursday  rpalsa
+
+	* pil/pilalias.h, pil/pilastroutils.h, pil/pilcatmap.h,
+	  pil/pilcdb.h, pil/pildate.h, pil/pildfsconfig.h,
+	  pil/pildictionary.h, pil/pilerrno.h, pil/pilfileutils.h,
+	  pil/pilfits.h, pil/pilframe.h, pil/pilkeymap.h, pil/pilkeyword.h,
+	  pil/pillist.h, pil/pilmemory.h, pil/pilmessages.h, pil/pilpaf.h,
+	  pil/pilqc.h, pil/pilrecipe.h, pil/piltask.h, pil/piltimer.h,
+	  pil/piltranslator.h: Copyright updated.
+
+2004-06-03 Thursday  rpalsa
+
+	* pil/pilmessages.c: Change the output stream for warnings from the
+	  error stream to the standard output stream. To be compliant with
+	  CPL.
+
+2004-06-02 Wednesday  rpalsa
+
+	* pil/pilutils.c: Correct license. Changed to GPL.
+
+2004-06-02 Wednesday  rpalsa
+
+	* pil/pilmacros.h, pil/pilstrutils.c, pil/pilstrutils.h,
+	  pil/pilutils.h: Correct license. Changed to GPL.
+
+2004-05-28 Friday  rpalsa
+
+	* configure.ac, cfitsio/configure.ac, kazlib/configure.ac: Required
+	  autoconf version updated
+
+2004-05-28 Friday  rpalsa
+
+	* admin/html.am: Updated with new version from CPL 1.0.2cvs
+
+2004-05-28 Friday  rpalsa
+
+	* admin/ltmain.sh, cfitsio/admin/ltmain.sh, kazlib/admin/ltmain.sh:
+	  Updated with version from libtool 1.5.6
+
+2004-05-28 Friday  rpalsa
+
+	* kazlib/admin/compile, kazlib/admin/config.guess,
+	  kazlib/admin/config.sub, kazlib/admin/depcomp,
+	  kazlib/admin/install-sh, kazlib/admin/missing,
+	  kazlib/admin/mkinstalldirs, cfitsio/admin/config.guess,
+	  cfitsio/admin/config.sub, cfitsio/admin/depcomp,
+	  cfitsio/admin/install-sh, cfitsio/admin/missing,
+	  cfitsio/admin/mkinstalldirs, admin/config.guess,
+	  admin/config.sub, admin/depcomp, admin/install-sh, admin/missing,
+	  admin/mkinstalldirs: Updated with version from automake 1.8.5
+
+2004-05-28 Friday  rpalsa
+
+	* acinclude.m4, cfitsio/acinclude.m4, kazlib/acinclude.m4,
+	  kazlib/m4macros/kazlib.m4: Use proper quoting in macro
+	  definitions.
+
+2004-05-28 Friday  rpalsa
+
+	* m4macros/eso.m4: Updated with new version from CPL 1.0.2cvs
+
+2004-05-28 Friday  rpalsa
+
+	* bootstrap, cfitsio/bootstrap, kazlib/bootstrap: Required build
+	  tool versions updated.
+
+2004-05-28 Friday  rpalsa
+
+	* Makefile.am, cfitsio/Makefile.am, kazlib/Makefile.am,
+	  pil/Makefile.am, tests/Makefile.am: Required automake version
+	  updated.
+
+2004-05-25 Tuesday  cizzo
+
+	* pil/piltranslator.c: Add aliases RotatorAngleStart,
+	  RotatorAngleEnd, and IfuFlatSpectrumExtracted
+
+2004-04-27 Tuesday  cizzo
+
+	* pil/piltranslator.c: Add alias IfuIdent
+
+2004-04-15 Thursday  cizzo
+
+	* pil/piltranslator.c: Add aliases IfuStandardExtracted and
+	  IfuScienceSky
+
+2004-03-29 Monday  cizzo
+
+	* pil/piltranslator.c: Add alias IfuFov
+
+2004-03-23 Tuesday  cizzo
+
+	* pil/piltranslator.c: Add aliases IfuArcSpectrumExtracted, IfuIds,
+	  IfuTrace, and IfuTransmission
+
+2004-01-29 Thursday  rpalsa
+
+	* pil/pilcatmap.c, pil/pilfits.c, pil/pilkeymap.c: Several memory
+	  leaks closed.
+
+2004-01-29 Thursday  rpalsa
+
+	* pil/pilrecipe.h: Function pilRecUpdateProductInfo() added.
+
+2004-01-29 Thursday  rpalsa
+
+	* pil/pilrecipe.c: Function _pilRecUpdateProductInfo promoted to
+	  member of the public API.
+
+2004-01-25 Sunday  rpalsa
+
+	* pil/piltranslator.c: Blankline added.
+
+2004-01-25 Sunday  rpalsa
+
+	* pil/pilrecipe.c, pil/pilrecipe.h: Functions added to manipulate
+	  the recipe information structure.
+
+2004-01-25 Sunday  rpalsa
+
+	* pil/pilcatmap.c: Dictionarry allocator and deallocator functions
+	  added to avoid memory leaks on catmap destruction.
+
+2004-01-25 Sunday  rpalsa
+
+	* pil/pilkeymap.c: Dictionarry allocator and deallocator functions
+	  added to avoid memory leaks on keymap destruction.
+
+2004-01-24 Saturday  rpalsa
+
+	* pil/piltranslator.c, pil/piltranslator.h: Added functions to
+	  clear the keyword and category map.
+
+2004-01-24 Saturday  rpalsa
+
+	* pil/pilmessages.c: Default message handler is now set before we
+	  check for the window size in order to avoid that the function
+	  returns before the default handler has been set.
+
+2004-01-15 Thursday  rpalsa
+
+	* pil/pilrecipe.c, pil/pilrecipe.h: Add pilRecValidateSet() to
+	  public API
+
+2004-01-14 Wednesday  rpalsa
+
+	* pil/pilmessages.c, pil/pilmessages.h: Add installable print
+	  handler support.
+
+2004-01-13 Tuesday  rpalsa
+
+	* pil/pilframeset.c: Documentation of pilSofInsert()'s return value
+	  fixed.
+
+2004-01-04 Sunday  rpalsa
+
+	* pil/pilframeset.c, pil/pilframeset.h: pilSofIsEmpty() added.
+
+2004-01-03 Saturday  rpalsa
+
+	* cfitsio/Makefile.am: Moved MAINTAINERCLEANFILES definition to the
+	  beginning
+
+2004-01-03 Saturday  rpalsa
+
+	* Makefile.am, pil/Makefile.am, tests/Makefile.am: Use per
+	  subdirectory settings for MAINTAINERCLEAN
+
+2003-12-25 Thursday  rpalsa
+
+	* Makefile.am: MAINTAINERCLEANFILES updated
+
+2003-12-25 Thursday  rpalsa
+
+	* kazlib/blast.pl: Moved here from top-level subdirectory
+	  pil/kazlib
+
+2003-12-25 Thursday  rpalsa
+
+	* kazlib/bootstrap: Added. Replaces Makefile.cvs
+
+2003-12-25 Thursday  rpalsa
+
+	* cfitsio/Licence.txt, cfitsio/Makefile.am,
+	  cfitsio/Makefile.in.orig, cfitsio/README, cfitsio/README.MacOS,
+	  cfitsio/README.win32, cfitsio/acinclude.m4: Moved here from
+	  top-level subdirectory pil/cfitsio
+
+2003-12-25 Thursday  rpalsa
+
+	* cfitsio/sample.tpl, cfitsio/scalnull.c, cfitsio/smem.c,
+	  cfitsio/speed.c, cfitsio/swapproc.c, cfitsio/testf77.f,
+	  cfitsio/testf77.ref, cfitsio/testf77.std, cfitsio/testprog.c,
+	  cfitsio/testprog.ref, cfitsio/testprog.std, cfitsio/testprog.tpt,
+	  cfitsio/vmsieee.c, cfitsio/vmsieeed.mar, cfitsio/vmsieeer.mar,
+	  cfitsio/wcssub.c, cfitsio/wcsutil.c, cfitsio/winDumpExts.mak,
+	  cfitsio/windumpexts.c, cfitsio/buffers.c, cfitsio/cfileio.c,
+	  cfitsio/cfortran.h, cfitsio/checksum.c, cfitsio/compress.c,
+	  cfitsio/compress.h, cfitsio/cookbook.c, cfitsio/drvrfile.c,
+	  cfitsio/drvrmem.c, cfitsio/drvrnet.c, cfitsio/drvrsmem.c,
+	  cfitsio/drvrsmem.h, cfitsio/editcol.c, cfitsio/edithdu.c,
+	  cfitsio/eval_defs.h, cfitsio/eval_f.c, cfitsio/eval_l.c,
+	  cfitsio/eval_tab.h, cfitsio/eval_y.c, cfitsio/f77_wrap.h,
+	  cfitsio/f77_wrap1.c, cfitsio/f77_wrap2.c, cfitsio/fitscopy.c,
+	  cfitsio/fitscore.c, cfitsio/fitsio.h, cfitsio/fitsio2.h,
+	  cfitsio/getcol.c, cfitsio/getcolb.c, cfitsio/getcold.c,
+	  cfitsio/getcole.c, cfitsio/getcoli.c, cfitsio/getcolj.c,
+	  cfitsio/getcolk.c, cfitsio/getcoll.c, cfitsio/getcols.c,
+	  cfitsio/getcolui.c, cfitsio/getcoluj.c, cfitsio/getcoluk.c,
+	  cfitsio/getkey.c, cfitsio/group.c, cfitsio/group.h,
+	  cfitsio/grparser.c, cfitsio/grparser.h, cfitsio/histo.c,
+	  cfitsio/imcompress.c, cfitsio/imcompress.h, cfitsio/iraffits.c,
+	  cfitsio/iter_a.c, cfitsio/iter_b.c, cfitsio/iter_c.c,
+	  cfitsio/listhead.c, cfitsio/longnam.h, cfitsio/modkey.c,
+	  cfitsio/pctype.h, cfitsio/pliocomp.c, cfitsio/putcol.c,
+	  cfitsio/putcolb.c, cfitsio/putcold.c, cfitsio/putcole.c,
+	  cfitsio/putcoli.c, cfitsio/putcolj.c, cfitsio/putcolk.c,
+	  cfitsio/putcoll.c, cfitsio/putcols.c, cfitsio/putcolu.c,
+	  cfitsio/putcolui.c, cfitsio/putcoluj.c, cfitsio/putcoluk.c,
+	  cfitsio/putkey.c, cfitsio/quantize.c, cfitsio/region.c,
+	  cfitsio/region.h, cfitsio/ricecomp.c, cfitsio/ricecomp.h,
+	  cfitsio/fitsio.doc, cfitsio/fitsio.ps, cfitsio/fitsio.tex,
+	  cfitsio/fitsio.toc, cfitsio/iter_a.f, cfitsio/iter_a.fit,
+	  cfitsio/iter_b.f, cfitsio/iter_b.fit, cfitsio/iter_c.f,
+	  cfitsio/iter_c.fit, cfitsio/make_dfloat.com,
+	  cfitsio/make_gfloat.com, cfitsio/make_ieee.com,
+	  cfitsio/makefile.bc, cfitsio/makefile.os2, cfitsio/makefile.vcc,
+	  cfitsio/makepc.bat, cfitsio/quick.ps, cfitsio/quick.tex,
+	  cfitsio/quick.toc, cfitsio/cfitsio.doc, cfitsio/cfitsio.ps,
+	  cfitsio/cfitsio.tex, cfitsio/cfitsio.toc,
+	  cfitsio/cfitsio_mac.sit.hqx, cfitsio/cfortran.doc,
+	  cfitsio/changes.txt, cfitsio/configure.in.orig,
+	  cfitsio/cookbook.f, cfitsio/eval.l, cfitsio/eval.y,
+	  cfitsio/f77.inc, cfitsio/mkpkg: Moved here from top-level
+	  subdirectory pil/cfitsio
+
+2003-12-25 Thursday  rpalsa
+
+	* cfitsio/configure.ac: Added. Replaces configure.in
+
+2003-12-25 Thursday  rpalsa
+
+	* cfitsio/bootstrap: Added. Replaces Makefile.cvs
+
+2003-12-25 Thursday  rpalsa
+
+	* cfitsio/admin/config.guess, cfitsio/admin/config.sub,
+	  cfitsio/admin/depcomp, cfitsio/admin/install-sh,
+	  cfitsio/admin/ltmain.sh, cfitsio/admin/missing,
+	  cfitsio/admin/mkinstalldirs: Synchronized with automake, autoconf
+	  and libtool version.
+
+2003-12-25 Thursday  rpalsa
+
+	* .cvsignore: Moved here from top-level subdirectory pil
+
+2003-12-25 Thursday  rpalsa
+
+	* admin/html.am: Moved here from top-level subdirectory pil/admin
+
+2003-12-25 Thursday  rpalsa
+
+	* kazlib/configure.ac: Added. Replaces configure.in
+
+2003-12-25 Thursday  rpalsa
+
+	* kazlib/CHANGES, kazlib/MUST_READ, kazlib/Makefile.am,
+	  kazlib/Makefile.gcc, kazlib/Makefile.vc, kazlib/README,
+	  kazlib/dict.c, kazlib/dict.h, kazlib/docs.ist, kazlib/docs.ltx,
+	  kazlib/except.c, kazlib/except.h, kazlib/hash.c, kazlib/hash.h,
+	  kazlib/list.c, kazlib/list.h, kazlib/sfx.c, kazlib/sfx.h,
+	  kazlib/acinclude.m4: Moved here from top-level subdirectory
+	  pil/kazlib
+
+2003-12-25 Thursday  rpalsa
+
+	* kazlib/m4macros/kazlib.m4: Added.
+
+2003-12-25 Thursday  rpalsa
+
+	* kazlib/admin/compile, kazlib/admin/config.guess,
+	  kazlib/admin/config.sub, kazlib/admin/depcomp,
+	  kazlib/admin/install-sh, kazlib/admin/ltmain.sh,
+	  kazlib/admin/missing, kazlib/admin/mkinstalldirs: Synchronized
+	  with automake, autoconf and libtool version.
+
+2003-12-25 Thursday  rpalsa
+
+	* tests/Makefile.am, tests/paf-test.c: Moved here from top-level
+	  directory pil/tests
+
+2003-12-25 Thursday  rpalsa
+
+	* cfitsio/.cvsignore, doxygen/.cvsignore, kazlib/.cvsignore,
+	  tests/.cvsignore: Moved here from top-level subdirectory pil
+
+2003-12-25 Thursday  rpalsa
+
+	* pil/Makefile.am, pil/getopt.c, pil/getopt.h, pil/getopt1.c,
+	  pil/md5.c, pil/md5.h, pil/pilalias.c, pil/pilalias.h,
+	  pil/pilastroutils.c, pil/pilastroutils.h, pil/pilcatmap.c,
+	  pil/pilcatmap.h, pil/pilcdb.c, pil/pilcdb.h, pil/pildate.c,
+	  pil/pildate.h, pil/pildfsconfig.c, pil/pildfsconfig.h,
+	  pil/pildictionary.c, pil/pildictionary.h, pil/pilerrno.c,
+	  pil/pilerrno.h, pil/pilfileutils.c, pil/pilfileutils.h,
+	  pil/pilfits.c, pil/pilfits.h, pil/pilframe.c, pil/pilframe.h,
+	  pil/pilframeset.c, pil/pilframeset.h, pil/pilkeymap.c,
+	  pil/pilkeymap.h, pil/pilkeyword.c, pil/pilkeyword.h,
+	  pil/pillist.c, pil/pillist.h, pil/pilmacros.h, pil/pilmemory.c,
+	  pil/pilmemory.h, pil/pilmessages.c, pil/pilmessages.h,
+	  pil/pilpaf.c, pil/pilpaf.h, pil/pilqc.c, pil/pilqc.h,
+	  pil/pilrecipe.c, pil/pilrecipe.h, pil/pilstrutils.c,
+	  pil/pilstrutils.h, pil/piltask.c, pil/piltask.h, pil/piltimer.c,
+	  pil/piltimer.h, pil/piltranslator.c, pil/piltranslator.h,
+	  pil/pilutils.c, pil/pilutils.h, pil/xmemory.c, pil/xmemory.h,
+	  pil/.cvsignore: Moved here from top-level subdirectory pil/src
+
+2003-12-25 Thursday  rpalsa
+
+	* m4macros/eso.m4: Added.
+
+2003-12-25 Thursday  rpalsa
+
+	* doxygen/Doxyfile.in: Moved here from top-level subdirectory pil
+
+2003-12-25 Thursday  rpalsa
+
+	* admin/config.guess, admin/config.sub, admin/depcomp,
+	  admin/install-sh, admin/ltmain.sh, admin/missing,
+	  admin/mkinstalldirs: Synchronized with automake, autoconf and
+	  libtool version.
+
+2003-12-25 Thursday  rpalsa
+
+	* acinclude.m4: Common macros implemented in eso.m4 removed.
+
+2003-12-25 Thursday  rpalsa
+
+	* configure.ac: Added. Replaces configure.in
+
+2003-12-25 Thursday  rpalsa
+
+	* bootstrap: Added. Replaces Makefile.cvs
+
+2003-12-25 Thursday  rpalsa
+
+	* bootdirs: Moved here from top-level subdirectory pil
+
+2003-12-25 Thursday  rpalsa
+
+	* Makefile.am: Moved here from top-level subdirectory pil. Updated
+	  to new directoy structure and libtoolized
+
+2003-12-25 Thursday  rpalsa
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, README, TODO: Moved here
+	  from top-level subdirectory pil
+

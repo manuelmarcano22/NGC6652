@@ -1,0 +1,44 @@
+
+quad: 2 
+name: NGC-6652-A 
+date: 2003-06-06T06:23:51.160
+exptime: 800.004
+ra: 279.152781 
+ra2 18h36m36.6674s 
+dec: -32.99196 
+dec2 -32d59m31.056s 
+ifuRA 18h35m43.8108s 
+ifuDEC -32d59m29.456s
+
+quad: 3 
+name: NGC-6652-A 
+date: 2003-06-06T06:23:51.160
+exptime: 800.004
+ra: 279.152781 
+ra2 18h36m36.6674s 
+dec: -32.99196 
+dec2 -32d59m31.056s 
+ifuRA 18h35m43.8108s 
+ifuDEC -32d59m29.456s
+
+quad: 1 
+name: NGC-6652-A 
+date: 2003-06-06T06:24:11.396
+exptime: 800.021
+ra: 279.152781 
+ra2 18h36m36.6674s 
+dec: -32.99196 
+dec2 -32d59m31.056s 
+ifuRA 18h35m43.8108s 
+ifuDEC -32d59m29.456s
+
+quad: 4 
+name: NGC-6652-A 
+date: 2003-06-06T06:24:11.396
+exptime: 800.021
+ra: 279.152781 
+ra2 18h36m36.6674s 
+dec: -32.99196 
+dec2 -32d59m31.056s 
+ifuRA 18h35m43.8108s 
+ifuDEC -32d59m29.456s

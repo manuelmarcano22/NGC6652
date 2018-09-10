@@ -1,0 +1,12 @@
+In this file:
+
+* About libpil
+
+About libpil:
+-------------
+
+  This is version 0.5 of the VIMOS pipeline support library.
+
+  This package contains a small C library which was developed for the
+  integration of the the VIMOS DRS library into the pipeline infrastructure
+  of the ESO dataflow system.

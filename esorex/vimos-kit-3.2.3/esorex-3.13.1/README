@@ -1,0 +1,66 @@
+
+
+About EsoRex
+-------------
+
+This is version 3.13.1 of the EsoRex application. This package includes
+source files to build the "esorex" executable, which allows the running
+of Common Pipeline Library (CPL) plugins. Also included is the
+documentation and the installation procedures.
+
+
+Prerequisites
+--------------
+
+For installing the EsoRex software you require:
+
+  * An ISO-C++ and an ISO-C99 compiler (preferably GNU gcc v4.8.5 or later)
+  * CPL (version 6.5.1 or later - available from the CPL web site at ESO)
+ 
+EsoRex also needs the libltdl development files from the GNU libtool package 
+for building. However, the needed source files from GNU libtool 2.4.3a are
+included in the Esorex distribution and do not need to be obtained separately.
+
+The following optional prerequisites need to be installed only if one wants to
+take advantage of the Python based recipe plugin extensions.
+
+  * Python interpreter >= 2.6.6
+  * libffi or libavcall.a (from libffcall). One of these are needed to fully
+    support enumeration recipe parameters in Python based recipes. If neither
+    of these libraries is available then EsoRex will completely disable the
+    Python extensions. If you need to specify the location of these dependencies
+    manually or need more control over these, see the configure script options
+    --with-libffi* and --with-avcall* for more details (./configure --help).
+
+
+Installation
+------------
+
+In order to be able to install the EsoRex tool from the source code,
+you will need an installed version of the CFITSIO and CPL libraries (see
+the Prerequesites, above).
+
+To install EsoRex, unpack the tar-archive in a directory of your
+choice, enter the created "esorex" directory, and run the following
+commands (for more information about the options for the configure
+script, please read the INSTALL file, that comes with this
+distribution).
+
+  %  ./configure --prefix=<where-esorex-will-be-installed> \
+                 --with-cpl=<where-cpl-is-installed> \
+                 --with-cfitsio=<where-cfitsio-is-installed>
+  %  make
+  %  make install
+
+
+An alternative to specifying with command-line parameters in the configure 
+command line where CPL and CFITSIO may be found, 
+is to set the environment variables CFITSIODIR and CPLDIR accordingly.
+
+  
+
+Reporting Bugs
+--------------
+
+Please report any bugs to <cpl-help@eso.org>. See also the BUGS file 
+included in the EsoRex distribution.

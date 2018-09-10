@@ -1,0 +1,2563 @@
+#
+#  "@(#) $Id: ESO-VLT-DIC.VIMOS_DRS,v 1.1 2012-09-26 12:47:51 cgarcia Exp $"
+#
+#
+Dictionary Name:   ESO-VLT-DIC.VIMOS_DRS
+Scope:             DFS
+Source:            bianca@ifctr.mi.cnr.it
+Date:              $Date: 2012-09-26 12:47:51 $
+Version Control:   $Revision: 1.1 $
+Revision:          0.1
+Status:            Development
+Description:       Based on GEN-SPE-ESO-19400-794/1.1/0
+#------------------------------------------------------------------------------
+# General keywords
+#
+
+Parameter Name:        PRO VMTYPE
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Vimos frame type
+Decsription:        Vimos frame type: one of "FRAME","STACKED","PACKED","IFU-IMAGE"
+
+
+Parameter Name:        PRO TABLE 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Type of table 
+Description:        Type of table: one of GRS EXT OBJ WIN CCD SPC LIN SSP ATM
+                IFU TEL FIL GAL STAR MATCH AST IPC PAR
+
+Parameter Name:        PRO QUAD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Vimos quadrant this table applies to
+Description:        Vimos quadrant to which apply the table (1 to 4)
+
+Parameter Name:        PRO ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Identifier of device 
+Description:        Identifier of device: device can be grism or Filter or
+                CCD or "standard Star field"  according to TABLE value 
+
+Parameter Name:        PRO NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of device 
+Description:        Name of "device": device can be grism or Filter or
+                CCD or "standard Star field" or "standard star"  according to TABLE value  
+
+Parameter Name:        PRO AIRMASS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Airmass of exposure 
+Description:        Airmass of exposure: can be in GAL, STAR and MATCH table
+
+Parameter Name:        PRO CDELT 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                arcsec/pixel
+Comment Field:        Pixel scale of telescope in CCD plane
+Description:        Pixel scale of telescope in CCD plane
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CRPIXi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        X/Y position of telescope optical axis in co-ordinate system of CCD
+Description:        X/Y position of telescope optical axis in co-ordinate system of CCD
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO FILT ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ID of filter used 
+Description:        ID of filter used: can be in GAL STAR MATCH and IPC table
+
+Parameter Name:        PRO FILT NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of filter used 
+Description:        Name of filter used: can be in GAL STAR MATCH and IPC table
+
+
+Parameter Name:        PRO GRIS ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Identifier of grism calibration applies to 
+Description:        Identifier of grism calibration applies to
+                Can be in SPC and LIN table
+
+Parameter Name:        PRO MAG ZERO 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                mag
+Comment Field:        Zero point magnitude used 
+Description:        Zero point magnitude used : can be in STAR MATCH IPC & GAL table
+
+Parameter Name:        PRO WLEN START 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                nm
+Comment Field:        Start wavelength of spectrum or filter 
+Description:        Start wavelength of spectrum or filter
+
+Parameter Name:        PRO WLEN END 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                nm
+Comment Field:        End wavelength of spectrum or filter
+Description:        End wavelength of spectrum or filter
+
+Parameter Name:        PRO CCD SKY XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for l 
+Description:        Order of the polynomial for l of the distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for m 
+Description:        Order of the polynomial for m of the distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+
+Parameter Name:        PRO MASK ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ID of mask used 
+Description:        ID of mask used (optional) 
+                Can be in EXT, GAL STAR & MATCH Table
+
+Parameter Name:        PRO MASK NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of mask used 
+Description:        Name of mask used (optional) 
+                Can be in EXT, GAL STAR & MATCH Table
+
+#WARNING: HEVE THESE CHANGED??????
+Parameter Name:        PRO PC001001 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Element (1,1) of FITS transformation matrix
+Description:        Element (1,1) of FITS transformation matrix
+                can be in FIL and MATCH table
+
+Parameter Name:        PRO PC001002 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Element (1,2) of FITS transformation matrix
+Description:        Element (1,2) of FITS transformation matrix
+                can be in FIL and MATCH table
+
+Parameter Name:        PRO PC002001 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Element (2,1) of FITS transformation matrix
+Description:        Element (2,1) of FITS transformation matrix
+                can be in FIL and MATCH table
+
+Parameter Name:        PRO PC002002 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Element (2,2) of FITS transformation matrix
+Description:        Element (2,2) of FITS transformation matrix
+                can be in FIL and MATCH table
+
+#------------------------------------------------------------------------------
+#         Grism Table (PRO TABLE = GRS)
+#
+
+Parameter Name:        PRO WLEN INC 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                nm
+Comment Field:        Increment in spectrum 
+Description:        Increment in spectrum 
+
+Parameter Name:        PRO WLEN CEN 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                nm
+Comment Field:        Central wavelength of spectrum (lo) 
+Description:        Central wavelength of spectrum (lo) 
+
+Parameter Name:        PRO SPECT LLEN LO 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Length in pixels of useful spectrum below central wavelength
+Description:        Length in pixels of useful spectrum below central wavelength
+
+Parameter Name:        PRO SPECT LLEN HI 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Length in pixels of useful spectrum above central wavelength
+Description:        Length in pixels of useful spectrum above central wavelength
+
+Parameter Name:        PRO AVG POS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                Å
+Comment Field:        Centre of region of spectrum to used for detecting objects
+Description:        Centre of region of spectrum to used for detecting objects
+
+Parameter Name:        PRO AVG RNG 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                Å
+Comment Field:        Range to be used around AVG POS 
+Description:        Range to be used around AVG POS 
+
+Parameter Name:        PRO SKY NO 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Number of string skylines in the wavelength range of this grism
+Description:        Number of string skylines in the wavelength range of this grism
+
+#WARNING changed from <i> to i
+Parameter Name:        PRO SKY WLENi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                Å
+Comment Field:        Wavelength of skyline I 
+Description:        Wavelength of skyline I 
+
+Parameter Name:        PRO FILT NO 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Number of filters that can be used  
+Description:        Number of filters that can be used with this grism 
+
+#WARNING changed from <i> to i
+Parameter Name:        PRO FILT IDi
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ID of filter I 
+Description:        ID of filter I 
+
+#WARNING changed from <i> to i
+Parameter Name:        PRO FILT NAMEi
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        name of filter I 
+Description:        name of filter I 
+
+#WARNING changed from <i> to i
+Parameter Name:        PRO FILT WLEN STARTi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                Å
+Comment Field:        Start wavelength of filter I 
+Description:        Start wavelength of filter I 
+
+#WARNING changed from <i> to i
+Parameter Name:        PRO FILT WLEN ENDi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                Å
+Comment Field:        End wavelength of filter I 
+Description:        End wavelength of filter I 
+
+Parameter Name:        PRO ZERO 
+Class:                header
+Context:        PROCESS
+Type:                logical
+Value Format:        %c
+Unit:                none
+Comment Field:        Apply zero order correction 
+Description:        Apply zero order correction 
+
+
+
+
+
+
+
+#------------------------------------------------------------------------------
+#         Extraction Table (PRO TABLE = EXT)
+#         The Extraction Table contains the information that is needed to 2D extract
+#         the spectra from a spectroscopic observation, i.e. to convert a frame from
+#         Frame format to stacked-spectra format. For a given slit configuration, it
+#         can be computed from the Grism Table. The rows in an Extraction Table are
+#         grouped by slit number. For each slit, several rows can be defined in the
+#         Extraction Table. Each row in an Extraction Table corresponds to a single
+#         row on the CCD.
+#         The Extraction Table has the same descriptors as the Grism Table, as well as
+#         the following additional descriptors:
+#
+
+Parameter Name:        PRO MASK QUAD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Vimos quadrant used 
+Description:        Vimos quadrant used 
+
+Parameter Name:        PRO OBS TYPE 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Gives type of observation (`MOS' or  `IFU')
+Description:        Gives type of observation (`MOS' or  `IFU')
+
+#------------------------------------------------------------------------------
+#         Window Table (PRO TABLE = WIN)
+#         The Window Table contains information about the location of object spectra
+#         and sky spectra within the 2D spectrum of one mask aperture. For MOS
+#         observations, the Window Table is used for the sky subtraction and for the
+#         1D extraction of object spectra. For these data, the Window Table is
+#         determined by the function that detects the objects in the spectra.
+#         The descriptors of the Window Table are the same as for the Extraction Table
+#         except for the Descriptor TABLE, which has the value `WIN':
+#
+
+#-----------------------------------------------------------------------------------
+#         Object Table (PRO TABLE = OBJ)
+#         This table is used to store the information of 1D extracted spectra, and is
+#         created by the 1D extraction task based on the information in the Window
+#         Table. It describes the layout of the spectra in a packed-spectra format
+#         frame. The following columns are defined:
+#         The descriptors of the Object Table are the same as for the Extraction Table
+#         except for the Descriptor TABLE, which has the value `OBJ'.
+
+#------------------------------------------------------------------------------
+#         11.2.6 CCD Table (PRO TABLE = CCD)
+#
+
+Parameter Name:        PRO READ DIR 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Read out direction of CCD: `COLUMN' or 'ROW'
+Description:        Read out direction of CCD: `COLUMN' or 'ROW'
+
+Parameter Name:        PRO RONi 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                ADU
+Comment Field:        Read out noise of CCD of readout area   
+Description:        Read out noise of CCD of readout area i (i=1,2)  
+
+Parameter Name:        PRO CONADi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                e-/ADU
+Comment Field:        Conversion factor of readout area i (i=1,2)
+Description:        Conversion factor of readout area i (i=1,2) 
+
+Parameter Name:        PRO BIASi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                ADU
+Comment Field:        Expected bias level of readout area 
+Description:        Expected bias level of readout area i (i=1,2)
+
+Parameter Name:        PRO DARKi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                ADU/sec
+Comment Field:        Expected dark current of readout area  
+Description:        Expected dark current of readout area i (i=1,2)
+
+Parameter Name:        PRO WINi STRX 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        X of BLC of readout area i
+Description:        X of BLC of readout area i (i=1,2) 
+
+Parameter Name:        PRO WINi STRY 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Y of BLC of readout area i 
+Description:        Y of BLC of readout area i (i=1,2) 
+
+Parameter Name:        PRO WINi NX 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Number of pixels in X of readout area i 
+Description:        Number of pixels in X of readout area i (i=1,2) 
+
+Parameter Name:        PRO WINi NY 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Number of pixels in Y of readout area i 
+Description:        Number of pixels in Y of readout area i (i=1,2) 
+
+
+Parameter Name:        PRO OSCi STRX 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        X of BLC of overscan area of CCD, readout area i
+Description:        X of BLC of overscan area of CCD, readout area i (i=1,2)
+
+Parameter Name:        PRO OSCi STRY 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Y of BLC of overscan area of CCD, readout area 
+Description:        Y of BLC of overscan area of CCD, readout area i (i=1,2)
+
+Parameter Name:        PRO OSCi NX 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Number of pixels in X of overscan area
+Description:        Number of pixels in X of overscan area, readout area i (i=1,2)
+
+Parameter Name:        PRO OSCi NY 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                pixel
+Comment Field:        Number of pixels in Y of overscan area 
+Description:        Number of pixels in Y of overscan area, readout area i (i=1,2)
+
+
+#------------------------------------------------------------------------------
+#         Spectro-photometric Calibration Table (PRO TABLE = SPC)
+#         The response function of a particular grism-CCD combination is stored in the
+#         descriptors of this table. It contains the calibration information for both
+#         MOS and IFU modes.
+#
+
+
+
+Parameter Name:        PRO PHO MOS ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ID of star used to derive calibration
+Description:        ID of star used to derive calibration for MOS 
+
+Parameter Name:        PRO PHO MOS NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of star used to derive calibration
+Description:        Name of star used to derive calibration for MOS
+
+Parameter Name:        PRO PHO MOS ORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of polynomial for photometric calibration of MOS spectra
+Description:        Order of polynomial for photometric calibration of MOS spectra
+
+#WARNING chenged from <I> to i
+Parameter Name:        PRO PHO MOSi 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none        
+Comment Field:        Ith order coefficient of polynomial for photometric calibration of MOS spectra
+Description:        Ith order coefficient of polynomial for photometric calibration of MOS spectra 
+
+Parameter Name:        PRO PHO IFU ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ID of star used to derive IFU calibration
+Description:        ID of star used to derive IFU calibration
+
+Parameter Name:        PRO PHO IFU NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of star used for IFU calibration
+Description:        Name of star used for IFU calibration
+
+Parameter Name:        PRO PHO IFU ORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of polynomial for photometric fibre
+Description:        Order of polynomial for photometric calibration of IFU spectrum of reference fibre
+
+#WARNING chenaged from <I> to i
+Parameter Name:        PRO PHO IFUi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Ith order coefficient of polynomial 
+Description:        Ith order coefficient of polynomial for photometric
+                calibration of IFU  spectrum of reference fibre 
+
+Parameter Name:        PRO PHO IFU L 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        L co-ordinate of reference fibre 
+Description:        L co-ordinate of reference fibre 
+
+Parameter Name:        PRO PHO IFU M 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        M co-ordinate of reference fibre 
+Description:        M co-ordinate of reference fibre 
+
+#------------------------------------------------------------------------------
+#         11.2.8 Line Catalogue (PRO TABLE = LIN)
+#         This table contains the laboratory wavelengths of an arc calibration lamp
+#         used for a particular grism. and descriptors defined are:
+#
+
+
+Parameter Name:        PRO LAMP ID 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ID of lamp 
+Description:        ID of lamp 
+
+Parameter Name:        PRO LAMP NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of lamp 
+Description:        Name of lamp 
+
+Parameter Name:        PRO GRIS NAME 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Name of grism this line catalogue is to be used for
+Description:        Name of grism this line catalogue is to be used for
+
+#----------------------------------------------------------------
+#         11.2.9 Spectro-photometric Standard Table (PRO TABLE = SSP)
+#         This table contains the data of a spectro-photometric standard star.
+#
+
+Parameter Name:        PRO RA 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                degree
+Comment Field:        RA (J2000) of star 
+Description:        RA (J2000) of star 
+
+Parameter Name:        PRO DEC 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                degree
+Comment Field:        Dec. (J2000) of star 
+Description:        Dec. (J2000) of star 
+
+#--------------------------------------------------------------
+#         11.2.10 Atmospheric Extinction Table (PRO TABLE = ATM)
+#
+
+#------------------------------------------------------------------------------
+#         11.2.13 IFU Table (PRO TABLE = IFU)
+#         This table contains information about the location of the fibres in the
+#         microlens array and in the mask plane. It also contains information about
+#         the relative transmission of each fibre.
+#
+
+Parameter Name:        PRO REF L 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        L co-ordinate of reference fibre 
+Description:        L co-ordinate of reference fibre 
+
+Parameter Name:        PRO REF M 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        M co-ordinate of reference fibre 
+Description:        M co-ordinate of reference fibre 
+
+Parameter Name:        PRO WIDTH LOW 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                arcsec
+Comment Field:        Fibre diameter on sky in low-resolution mode
+Description:        Fibre diameter on sky in low-resolution mode
+
+Parameter Name:        PRO WIDTH HIG 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                arcsec
+Comment Field:        Fibre diameter on sky in high resolution mode
+Description:        Fibre diameter on sky in high resolution mode
+
+#------------------------------------------------------------------------------
+#         11.2.14 Telescope Table (PRO TABLE = TEL)
+#         This table contains the coefficients for the transformation from the local
+#         gnomonic co-ordinate system for the sky to mask co-ordinates.
+#
+
+
+# WARNING: changed fro PLATECALE to PLATSCAL
+Parameter Name:        PRO PLATSCAL 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                arcsec/mm
+Comment Field:        Plate scale of telescope in mask plane 
+Description:        Plate scale of telescope in mask plane 
+
+Parameter Name:        PRO TEL DIS XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for x of the optical distortion sky plane to mask plane
+Description:        Order of the polynomial for x of the optical distortion sky plane to mask plane
+
+#WARNING changed from X<I><J> to X_i_j and i j from I3 format to i format
+Parameter Name:        PRO TEL DIS X_i_j
+Class:                header
+Context:        PROCESS
+Type:                double  
+Value Format:        %f
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for x of the optical distortion sky plane to mask plane
+Description:        ij coefficient of the polynomial for x of the optical distortion sky plane to mask plane
+
+Parameter Name:        PRO TEL DIS YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for y of the optical distortion sky plane to mask plane 
+Description:        Order of the polynomial for y of the optical distortion sky plane to mask plane 
+
+#WARNING changed from X<I><J> to X_i_j and i j from I3 format to i format
+Parameter Name:        PRO TEL DIS Y_i_j 
+Class:                header
+Context:        PROCESS
+Type:                double 
+Value Format:        %f
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y of the optical distortion sky plane to mask plane
+Description:        ij coefficient of the polynomial for y of the optical distortion sky plane to mask plane
+
+Parameter Name:        PRO TEL DIS XRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO TEL DIS YRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+
+Parameter Name:        PRO TEL X 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                mm
+Comment Field:        Position of telescope optical axis in co-ordinate system of the quadrant
+Description:        Position of telescope optical axis in co-ordinate system of the quadrant
+
+Parameter Name:        PRO TEL Y 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                mm
+Comment Field:        Position of telescope optical axis in co-ordinate system of the quadrant
+Description:        Position of telescope optical axis in co-ordinate system of the quadrant
+
+#------------------------------------------------------------------------------
+#         11.2.15 Filter Table (PRO TABLE = FIL)
+#         This table contains the calibration information specific to a VIMOS filter
+#
+
+
+
+
+#------------------------------------------------------------------------------
+#         11.2.16 Galaxy Table (PRO TABLE = GAL)
+#         A Galaxy table contains the output from the object detection and
+#         classification done in Direct Imaging. It contains all output parameters
+#         from Sextractor. This table is the input for the Mask Preparation Software.
+#
+
+#------------------------------------------------------------------------------
+#         11.2.17 Star Table (PRO TABLE = STAR)
+#         The Star Table contains the pixel co-ordinates and the world co-ordinates of
+#         stars in an image. A Star Table is created from a Galaxy Table.
+#
+
+#------------------------------------------------------------------------------
+#         11.2.18 Star Match Table (PRO TABLE = MATCH)
+#         The Star Match Table is the output of the function that determines the
+#         astrometry of an image. This function matches stars in a Star Table with
+#         those in an Astrometric Table.
+#         The Descriptors of the Star Match Table contain the coefficients of the
+#         co-ordinate transformation that was fit by matching the stars. The format of
+#         these coefficients is the same as for the Filter Table.
+#
+
+#------------------------------------------------------------------------------
+#         11.2.19 Astrometric Table (PRO TABLE = AST)
+#         An Astrometric Table contains the information of stars in a field that is
+#         used for standard calibration of the instrument, both for calibrating the
+#         optical distortions and for the photometric calibration. It contains
+#         positions of the stars and the magnitudes in the standard Virmos filters.
+#
+
+#------------------------------------------------------------------------------
+#         11.2.20 Photometric Calibration Table (PRO TABLE = IPC)
+#         This table contains the coefficients to photometrically calibrate an imaging
+#         exposure taken with a particular filter.
+#
+
+Parameter Name:        PRO COLTERM 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Colour term for filter 
+Description:        Colour term for filter 
+
+Parameter Name:        PRO EXTINCT 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                mag/airmass 
+Comment Field:        Atmospheric extinction coefficient 
+Description:        Atmospheric extinction coefficient 
+
+Parameter Name:        PRO COLOUR 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Colour for colour term (e.g. "B-V") 
+Description:        Colour for colour term (e.g. "B-V") 
+
+#------------------------------------------------------------------------------
+#         11.2.21 Parameter Table (PRO TABLE = PAR)
+#         The Parameter Table is used to store parameter files used for external
+#         program in a table.
+#
+
+
+Parameter Name:        PRO TYPE 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Type of table for PROGRAM 
+Description:        Type of table for PROGRAM 
+
+Parameter Name:        PRO PROGRAM 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Program parameter file was used for 
+Description:        Program parameter file was used for 
+
+
+
+#------------------------------------------------------------------------------
+#   calibrations to be put in observations headers by OS
+#------------------------------------------------------------------------------
+
+####################################
+#
+#  CCD To Sky & SKY to CCD k/w
+#
+#####################################
+Parameter Name:        PRO CCD SKY DAYTIM
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Time stamp for ccd2sky matrix 
+Description:         Time stamp for ccd2sky matrix
+
+Parameter Name:        PRO CCD SKY TEMP
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Temperature ccd2sky matrix 
+Description:         Camera Temperature at which ccd2sky matrix has been obtained
+
+Parameter Name:        PRO SKY CCD XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for X of the distortion model sky plane to CCD
+Description:        Order of the polynomial for X of the distortion model sky plane to CCD
+
+#*************************************************
+#WARNING changed from X<I><J> to X_i_j and i j from I3 format to i format
+Parameter Name:        PRO SKY CCD X_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD X_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD X_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD X_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD X_4_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD X_5_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model sky plane to CCD
+
+#*************************************************
+
+Parameter Name:        PRO SKY CCD YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for Y of the distortion model sky plane to CCD
+Description:        Order of the polynomial for Y of the distortion model sky plane to CCD
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+##*************************************************
+Parameter Name:        PRO SKY CCD Y_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for Yof the distortion model sky plane to CCD
+
+
+Parameter Name:        PRO SKY CCD Y_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for Yof the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD Y_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for Yof the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD Y_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for Yof the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD Y_4_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for Yof the distortion model sky plane to CCD
+
+Parameter Name:        PRO SKY CCD Y_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y of the distortion model sky plane to CCD
+Description:        ij coefficient of the polynomial for Yof the distortion model sky plane to CCD
+
+#*************************************************
+
+Parameter Name:        PRO SKY CCD XRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO SKY CCD YRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+
+Parameter Name:        PRO SKY CCD XREFi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                degree
+Comment Field:        Position of CCD co-ordinate system X zero point in sky co-ordinate system, quadrant i
+Description:        Position of CCD co-ordinate system X zero point in sky
+                co-ordinate system, quadrant i (i=1,4)
+
+Parameter Name:        PRO SKY CCD YREFi
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                degree
+Comment Field:        Position of CCD co-ordinate system Y zero point in sky co-ordinate system, quadrant 1
+Description:        Position of CCD co-ordinate system Y zero point in sky 
+                co-ordinate system, quadrant  i (i=1,4)
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+#
+Parameter Name:        PRO CCD SKY X_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for l 
+Description:        ij coefficient of the polynomial for l of the
+                distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY X_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for l 
+Description:        ij coefficient of the polynomial for l of the
+                distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY X_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for l 
+Description:        ij coefficient of the polynomial for l of the
+                distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY X_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for l 
+Description:        ij coefficient of the polynomial for l of the
+                distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY X_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for l 
+Description:        ij coefficient of the polynomial for l of the
+                distortion model CCD to sky
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY X_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for l 
+Description:        ij coefficient of the polynomial for l of the
+                distortion model CCD to sky
+                Can be in FIL and MATCH table
+#*********************************************************
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+#
+Parameter Name:        PRO CCD SKY Y_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for m 
+Description:        ij coefficient of the polynomial for m of the
+                distortion model CCD to sky.
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY Y_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for m 
+Description:        ij coefficient of the polynomial for m of the
+                distortion model CCD to sky.
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY Y_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for m 
+Description:        ij coefficient of the polynomial for m of the
+                distortion model CCD to sky.
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY Y_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for m 
+Description:        ij coefficient of the polynomial for m of the
+                distortion model CCD to sky.
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY Y_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for m 
+Description:        ij coefficient of the polynomial for m of the
+                distortion model CCD to sky.
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY Y_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for m 
+Description:        ij coefficient of the polynomial for m of the
+                distortion model CCD to sky.
+                Can be in FIL and MATCH table
+
+#*********************************************************
+
+Parameter Name:        PRO CCD SKY XRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                arcsec
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+                Can be in FIL and MATCH table
+
+Parameter Name:        PRO CCD SKY YRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                arcsec
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+                Can be in FIL and MATCH table
+
+
+####################################
+#
+#  CCD To Mask & Mask to CCD k/w
+#
+#####################################
+
+
+Parameter Name:        PRO CCD MASK DAYTIM
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Time stamp for ccd2mask matrix 
+Description:         Time stamp for ccd2mask matrix
+
+Parameter Name:        PRO CCD MASK TEMP
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Temperature ccd2mask matrix 
+Description:         Camera Temperature at which ccd2mask matrix has been obtained
+
+Parameter Name:        PRO MASK CCD XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for X of the distortion model mask to CCD
+Description:        Order of the polynomial for X of the distortion model mask to CCD
+
+
+
+Parameter Name:        PRO CCD MASK X0
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      shift X term for ccd to mask matrix  
+Description:        shift X term for ccd to mask matrix
+
+Parameter Name:        PRO CCD MASK XX
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      scale X term for ccd to mask matrix  
+Description:        scale X term for ccd to mask matrix
+
+Parameter Name:        PRO CCD MASK XY
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      rotation X term for ccd to mask matrix  
+Description:        rotation X term for ccd to mask matrix
+
+
+Parameter Name:        PRO CCD MASK Y0
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      shift y term for ccd to mask matrix  
+Description:        shift y term for ccd to mask matrix
+
+Parameter Name:        PRO CCD MASK YX
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      scale y term for ccd to mask matrix  
+Description:        scale y term for ccd to mask matrix
+
+Parameter Name:        PRO CCD MASK YY
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      rotation y term for ccd to mask matrix  
+Description:        rotation y term for ccd to mask matrix
+
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+#
+Parameter Name:        PRO MASK CCD X_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+
+Parameter Name:        PRO MASK CCD X_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+
+Parameter Name:        PRO MASK CCD X_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+
+Parameter Name:        PRO MASK CCD X_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+
+Parameter Name:        PRO MASK CCD X_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+
+Parameter Name:        PRO MASK CCD X_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+Description:        ij coefficient of the polynomial for X of the distortion model mask to CCD
+
+#******************************************************
+
+Parameter Name:        PRO MASK CCD YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for Y of the distortion model mask to CCD
+Description:        Order of the polynomial for Y of the distortion model mask to CCD
+
+
+Parameter Name:        PRO MASK CCD X0
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      shift X term for ccd to mask matrix  
+Description:        shift X term for ccd to mask matrix
+
+Parameter Name:        PRO MASK CCD XX
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      scale X term for ccd to mask matrix  
+Description:        scale X term for ccd to mask matrix
+
+Parameter Name:        PRO MASK CCD XY
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      rotation X term for ccd to mask matrix  
+Description:        rotation X term for ccd to mask matrix
+
+Parameter Name:        PRO MASK CCD Y0
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      shift X term for ccd to mask matrix  
+Description:        shift X term for ccd to mask matrix
+
+Parameter Name:        PRO MASK CCD YY
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      scale X term for ccd to mask matrix  
+Description:        scale X term for ccd to mask matrix
+
+Parameter Name:        PRO MASK CCD YX
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:      rotation X term for ccd to mask matrix  
+Description:        rotation X term for ccd to mask matrix
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+#
+#******************************************************
+Parameter Name:        PRO MASK CCD Y_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y 
+Description:        ij coefficient of the polynomial for Y of the distortion model mask to CCD 
+
+Parameter Name:        PRO MASK CCD Y_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y 
+Description:        ij coefficient of the polynomial for Y of the distortion model mask to CCD 
+
+Parameter Name:        PRO MASK CCD Y_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y 
+Description:        ij coefficient of the polynomial for Y of the distortion model mask to CCD 
+
+Parameter Name:        PRO MASK CCD Y_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y 
+Description:        ij coefficient of the polynomial for Y of the distortion model mask to CCD 
+
+Parameter Name:        PRO MASK CCD Y_4_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y 
+Description:        ij coefficient of the polynomial for Y of the distortion model mask to CCD 
+
+Parameter Name:        PRO MASK CCD Y_5_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for Y 
+Description:        ij coefficient of the polynomial for Y of the distortion model mask to CCD 
+
+#******************************************************
+
+Parameter Name:        PRO MASK CCD XRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO MASK CCD YRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+
+Parameter Name:        PRO CCD MASK XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for x of the distortion model CCD to mask
+Description:        Order of the polynomial for x of the distortion model CCD to mask
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+#
+#******************************************************
+Parameter Name:        PRO CCD MASK X_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        0i coefficient of the polynomial for x 
+Description:        0i coefficient of the polynomial for x of the distortion model CCD to mask 
+
+Parameter Name:        PRO CCD MASK X_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for x 
+Description:        ij coefficient of the polynomial for x of the distortion model CCD to mask 
+
+Parameter Name:        PRO CCD MASK X_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for x 
+Description:        ij coefficient of the polynomial for x of the distortion model CCD to mask 
+
+Parameter Name:        PRO CCD MASK X_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for x 
+Description:        ij coefficient of the polynomial for x of the distortion model CCD to mask 
+
+Parameter Name:        PRO CCD MASK X_4_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for x 
+Description:        ij coefficient of the polynomial for x of the distortion model CCD to mask 
+
+Parameter Name:        PRO CCD MASK X_5_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for x 
+Description:        ij coefficient of the polynomial for x of the distortion model CCD to mask 
+#******************************************************
+
+Parameter Name:        PRO CCD MASK YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the polynomial for y of the distortion model CCD to mask
+Description:        Order of the polynomial for y of the distortion model CCD to mask
+
+#*********************************************************
+#
+#  slx doesn't like double indexes, state explicitely in dictionary (up to 5)
+#
+#******************************************************
+Parameter Name:        PRO CCD MASK Y_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y 
+Description:        ij coefficient of the polynomial for y of the distortion model CCD to mask
+
+Parameter Name:        PRO CCD MASK Y_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y 
+Description:        ij coefficient of the polynomial for y of the distortion model CCD to mask
+
+
+Parameter Name:        PRO CCD MASK Y_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y 
+Description:        ij coefficient of the polynomial for y of the distortion model CCD to mask
+
+
+Parameter Name:        PRO CCD MASK Y_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y 
+Description:        ij coefficient of the polynomial for y of the distortion model CCD to mask
+
+
+Parameter Name:        PRO CCD MASK Y_4_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y 
+Description:        ij coefficient of the polynomial for y of the distortion model CCD to mask
+
+
+Parameter Name:        PRO CCD MASK Y_5_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        ij coefficient of the polynomial for y 
+Description:        ij coefficient of the polynomial for y of the distortion model CCD to mask
+
+#******************************************************
+
+Parameter Name:        PRO CCD MASK XRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                mm
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO CCD MASK YRMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                mm
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+
+
+####################################
+#
+#  inverse Dispersion relation
+#
+#####################################
+
+Parameter Name:        PRO IDS MAT DAYTIM
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Time stamp for inverse Dispersion relation 
+Description:         Time stamp for inverse Dispersion relation
+
+Parameter Name:        PRO IDS MAT TEMP
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Temperature  inverse Dispersion relation
+Description:         Camera Temperature at which inverse Dispersion relation has been obtained
+
+Parameter Name:        PRO IDS REL ORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of inverse dispersion relations 
+Description:        Order of inverse dispersion relations 
+
+Parameter Name:        PRO IDS MAT XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of inverse dispersion relation
+Description:        Order of inverse dispersion relation matrix polynomials in X
+
+Parameter Name:        PRO IDS MAT YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of inverse dispersion relation
+Description:        Order of inverse dispersion relation matrix polynomials in Y
+
+Parameter Name:        PRO IDS MAT X_RMS
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO IDS MAT Y_RMS
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y
+
+#*************************************************************
+Parameter Name:        PRO IDS MAT_0_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_0_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_0_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_0_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_1_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_1_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_1_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_1_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_2_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_2_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+
+Parameter Name:        PRO IDS MAT_2_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+
+Parameter Name:        PRO IDS MAT_2_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_3_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_3_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_3_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_3_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_4_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_4_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_4_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+
+Parameter Name:        PRO IDS MAT_4_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient ei,kl of inverse dispersion rel. matrix
+Description:        Coefficient ei,kl of inverse dispersion relation matrix
+#*************************************************************
+
+####################################
+#
+#  Otpical distortion model
+#
+#####################################
+
+Parameter Name:        PRO OPT DIS DAYTIM
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Time stamp for Otpical distortion 
+Description:         Time stamp for Otpical distortion
+
+Parameter Name:        PRO OPT DIS TEMP
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        Temperature  Otpical distortion
+Description:         Camera Temperature at which Otpical distortion has been obtained
+
+Parameter Name:        PRO OPT DIS XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the optical distortion polynomial for X
+Description:        Order of the optical distortion polynomial for X
+
+
+Parameter Name:        PRO OPT DIS X_RMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        RMS of the optical distortion polynomial for X
+Description:        RMS of the optical distortion polynomial for X
+
+
+Parameter Name:        PRO OPT DIS Y_RMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                none
+Comment Field:        RMS of the optical distortion polynomial for X
+Description:        RMS of the optical distortion polynomial for X
+
+#****************************************************
+#WARNING changed from X<I><J> to X_i_j and i j from I3 format to i format
+Parameter Name:        PRO OPT DIS X_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient aij of optical distortion model.
+Description:        Coefficient aij of optical distortion model.
+
+Parameter Name:        PRO OPT DIS X_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient aij of optical distortion model.
+Description:        Coefficient aij of optical distortion model.
+
+Parameter Name:        PRO OPT DIS X_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient aij of optical distortion model.
+Description:        Coefficient aij of optical distortion model.
+
+Parameter Name:        PRO OPT DIS X_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient aij of optical distortion model.
+Description:        Coefficient aij of optical distortion model.
+
+Parameter Name:        PRO OPT DIS X_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient aij of optical distortion model.
+Description:        Coefficient aij of optical distortion model.
+
+Parameter Name:        PRO OPT DIS X_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient aij of optical distortion model.
+Description:        Coefficient aij of optical distortion model.
+
+#****************************************************
+
+
+Parameter Name:        PRO OPT DIS YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the optical distortion polynomial for Y
+Description:        Order of the optical distortion polynomial for Y
+
+#****************************************************
+Parameter Name:        PRO OPT DIS Y_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient bij of optical distortion model
+Description:        Coefficient bij of optical distortion model
+
+Parameter Name:        PRO OPT DIS Y_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient bij of optical distortion model
+Description:        Coefficient bij of optical distortion model
+
+Parameter Name:        PRO OPT DIS Y_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient bij of optical distortion model
+Description:        Coefficient bij of optical distortion model
+
+Parameter Name:        PRO OPT DIS Y_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient bij of optical distortion model
+Description:        Coefficient bij of optical distortion model
+
+Parameter Name:        PRO OPT DIS Y_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient bij of optical distortion model
+Description:        Coefficient bij of optical distortion model
+
+Parameter Name:        PRO OPT DIS Y_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient bij of optical distortion model
+Description:        Coefficient bij of optical distortion model
+#****************************************************
+
+####################################
+#
+#  Curvature model
+#
+#####################################
+
+Parameter Name:        PRO CRV POL ORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of curvature polynomials 
+Description:        Order of curvature polynomials 
+
+Parameter Name:        PRO CRV MOD XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of curvature model polynomials  
+Description:        Order of curvature model polynomials X 
+
+Parameter Name:        PRO CRV MOD YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of curvature model polynomials
+Description:        Order of curvature model polynomials in Y
+
+#****************************************************
+#WARNING changed from <I><K><L> to _i_k_l i k l in i format
+Parameter Name:        PRO CRV MOD_0_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_0_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_0_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_0_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_1_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_1_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_1_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_1_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_2_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_2_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_2_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_2_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_3_0_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_3_1_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_3_2_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+Parameter Name:        PRO CRV MOD_3_3_i 
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient di,kl of curvature model
+Description:        Coefficient di,kl of curvature model
+
+
+#****************************************************
+
+Parameter Name:        PRO CRV MOD X_RMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO CRV MOD Y_RMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+
+
+####################################
+#
+#  zero order corection model
+#
+#####################################
+
+Parameter Name:        PRO ZERO XORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the contamination model for X
+Description:        Order of the contamination model for X
+                A value of -1 indicates that no 0th order correction is needed for this grism
+
+#*************************************************************
+#WARNING changed from X<I><J> to X_i_j and i j from I3 format to i format
+Parameter Name:        PRO ZERO X_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient hij of contamination model
+Description:        Coefficient hij of contamination model
+
+Parameter Name:        PRO ZERO X_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient hij of contamination model
+Description:        Coefficient hij of contamination model
+
+Parameter Name:        PRO ZERO X_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient hij of contamination model
+Description:        Coefficient hij of contamination model
+
+Parameter Name:        PRO ZERO X_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient hij of contamination model
+Description:        Coefficient hij of contamination model
+
+Parameter Name:        PRO ZERO X_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient hij of contamination model
+Description:        Coefficient hij of contamination model
+
+Parameter Name:        PRO ZERO X_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient hij of contamination model
+Description:        Coefficient hij of contamination model
+#*************************************************************
+
+Parameter Name:        PRO ZERO YORD 
+Class:                header
+Context:        PROCESS
+Type:                integer
+Value Format:        %d
+Unit:                none
+Comment Field:        Order of the contamination model for Y
+Description:        Order of the contamination model for Y
+
+#*************************************************************
+#WARNING changed from X<I><J> to X_i_j and i j from I3 format to i format
+Parameter Name:        PRO ZERO Y_0_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient mij of contamination model
+Description:        Coefficient mij of contamination model
+
+Parameter Name:        PRO ZERO Y_1_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient mij of contamination model
+Description:        Coefficient mij of contamination model
+
+Parameter Name:        PRO ZERO Y_2_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient mij of contamination model
+Description:        Coefficient mij of contamination model
+
+Parameter Name:        PRO ZERO Y_3_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient mij of contamination model
+Description:        Coefficient mij of contamination model
+
+Parameter Name:        PRO ZERO Y_4_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient mij of contamination model
+Description:        Coefficient mij of contamination model
+
+Parameter Name:        PRO ZERO Y_5_i
+Class:                header
+Context:        PROCESS
+Type:                string
+Value Format:        %s
+Unit:                none
+Comment Field:        Coefficient mij of contamination model
+Description:        Coefficient mij of contamination model
+
+#*************************************************************
+
+Parameter Name:        PRO ZERO X_RMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in X 
+Description:        RMS error in model fit in X 
+
+Parameter Name:        PRO ZERO Y_RMS 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        RMS error in model fit in Y 
+Description:        RMS error in model fit in Y 
+
+Parameter Name:        PRO ZERO PWIDTH 
+Class:                header
+Context:        PROCESS
+Type:                double
+Value Format:        %f
+Unit:                pixel
+Comment Field:        Width of 0th order spectrum 
+Description:        Width of 0th order spectrum 

@@ -1,0 +1,32 @@
+In this file:
+
+* Reporting Bugs
+* Currently Known Problems
+
+
+Reporting Bugs
+--------------
+
+Please report any EsoRex problems to usg-help@eso.org .
+
+When reporting bugs, please indicate the package and version. For 
+example "EsoRex 3.6.8". To determine the version of the distribution 
+that you are using, check the README file or type "esorex --version".
+
+
+Currently Known Problems
+------------------------
+
+When a recipe is used with the --suppress-prefix option, and the 
+--output-dir is set to the current working directory, then the first 
+execution of a recipe will work correctly, but subsequent executions may 
+fail. This is due to output products being given "read-only" permission 
+(to avoid the potential inadvertent loss of products). The recipe itself
+is unable to modify the permissions, and thus it fails when attempting 
+to create the file. The solution (other than using a different output 
+directory or prefixes) is to change the permission of these output files 
+or delete them prior to any subsequent execution of that recipe.
+
+
+End of file
+-----------

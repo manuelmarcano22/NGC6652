@@ -1,0 +1,11 @@
+../data/grism1/products/master_bias.fits MASTER_BIAS
+../esorex/calibrations/calib/vimos-3.2.3/cal/lcat_HR_blue.tfits LINE_CATALOG
+../esorex/calibrations/calib/vimos-3.2.3/cal/ifu_ident_HR_blue.1.fits IFU_IDENT
+../data/grism1/VIMOS.2003-06-03T09:25:39.665.fits IFU_ARC_SPECTRUM
+../data/grism1/VIMOS.2003-06-04T05:33:17.640.fits IFU_SCREEN_FLAT
+../data/grism1/VIMOS.2003-06-06T07:14:09.879.fits IFU_SCREEN_FLAT
+../data/grism1/VIMOS.2003-06-04T06:25:07.208.fits IFU_SCREEN_FLAT
+../data/grism1/VIMOS.2003-06-04T06:49:47.884.fits IFU_SCREEN_FLAT
+../data/grism1/VIMOS.2003-06-06T07:08:36.980.fits IFU_SCREEN_FLAT
+../data/grism1/VIMOS.2003-06-04T04:35:15.634.fits IFU_SCREEN_FLAT
+../data/grism1/VIMOS.2003-06-06T07:12:01.120.fits IFU_SCREEN_FLAT

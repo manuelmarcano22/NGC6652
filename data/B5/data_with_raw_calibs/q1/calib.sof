@@ -1,0 +1,7 @@
+./VIMOS.2003-06-24T10:44:42.776.fits	IFU_SCREEN_FLAT
+./VIMOS.2003-06-24T10:43:31.636.fits	IFU_SCREEN_FLAT
+./VIMOS.2003-06-24T10:45:54.168.fits	IFU_SCREEN_FLAT
+./VIMOS.2003-06-24T06:32:58.132.fits	IFU_ARC_SPECTRUM
+master_bias.fits	MASTER_BIAS
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/calibrations/calib/vimos-3.2.3/cal/lcat_HR_blue.tfits	LINE_CATALOG
+/home/mmarcano/Documents/VIMOS/NGC6652/esorex/calibrations/calib/vimos-3.2.3/cal/ifu_ident_HR_blue.1.fits	IFU_IDENT

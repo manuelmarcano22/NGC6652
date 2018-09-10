@@ -1,0 +1,11 @@
+prefix=/home/mmarcano/Documents/VIMOS/NGC6652/esorex
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cfitsio
+Description: FITS File Subroutine Library
+Version: 3.36
+Libs: -L${libdir} -lcfitsio -lpthread 
+Libs.private: -lm
+Cflags: -I${includedir}

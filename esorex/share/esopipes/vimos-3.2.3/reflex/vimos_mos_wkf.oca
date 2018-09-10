@@ -1,0 +1,169 @@
+///Original file: DFO rules provided by Burkhard by e-mail on 25.04.2012
+///
+/// Replaced DO.CLASS with REFLEX.CATG throughout
+if DPR.CATG=="CALIB" and DPR.TYPE=="BIAS" and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "BIAS";
+  REFLEX.CATG = "BIAS";
+  CATG = "CALIB";
+}
+if DPR.CATG=="CALIB" and DPR.TYPE=="FLAT,LAMP" and INS.MODE=="MOS" and INSTRUME=="VIMOS" then 
+{
+ RAW.TYPE = "MOS_CAL";
+ REFLEX.CATG = "MOS_SCREEN_FLAT";
+ CATG = "CALIB";
+}
+if DPR.CATG=="CALIB" and DPR.TYPE=="WAVE,LAMP" and INS.MODE=="MOS" and INSTRUME=="VIMOS" then 
+{
+ RAW.TYPE = "MOS_CAL_ARC"; ///...to classify arcs separately from flats, so as to associate them even if not generated from the same template
+ REFLEX.CATG = "MOS_ARC_SPECTRUM";
+ CATG = "CALIB";
+}
+if DPR.CATG=="CALIB" and DPR.TYPE=="STD" and INS.MODE=="MOS" and OCS.CON.QUAD==TPL.EXPNO and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "STD_MOS";
+  REFLEX.CATG = "MOS_STANDARD";
+  CATG = "CALIB";
+}
+if DPR.CATG=="SCIENCE" and DPR.TYPE=="OBJECT" and INS.MODE=="MOS" and INSTRUME=="VIMOS" then 
+{
+  RAW.TYPE = "SCI_MOS";
+  REFLEX.CATG = "MOS_SCIENCE";
+  CATG = "SCIENCE";
+  REFLEX.TARGET = "T"; /// Needed for Reflex use.
+}
+
+if PRO.CATG=="CCD_TABLE"  and PRO.TABLE=="CCD" and (INS.MODE=="IFU" or INS.MODE=="MOS") and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "CCD_TABLE";
+}
+
+if PRO.CATG=="CONFIG_TABLE" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "CONFIG_TABLE";
+}
+
+if PRO.CATG=="EXTINCT_TABLE" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "EXTINCT_TABLE";
+}
+
+if PRO.CATG=="TELLURIC_CONTAMINATION" and INSTRUME like "%VIMOS%" then
+{
+  REFLEX.CATG = "TELLURIC_CONTAMINATION";
+}
+
+if PRO.CATG=="LINE_CATALOG" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "LINE_CATALOG";
+}
+
+if PRO.CATG=="STD_FLUX_TABLE" and INSTRUME=="VIMOS" then 
+{
+  REFLEX.CATG = "STD_FLUX_TABLE";
+}
+if PRO.CATG=="SKY_LINE_CATALOG" and INSTRUME like "%VIMOS%" then
+{ 
+  REFLEX.CATG = "SKY_LINE_CATALOG";
+} 
+
+select execute(BIAS) from inputFiles where RAW.TYPE=="BIAS"
+  group by DET.READ.CLOCK,TPL.START,OCS.CON.QUAD as (TPL_D,tpl);
+select execute(MOS_CAL) from inputFiles where RAW.TYPE=="MOS_CAL"
+  group by INS.GRIS1.NAME,INS.GRIS2.NAME,INS.GRIS3.NAME,INS.GRIS4.NAME,INS.FILT1.NAME,INS.FILT2.NAME,INS.FILT3.NAME,INS.FILT4.NAME,INS.MASK1.ID,INS.MASK2.ID,INS.MASK3.ID,INS.MASK4.ID,TPL.START,OCS.CON.QUAD as (TPL_D,tpl);
+select execute(STD_MOS) from inputFiles where RAW.TYPE=="STD_MOS"
+  group by ARCFILE;
+select execute(SCI_MOS) from inputFiles where RAW.TYPE=="SCI_MOS"
+  group by INS.GRIS1.NAME,INS.GRIS2.NAME,INS.GRIS3.NAME,INS.GRIS4.NAME,INS.FILT1.NAME,INS.FILT2.NAME,INS.FILT3.NAME,INS.FILT4.NAME,INS.MASK1.ID,INS.MASK2.ID,INS.MASK3.ID,INS.MASK4.ID,TPL.START,OCS.CON.QUAD as (TPL_D,tpl);
+action BIAS
+{
+/// include CCD_TABLE 
+   recipe vmbias
+  {
+  }
+  product MASTER_BIAS { PRO.CATG="MASTER_BIAS"; REFLEX.CATG="MASTER_BIAS"; PRO.EXT="tpl_0000.fits";}
+}
+action MOS_CAL
+{
+  minRet = 1; maxRet = 1;
+  select file as MOS_ARC_SPECTRUM from rawFiles where REFLEX.CATG=="MOS_ARC_SPECTRUM" and DPR.TYPE=="WAVE,LAMP" and INS.MODE=="MOS" and inputFile.INS.GRIS1.NAME?=INS.GRIS1.NAME and inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.GRIS2.NAME?=INS.GRIS2.NAME and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.GRIS3.NAME?=INS.GRIS3.NAME and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.GRIS4.NAME?=INS.GRIS4.NAME and inputFile.INS.MASK4.ID?=INS.MASK4.ID and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and (MJD-OBS <= 55337.0 or (MJD-OBS > 55337.0 and inputFile.TPL.START==TPL.START))
+;
+  minRet = 1; maxRet = 1;
+  select file as MASTER_BIAS from calibFiles where REFLEX.CATG=="MASTER_BIAS" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as LINE_CATALOG from calibFiles where PRO.CATG=="LINE_CATALOG" and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and MJD-OBS > 57023.0 and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as CONFIG_TABLE from calibFiles where PRO.CATG=="CONFIG_TABLE" and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and MJD-OBS > 57023.0 and inputFile.INSTRUME==INSTRUME; 
+  recipe vmmoscalib {
+  }
+  product MOS_DISP_COEFF { PRO.CATG="MOS_DISP_COEFF"; REFLEX.CATG="MOS_DISP_COEFF"; PRO.EXT="tpl_0000.fits";}
+  product MOS_CURV_COEFF { PRO.CATG="MOS_CURV_COEFF"; REFLEX.CATG="MOS_CURV_COEFF"; PRO.EXT="tpl_0001.fits";}
+  product MOS_SLIT_LOCATION { PRO.CATG="MOS_SLIT_LOCATION"; REFLEX.CATG="MOS_SLIT_LOCATION"; PRO.EXT="tpl_0002.fits";}
+  product MOS_MASTER_SCREEN_FLAT { PRO.CATG="MOS_MASTER_SCREEN_FLAT"; REFLEX.CATG="MOS_MASTER_SCREEN_FLAT"; PRO.EXT="tpl_0003.fits";}
+  product MOS_ARC_SPECTRUM_EXTRACTED { PRO.CATG="MOS_ARC_SPECTRUM_EXTRACTED"; REFLEX.CATG="MOS_ARC_SPECTRUM_EXTRACTED"; PRO.EXT="tpl_0004.fits";}
+}
+action STD_MOS
+{
+  minRet = 1; maxRet = 1;
+  select file as MASTER_BIAS from calibFiles where REFLEX.CATG=="MASTER_BIAS" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as CONFIG_TABLE from calibFiles where PRO.CATG=="CONFIG_TABLE" and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID )  and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and MJD-OBS > 57023.0 and inputFile.INSTRUME==INSTRUME; 
+  minRet = 1; maxRet = 1;
+  select file as MOS_DISP_COEFF from calibFiles where REFLEX.CATG=="MOS_DISP_COEFF" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MOS_CURV_COEFF from calibFiles where REFLEX.CATG=="MOS_CURV_COEFF" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MOS_SLIT_LOCATION from calibFiles where REFLEX.CATG=="MOS_SLIT_LOCATION" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as EXTINCT_TABLE from calibFiles where PRO.CATG=="EXTINCT_TABLE" and (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as STD_FLUX_TABLE from calibFiles where PRO.CATG=="STD_FLUX_TABLE" and inputFile.OBS.TARG.NAME==OBS.TARG.NAME and MJD-OBS > 57023.0 and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 0; maxRet = 1;
+  select file as TELLURIC_CONTAMINATION from calibFiles where PRO.CATG=="TELLURIC_CONTAMINATION" and inputFile.INSTRUME==INSTRUME
+  ;
+
+  recipe vmmosscience {
+  }
+  product MOS_STANDARD_REDUCED { PRO.CATG="MOS_STANDARD_REDUCED"; REFLEX.CATG="MOS_STANDARD_REDUCED"; PRO.EXT="0000.fits";}
+  product MOS_SPECPHOT_TABLE { PRO.CATG="MOS_SPECPHOT_TABLE"; REFLEX.CATG="MOS_SPECPHOT_TABLE"; PRO.EXT="0002.fits";}
+}
+action SCI_MOS
+{
+  minRet = 1; maxRet = 1;
+  select file as MASTER_BIAS from calibFiles where REFLEX.CATG=="MASTER_BIAS" and inputFile.DET.READ.CLOCK==DET.READ.CLOCK and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as CONFIG_TABLE from calibFiles where PRO.CATG=="CONFIG_TABLE" and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and MJD-OBS > 57023.0 and inputFile.INSTRUME==INSTRUME; 
+  minRet = 1; maxRet = 1;
+  select file as MOS_DISP_COEFF from calibFiles where REFLEX.CATG=="MOS_DISP_COEFF" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MOS_CURV_COEFF from calibFiles where REFLEX.CATG=="MOS_CURV_COEFF" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MOS_SLIT_LOCATION from calibFiles where REFLEX.CATG=="MOS_SLIT_LOCATION" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 1; maxRet = 1;
+  select file as MOS_MASTER_SCREEN_FLAT from calibFiles where REFLEX.CATG=="MOS_MASTER_SCREEN_FLAT" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and ( inputFile.INS.MASK1.ID?=INS.MASK1.ID and inputFile.INS.MASK2.ID?=INS.MASK2.ID and inputFile.INS.MASK3.ID?=INS.MASK3.ID and inputFile.INS.MASK4.ID?=INS.MASK4.ID ) and ( OBS.ID==inputFile.OBS.ID or (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) ) and inputFile.INSTRUME==INSTRUME and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 0; maxRet = 1;
+  select file as EXTINCT_TABLE from calibFiles where PRO.CATG=="EXTINCT_TABLE" and (MJD-OBS < inputFile.MJD-OBS or MJD-OBS >= inputFile.MJD-OBS) and inputFile.INSTRUME==INSTRUME
+  ;
+  minRet = 0; maxRet = 1;
+  select file as MOS_SPECPHOT_TABLE from calibFiles where REFLEX.CATG=="MOS_SPECPHOT_TABLE" and inputFile.OCS.CON.QUAD==OCS.CON.QUAD and DET.CHIP1.ID==inputFile.DET.CHIP1.ID and ( inputFile.INS.FILT1.NAME?=INS.FILT1.NAME and inputFile.INS.FILT2.NAME?=INS.FILT2.NAME and inputFile.INS.FILT3.NAME?=INS.FILT3.NAME and inputFile.INS.FILT4.NAME?=INS.FILT4.NAME ) and ( inputFile.INS.GRIS1.ID?=INS.GRIS1.ID and inputFile.INS.GRIS2.ID?=INS.GRIS2.ID and inputFile.INS.GRIS3.ID?=INS.GRIS3.ID and inputFile.INS.GRIS4.ID?=INS.GRIS4.ID ) and inputFile.INSTRUME==INSTRUME
+  ;
+
+  minRet = 0; maxRet = 1;
+  select file as SKY_LINE_CATALOG from calibFiles where PRO.CATG=="SKY_LINE_CATALOG" and inputFile.INSTRUME==INSTRUME;
+
+  recipe vmmosscience {
+  }
+}

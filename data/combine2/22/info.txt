@@ -1,0 +1,44 @@
+
+quad: 2 
+name: NGC-6652-B 
+date: 2003-06-22T06:40:54.317
+exptime: 1250.001
+ra: 279.156489 
+ra2 18h36m37.5574s 
+dec: -32.99396 
+dec2 -32d59m38.256s 
+ifuRA 18h35m44.6993s 
+ifuDEC -32d59m36.656s
+
+quad: 3 
+name: NGC-6652-B 
+date: 2003-06-22T06:40:54.317
+exptime: 1250.001
+ra: 279.156489 
+ra2 18h36m37.5574s 
+dec: -32.99396 
+dec2 -32d59m38.256s 
+ifuRA 18h35m44.6993s 
+ifuDEC -32d59m36.656s
+
+quad: 1 
+name: NGC-6652-B 
+date: 2003-06-22T06:41:25.311
+exptime: 1250.0
+ra: 279.156489 
+ra2 18h36m37.5574s 
+dec: -32.99396 
+dec2 -32d59m38.256s 
+ifuRA 18h35m44.6993s 
+ifuDEC -32d59m36.656s
+
+quad: 4 
+name: NGC-6652-B 
+date: 2003-06-22T06:41:25.311
+exptime: 1250.0
+ra: 279.156489 
+ra2 18h36m37.5574s 
+dec: -32.99396 
+dec2 -32d59m38.256s 
+ifuRA 18h35m44.6993s 
+ifuDEC -32d59m36.656s

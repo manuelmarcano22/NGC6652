@@ -1,0 +1,7 @@
+vimos.Parameters.apply.transmission="true"
+vimos.Parameters.badpixel.clean="false"
+vimos.Parameters.bias.removing.method="Zmaster"
+vimos.Parameters.flux.calibration="false"
+vimos.Parameters.quality.enable="false"
+vimos.Parameters.sky.align="true"
+vimos.Parameters.sky.individual="false"

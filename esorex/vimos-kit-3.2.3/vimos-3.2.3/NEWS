@@ -1,0 +1,6 @@
+3.2.1 (2018-04-16)
+==================
+
+ - Ported to Reflex 2.9.
+ - Fix time normalisation if several science frames are stacked.
+ - Documentation update
