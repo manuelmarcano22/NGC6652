@@ -1,0 +1,13 @@
+
+Start time     : 2018-09-20T19:26:55
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+19:26:55 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+19:26:55 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+19:26:55 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2 vmifustandard /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifustandard.sof
+19:26:55 [ ERROR ] : [tid=000] Could not open the input file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifu_ids.fits' with tag 'IFU_IDS' and no group in line 3 of the SOF '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifustandard.sof'
+19:26:55 [ ERROR ] : [tid=000] Could not open the input file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifu_trace.fits' with tag 'IFU_TRACE' and no group in line 4 of the SOF '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifustandard.sof'
+19:26:55 [ ERROR ] : [tid=000] Could not open the input file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifu_transmission.fits' with tag 'IFU_TRANSMISSION' and no group in line 5 of the SOF '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifustandard.sof'
+19:26:55 [ ERROR ] : [tid=000] Problem occurred loading frameset from the SOF file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant2/ifustandard.sof'.
+If you want to ignore errors of missing files in the sof, set '--check-sof-exist=false'.

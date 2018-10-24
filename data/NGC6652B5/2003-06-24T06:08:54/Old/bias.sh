@@ -1,0 +1,2 @@
+#!/usr/bin/env bash 
+/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T06:08:54/RawESOdata/quadrant1 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T06:08:54/RawESOdata/quadrant1 vmbias  /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T06:08:54/RawESOdata/quadrant1/bias.sof

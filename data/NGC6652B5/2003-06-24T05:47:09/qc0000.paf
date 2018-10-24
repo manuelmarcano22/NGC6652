@@ -4,9 +4,9 @@ PAF.ID              "";
 PAF.NAME            "qc0000.paf";            # Name of PAF
 PAF.DESC            "";                      # Short description of PAF
 PAF.CRTE.NAME       "mmarcano";              # Name of creator
-PAF.CRTE.DAYTIM     "2018-09-05T16:55:06";   # Civil time for creation
+PAF.CRTE.DAYTIM     "2018-09-20T16:27:47";   # Civil time for creation
 PAF.LCHG.NAME       "mmarcano";              # Author of par. file
-PAF.LCHG.DAYTIM     "2018-09-05T16:55:06";   # Timestamp for last change
+PAF.LCHG.DAYTIM     "2018-09-20T16:27:47";   # Timestamp for last change
 PAF.CHCK.NAME       "";                      # Name of appl. checking
 PAF.CHCK.DAYTIM     "";                      # Time for checking
 PAF.CHCK.CHECKSUM   "";                      # Checksum for the PAF
@@ -14,25 +14,25 @@ PAF.HDR.END;
 #------------------------------------------------------------------------------
 QC.DID              "VIMOS_QC-1.0";          # QC1 dictionary [VIMOS]
 PRO.CATG            "IFU_SPECPHOT_TABLE";    # Product category [VIMOS]
-ARCFILE             "VIMOS.2003-06-24T10:38:01.522.fits"; # Archive File Name [VIMOS]
+ARCFILE             "VIMOS.2003-06-24T10:34:16.581.fits"; # Archive File Name [VIMOS]
 TPL.ID              "VIMOS_ifu_cal_Specphot"; # Template signature ID [VIMOS]
-OCS.CON.QUAD        4;                       # Quadrant [VIMOS]
-INS.FILT4.NAME      "Free";                  # Filter name [VIMOS]
-INS.GRIS4.NAME      "HR_blue";               # Grism name [VIMOS]
+OCS.CON.QUAD        3;                       # Quadrant [VIMOS]
+INS.FILT3.NAME      "Free";                  # Filter name [VIMOS]
+INS.GRIS3.NAME      "HR_blue";               # Grism name [VIMOS]
 QC.IFU.EFFICIENCY1.LAMBDA 3700.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
 QC.IFU.EFFICIENCY1  0.;                      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY2.LAMBDA 4100.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
 QC.IFU.EFFICIENCY2  0.;                      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY3.LAMBDA 4500.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
-QC.IFU.EFFICIENCY3  0.0690839216113091;      # Efficiency (e-/photon) [VIMOS]
+QC.IFU.EFFICIENCY3  0.0704125538468361;      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY4.LAMBDA 4900.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
-QC.IFU.EFFICIENCY4  0.0809174999594688;      # Efficiency (e-/photon) [VIMOS]
+QC.IFU.EFFICIENCY4  0.0870038494467735;      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY5.LAMBDA 5300.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
-QC.IFU.EFFICIENCY5  0.0871579572558403;      # Efficiency (e-/photon) [VIMOS]
+QC.IFU.EFFICIENCY5  0.0928403213620186;      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY6.LAMBDA 5700.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
-QC.IFU.EFFICIENCY6  0.086891233921051;       # Efficiency (e-/photon) [VIMOS]
+QC.IFU.EFFICIENCY6  0.0939166694879532;      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY7.LAMBDA 6100.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
-QC.IFU.EFFICIENCY7  0.0811833739280701;      # Efficiency (e-/photon) [VIMOS]
+QC.IFU.EFFICIENCY7  0.08973029255867;        # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY8.LAMBDA 6500.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]
 QC.IFU.EFFICIENCY8  0.;                      # Efficiency (e-/photon) [VIMOS]
 QC.IFU.EFFICIENCY9.LAMBDA 6900.;             # Wavelength of efficiency evaluation (Angstrom) [VIMOS]

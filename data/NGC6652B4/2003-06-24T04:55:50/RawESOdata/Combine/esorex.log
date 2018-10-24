@@ -1,0 +1,17 @@
+
+Start time     : 2018-09-19T17:20:53
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+17:20:53 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+17:20:53 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+17:20:53 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:55:50/RawESOdata/Combine --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:55:50/RawESOdata/Combine vmifucombinecube /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:55:50/RawESOdata/Combine/ifucombinefovifu_science_reduced.sof
+17:20:53 [ INFO  ] vmifucombinecube: [tid=000] Found 4 input IFU_SCIENCE_REDUCED
+17:20:53 [WARNING] vmifucombinecube: [tid=000] Input frames are from different exposures.
+17:20:53 [ INFO  ] vmifucombinecube: [tid=000] Reconstructing cube 40 x 40 x 4259 (IFU head from (20,20) to (60,60))
+17:20:53 [ INFO  ] vmifucombinecube: [tid=000] Loading input frames...
+17:20:53 [ INFO  ] vimos_ifu_combinecube_add_wcs: [tid=000] Adding WCS information to the cube
+17:20:53 [ INFO  ] vmifucombinecube: [tid=000] Saving the cube...
+17:20:54 [ INFO  ] : [tid=000] Calculating product checksums
+17:20:54 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:55:50/RawESOdata/Combine/ifu_science_cube.fits
+17:20:54 [ INFO  ] : [tid=000] 1 product created

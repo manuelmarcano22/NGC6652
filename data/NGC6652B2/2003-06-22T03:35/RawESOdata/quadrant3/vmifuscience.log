@@ -1,0 +1,45 @@
+
+Start time     : 2018-09-20T19:48:00
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+19:48:00 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+19:48:00 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+19:48:00 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3 vmifuscience --CalibrateFlux=true /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3/ifuscience.sof
+19:48:00 [ INFO  ] vmifuscience: [tid=000] Loading input frames...
+19:48:00 [ INFO  ] vmifuscience: [tid=000] Bias removal...
+19:48:00 [ INFO  ] vmifuscience: [tid=000] Processing data from quadrant 3, HR_blue/Free, shutter ON...
+19:48:00 [ INFO  ] vmifuscience: [tid=000] Processing spectra in pseudo-slit 2:
+19:48:00 [ INFO  ] vmifuscience: [tid=000]   Load flat field tracing table...
+19:48:01 [ INFO  ] vmifuscience: [tid=000]   Detect traceable spectra on science...
+19:48:01 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 70.000000, Detected spectra: 37
+19:48:01 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 67.000000, Detected spectra: 43
+19:48:01 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 64.000000, Detected spectra: 46
+19:48:01 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 61.000000, Detected spectra: 47
+19:48:01 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 58.000000, Detected spectra: 53
+19:48:01 [ INFO  ] vmifuscience: [tid=000]     53 spectra detected on scientific exposure.
+19:48:01 [ INFO  ] vmifuscience: [tid=000]   Tracing detected spectra...
+19:48:01 [ INFO  ] vmifuscience: [tid=000]   Identify traced spectra on science exposure...
+19:48:01 [ INFO  ] vmifuscience: [tid=000]   Flat tracings alignment: offset: -6.339759, slope: 0.002587
+19:48:01 [ INFO  ] vmifuscience: [tid=000]   Align flat field tracings to science exposure...
+19:48:01 [ INFO  ] vmifuscience: [tid=000]   Extraction of scientific spectra...
+19:48:04 [ INFO  ] vmifuscience: [tid=000]   Align wavelength calibration to detected sky lines...
+19:48:04 [ INFO  ] ifuAlignSkylines: [tid=000]   Applying median shift of 1.445416 px
+19:48:04 [ INFO  ] ifuAlignSkylines: [tid=000]   NOT applying individual shifts
+19:48:04 [ INFO  ] vmifuscience: [tid=000]     Alignment: 1.45 CCD pixels
+19:48:04 [ INFO  ] vmifuscience: [tid=000]   Resample scientific spectra at constant wavelength step (0.54 Angstrom)
+19:48:04 [ INFO  ] vmifuscience: [tid=000] Apply transmission correction to extracted spectra...
+19:48:04 [ INFO  ] vmifuscience: [tid=000] Applying spectro-photometric calibration ...
+19:48:04 [ ERROR ] VmSpApplyPhot: [tid=000] Input table and input image are incompatible
+19:48:04 [WARNING] vmifuscience: [tid=000] Spectro-photometric calibration failure: the corresponding product, IFU_SCIENCE_FLUX_REDUCED, will not be created
+19:48:04 [ INFO  ] : [tid=000] Calculating product checksums
+19:48:04 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3/ifu_fov.fits
+19:48:04 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3/ifu_science_reduced.fits
+19:48:04 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3/ifu_sky_ids.fits
+19:48:04 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B2/2003-06-22T03:35/RawESOdata/quadrant3/ifu_sky_trace.fits
+19:48:04 [ INFO  ] : [tid=000] 4 products created
+19:48:04 [ INFO  ] : [tid=000] Recipe operation(s) took            3.5 seconds to complete.
+19:48:04 [ INFO  ] : [tid=000] Size of single raw input frame  =    17.64 MB
+
+19:48:04 [ INFO  ] : [tid=000] => processing rate of     5.03 MB/sec 
+

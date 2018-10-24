@@ -1,0 +1,43 @@
+PAF.HDR.START;
+PAF.TYPE            "QC1 parameters";        # Type of parameter file
+PAF.ID              "";
+PAF.NAME            "qc0003.paf";            # Name of PAF
+PAF.DESC            "";                      # Short description of PAF
+PAF.CRTE.NAME       "mmarcano";              # Name of creator
+PAF.CRTE.DAYTIM     "2018-09-20T19:30:27";   # Civil time for creation
+PAF.LCHG.NAME       "mmarcano";              # Author of par. file
+PAF.LCHG.DAYTIM     "2018-09-20T19:30:27";   # Timestamp for last change
+PAF.CHCK.NAME       "";                      # Name of appl. checking
+PAF.CHCK.DAYTIM     "";                      # Time for checking
+PAF.CHCK.CHECKSUM   "";                      # Checksum for the PAF
+PAF.HDR.END;
+#------------------------------------------------------------------------------
+QC.DID              "VIMOS_QC-1.0";          # QC1 dictionary [VIMOS]
+PRO.CATG            "IFU_IDS";               # Product category [VIMOS]
+ARCFILE             "VIMOS.2003-06-22T04:00:18.413.fits"; # Archive File Name [VIMOS]
+TPL.ID              "VIMOS_ifu_cal_NightCalib"; # Template signature ID [VIMOS]
+OCS.CON.QUAD        1;                       # Quadrant [VIMOS]
+INS.GRIS1.NAME      "HR_blue";               # Grism name [VIMOS]
+INS.FILT1.NAME      "Free";                  # Filter name [VIMOS]
+INS.FOCU1.TEMP      15.87817;                # Beam temperature [VIMOS]
+ADA.ABSROT.START    205.52597;               # Adaptor initial rotator angle [VIMOS]
+ADA.ABSROT.END      205.52563;               # Adaptor final rotator angle [VIMOS]
+INS.IFUS.MODE       "ON";                    # IFU mode [VIMOS]
+INS.IFUE.MAG        "2:1";                   # IFU magnification [VIMOS]
+PRO.WLEN.CEN        5015.675;                # Reference wavelength (Angstrom) [VIMOS]
+QC.IFU.RESOLUTION1.LAMBDA 6029.9970703125;   # Line used in spectral resolution determination (Angstrom) [VIMOS]
+QC.IFU.RESOLUTION1  3259.0987957178;         # Mean spectral resolution at red end of spectra [VIMOS]
+QC.IFU.RESOLUTION1.RMS 128.579911264746;     # RMS of spectral resolution at red end of spectra [VIMOS]
+QC.IFU.RESOLUTION2.LAMBDA 5015.6748046875;   # Line used in spectral resolution determination (Angstrom) [VIMOS]
+QC.IFU.RESOLUTION2  2691.22625719934;        # Mean spectral resolution at center of spectra [VIMOS]
+QC.IFU.RESOLUTION2.RMS 133.579186721845;     # RMS of spectral resolution at center of spectra [VIMOS]
+QC.IFU.RESOLUTION3.LAMBDA 4471.47998046875;  # Line used in spectral resolution determination (Angstrom) [VIMOS]
+QC.IFU.RESOLUTION3  2655.4174283733;         # Mean spectral resolution at blue end of spectra [VIMOS]
+QC.IFU.RESOLUTION3.RMS 109.592158140238;     # RMS of spectral resolution at blue end of spectra [VIMOS]
+QC.IFU.IDS.RMS      0.18261646826306;        # Mean IDS rms (pixel) [VIMOS]
+QC.IFU.WAVELOST2    36;                      # Fibers lost both to trace and wavecalib [VIMOS]
+QC.IFU.WAVECAL2.COEFF0 2060.79444867294;     # Median coefficient 0 of IDS (pixel) [VIMOS]
+QC.IFU.WAVECAL2.COEFF1 1.80510600418347;     # Median coefficient 1 of IDS (pixel/Angstrom) [VIMOS]
+QC.IFU.WAVECAL2.COEFF2 -0.000116130622974331; # Median coefficient 2 of IDS (pixel/Angstrom^2) [VIMOS]
+QC.IFU.WAVECAL2.COEFF3 2.82512259931408E-08; # Median coefficient 3 of IDS (pixel/Angstrom^3) [VIMOS]
+QC.IFU.WAVECAL2.COEFF4 -7.55233882913879E-12; # Median coefficient 4 of IDS (pixel/Angstrom^4) [VIMOS]

@@ -1,0 +1,13 @@
+
+Start time     : 2018-10-12T16:01:49
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+16:01:49 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+16:01:49 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+16:01:49 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine vmifucombinecube /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine/ifucombinefovifu_science_flux_reduced.sof
+16:01:49 [ ERROR ] : [tid=000] Could not open the input file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant1/ifu_science_flux_reduced.fits' with tag 'IFU_SCIENCE_FLUX_REDUCED' and no group in line 1 of the SOF '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine/ifucombinefovifu_science_flux_reduced.sof'
+16:01:49 [ ERROR ] : [tid=000] Could not open the input file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant3/ifu_science_flux_reduced.fits' with tag 'IFU_SCIENCE_FLUX_REDUCED' and no group in line 3 of the SOF '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine/ifucombinefovifu_science_flux_reduced.sof'
+16:01:49 [ ERROR ] : [tid=000] Could not open the input file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant4/ifu_science_flux_reduced.fits' with tag 'IFU_SCIENCE_FLUX_REDUCED' and no group in line 4 of the SOF '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine/ifucombinefovifu_science_flux_reduced.sof'
+16:01:49 [ ERROR ] : [tid=000] Problem occurred loading frameset from the SOF file '/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/Combine/ifucombinefovifu_science_flux_reduced.sof'.
+If you want to ignore errors of missing files in the sof, set '--check-sof-exist=false'.

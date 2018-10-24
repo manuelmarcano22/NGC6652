@@ -1,63 +1,63 @@
 
-Start time     : 2018-09-05T19:13:29
+Start time     : 2018-09-19T11:52:42
 Program name   : esorex
 Severity level : [ INFO  ] 
 
-19:13:29 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
-19:13:29 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.37, WCSLIB = 4.25.1, FFTW (normal precision) = 3.3.3, FFTW (single precision) = 3.3.3, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 201107
-19:13:29 [ INFO  ] : [tid=000] Invocation command line was: /bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2 vmifucalib /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/calib.sof
-19:13:29 [ INFO  ] vimos_print_banner: [tid=000] *****************************************
-19:13:29 [ INFO  ] vimos_print_banner: [tid=000] Welcome to VIMOS Pipeline release 3.2.3
-19:13:29 [ INFO  ] vimos_print_banner: [tid=000] *****************************************
-19:13:29 [ INFO  ] vmifucalib: [tid=000] Loading the input frames...
-19:13:30 [ INFO  ] vmifucalib: [tid=000] Processing data from quadrant 2, HR_blue/Free, shutter ON...
-19:13:30 [ INFO  ] vmifucalib: [tid=000] Bias removal...
-19:13:31 [ INFO  ] vmifucalib: [tid=000] Combining 3 flat fields with method 'MinMax'
-19:13:31 [ INFO  ] vmifucalib: [tid=000] Processing spectra in pseudo-slit 2:
-19:13:31 [ INFO  ] vmifucalib: [tid=000]   Identify and trace flat field spectra...
-19:13:31 [ INFO  ] ifuIdentifyUpgrade: [tid=000]   Cross-correlation offset with reference identification: -4.505608
-19:13:31 [ INFO  ] vmifucalib: [tid=000]     358 out of 400 spectra were identified and traced.
-19:13:31 [ INFO  ] vmifucalib: [tid=000]   Extract flat field spectra...
-19:13:33 [ INFO  ] vmifucalib: [tid=000]   Extract arc lamp spectra...
-19:13:35 [ INFO  ] vmifucalib: [tid=000]   Compute the wavelength calibration (blind)...
-19:13:35 [ INFO  ] vmifucalib: [tid=000]     357 out of 358 extracted spectra were wavelength calibrated.
-19:13:35 [ INFO  ] vmifucalib: [tid=000]   Resample flat field spectra at constant wavelength step (0.54 Angstrom)
-19:13:35 [ INFO  ] vmifucalib: [tid=000]   Resample arc lamp spectra at constant wavelength step (0.54 Angstrom)
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Derive the relative transmission correction from extracted flat field spectra...
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Computing QC1 parameters...
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Flux of He 5015.68: 7342.88 +/- 1167.47 ADU/fiber/s
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Flux of Ne 5944.83: 17634.91 +/- 2815.46 ADU/fiber/s
-19:13:35 [WARNING] vmifucalib: [tid=000] No Ar lines in HR_blue spectral range: corresponding QC1 parameters are not computed.
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 6030.00: 3157.13 +/- 160.84
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 5015.67: 2460.85 +/- 223.84
-19:13:35 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 4471.48: 2695.60 +/- 196.49
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 4026.19: line not available
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 4471.48: 0.073
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 4713.14: 0.252
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 4921.93: 0.195
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 5015.67: 0.086
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 5764.42: 0.253
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 5852.49: 0.170
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 5875.62: 0.135
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 5944.83: 0.190
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6030.00: 0.193
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6074.34: 0.282
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6096.16: 0.157
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6143.06: 0.272
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6163.59: 0.260
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6217.28: line not available
-19:13:35 [ INFO  ] distortionsRms: [tid=000] RMS for 6266.50: line not available
-19:13:35 [ INFO  ] vmifucalib: [tid=000] IDS RMS: 0.194 pixel
-19:13:37 [ INFO  ] : [tid=000] Calculating product checksums
-19:13:37 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_arc_spectrum_extracted.fits
-19:13:37 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_flat_spectrum_extracted.fits
-19:13:37 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_ids.fits
-19:13:37 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_master_screen_flat.fits
-19:13:37 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_trace.fits
-19:13:37 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_transmission.fits
-19:13:37 [ INFO  ] : [tid=000] 6 products created
-19:13:37 [ INFO  ] : [tid=000] Recipe operation(s) took           8.21 seconds to complete.
-19:13:37 [ INFO  ] : [tid=000] Total size of 4 raw input frames  =    70.54 MB
+11:52:42 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+11:52:42 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+11:52:42 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2 vmifucalib /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/calib.sof
+11:52:42 [ INFO  ] vimos_print_banner: [tid=000] *****************************************
+11:52:42 [ INFO  ] vimos_print_banner: [tid=000] Welcome to VIMOS Pipeline release 3.2.3
+11:52:42 [ INFO  ] vimos_print_banner: [tid=000] *****************************************
+11:52:43 [ INFO  ] vmifucalib: [tid=000] Loading the input frames...
+11:52:43 [ INFO  ] vmifucalib: [tid=000] Processing data from quadrant 2, HR_blue/Free, shutter ON...
+11:52:43 [ INFO  ] vmifucalib: [tid=000] Bias removal...
+11:52:43 [ INFO  ] vmifucalib: [tid=000] Combining 3 flat fields with method 'MinMax'
+11:52:44 [ INFO  ] vmifucalib: [tid=000] Processing spectra in pseudo-slit 2:
+11:52:44 [ INFO  ] vmifucalib: [tid=000]   Identify and trace flat field spectra...
+11:52:44 [ INFO  ] ifuIdentifyUpgrade: [tid=000]   Cross-correlation offset with reference identification: -4.505608
+11:52:44 [ INFO  ] vmifucalib: [tid=000]     358 out of 400 spectra were identified and traced.
+11:52:44 [ INFO  ] vmifucalib: [tid=000]   Extract flat field spectra...
+11:52:46 [ INFO  ] vmifucalib: [tid=000]   Extract arc lamp spectra...
+11:52:50 [ INFO  ] vmifucalib: [tid=000]   Compute the wavelength calibration (blind)...
+11:52:50 [ INFO  ] vmifucalib: [tid=000]     357 out of 358 extracted spectra were wavelength calibrated.
+11:52:50 [ INFO  ] vmifucalib: [tid=000]   Resample flat field spectra at constant wavelength step (0.54 Angstrom)
+11:52:50 [ INFO  ] vmifucalib: [tid=000]   Resample arc lamp spectra at constant wavelength step (0.54 Angstrom)
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Derive the relative transmission correction from extracted flat field spectra...
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Computing QC1 parameters...
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Flux of He 5015.68: 7342.88 +/- 1167.47 ADU/fiber/s
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Flux of Ne 5944.83: 17634.91 +/- 2815.46 ADU/fiber/s
+11:52:50 [WARNING] vmifucalib: [tid=000] No Ar lines in HR_blue spectral range: corresponding QC1 parameters are not computed.
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 6030.00: 3157.13 +/- 160.84
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 5015.67: 2460.85 +/- 223.84
+11:52:50 [ INFO  ] vmifucalib: [tid=000] Spectral resolution at 4471.48: 2695.60 +/- 196.49
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 4026.19: line not available
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 4471.48: 0.073
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 4713.14: 0.252
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 4921.93: 0.195
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 5015.67: 0.086
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 5764.42: 0.253
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 5852.49: 0.170
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 5875.62: 0.135
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 5944.83: 0.190
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6030.00: 0.193
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6074.34: 0.282
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6096.16: 0.157
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6143.06: 0.272
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6163.59: 0.260
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6217.28: line not available
+11:52:50 [ INFO  ] distortionsRms: [tid=000] RMS for 6266.50: line not available
+11:52:50 [ INFO  ] vmifucalib: [tid=000] IDS RMS: 0.194 pixel
+11:52:51 [ INFO  ] : [tid=000] Calculating product checksums
+11:52:51 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_arc_spectrum_extracted.fits
+11:52:51 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_flat_spectrum_extracted.fits
+11:52:52 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_ids.fits
+11:52:52 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_master_screen_flat.fits
+11:52:52 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_trace.fits
+11:52:52 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B4/2003-06-24T04:24:10/RawESOdata/quadrant2/ifu_transmission.fits
+11:52:52 [ INFO  ] : [tid=000] 6 products created
+11:52:52 [ INFO  ] : [tid=000] Recipe operation(s) took           9.06 seconds to complete.
+11:52:52 [ INFO  ] : [tid=000] Total size of 4 raw input frames  =    70.54 MB
 
-19:13:37 [ INFO  ] : [tid=000] => processing rate of     8.60 MB/sec 
+11:52:52 [ INFO  ] : [tid=000] => processing rate of     7.78 MB/sec 
 

@@ -1,0 +1,19 @@
+
+Start time     : 2018-09-20T16:27:14
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+16:27:14 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+16:27:14 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+16:27:14 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T05:47:09/RawESOdata/quadrant3 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T05:47:09/RawESOdata/quadrant3 vmbias /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T05:47:09/RawESOdata/quadrant3/bias.sof
+16:27:32 [ INFO  ] vmbias: [tid=000] Combining 10 frames with method 'Median'
+16:27:32 [ INFO  ] vimos_bias_write_qc: [tid=000] Computing QC1 parameters...
+16:27:33 [ INFO  ] dfs_save_image: [tid=000] Saving MASTER_BIAS image to disk...
+16:27:33 [ INFO  ] : [tid=000] Calculating product checksums
+16:27:33 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652B5/2003-06-24T05:47:09/RawESOdata/quadrant3/master_bias.fits
+16:27:33 [ INFO  ] : [tid=000] 1 product created
+16:27:33 [ INFO  ] : [tid=000] Recipe operation(s) took           19.5 seconds to complete.
+16:27:33 [ INFO  ] : [tid=000] Total size of 10 raw input frames  =   176.20 MB
+
+16:27:33 [ INFO  ] : [tid=000] => processing rate of     9.02 MB/sec 
+
