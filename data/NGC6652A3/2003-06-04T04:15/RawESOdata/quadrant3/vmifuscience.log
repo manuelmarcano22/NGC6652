@@ -1,0 +1,44 @@
+
+Start time     : 2018-10-24T17:12:13
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+17:12:13 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+17:12:13 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+17:12:13 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3 vmifuscience --CalibrateFlux=true /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3/ifuscience.sof
+17:12:13 [ INFO  ] vmifuscience: [tid=000] Loading input frames...
+17:12:13 [ INFO  ] vmifuscience: [tid=000] Bias removal...
+17:12:13 [ INFO  ] vmifuscience: [tid=000] Processing data from quadrant 3, HR_blue/Free, shutter ON...
+17:12:13 [ INFO  ] vmifuscience: [tid=000] Processing spectra in pseudo-slit 2:
+17:12:13 [ INFO  ] vmifuscience: [tid=000]   Load flat field tracing table...
+17:12:14 [ INFO  ] vmifuscience: [tid=000]   Detect traceable spectra on science...
+17:12:14 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 37.000000, Detected spectra: 7
+17:12:14 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 34.000000, Detected spectra: 18
+17:12:14 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 31.000000, Detected spectra: 35
+17:12:14 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 28.000000, Detected spectra: 64
+17:12:14 [ INFO  ] vmifuscience: [tid=000]     64 spectra detected on scientific exposure.
+17:12:14 [ INFO  ] vmifuscience: [tid=000]   Tracing detected spectra...
+17:12:14 [ INFO  ] vmifuscience: [tid=000]   Identify traced spectra on science exposure...
+17:12:14 [ INFO  ] vmifuscience: [tid=000]   Flat tracings alignment: offset: 0.264865, slope: -0.000073
+17:12:14 [ INFO  ] vmifuscience: [tid=000]   Align flat field tracings to science exposure...
+17:12:14 [ INFO  ] vmifuscience: [tid=000]   Extraction of scientific spectra...
+17:12:17 [ INFO  ] vmifuscience: [tid=000]   Align wavelength calibration to detected sky lines...
+17:12:17 [ INFO  ] ifuAlignSkylines: [tid=000]   Applying median shift of 1.402189 px
+17:12:17 [ INFO  ] ifuAlignSkylines: [tid=000]   NOT applying individual shifts
+17:12:17 [ INFO  ] vmifuscience: [tid=000]     Alignment: 1.40 CCD pixels
+17:12:17 [ INFO  ] vmifuscience: [tid=000]   Resample scientific spectra at constant wavelength step (0.54 Angstrom)
+17:12:17 [ INFO  ] vmifuscience: [tid=000] Apply transmission correction to extracted spectra...
+17:12:17 [ INFO  ] vmifuscience: [tid=000] Applying spectro-photometric calibration ...
+17:12:17 [ INFO  ] VmSpApplyPhot: [tid=000] Mean airmass: 1.1444
+17:12:17 [ INFO  ] : [tid=000] Calculating product checksums
+17:12:17 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3/ifu_fov.fits
+17:12:17 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3/ifu_science_flux_reduced.fits
+17:12:17 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3/ifu_science_reduced.fits
+17:12:17 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3/ifu_sky_ids.fits
+17:12:17 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A3/2003-06-04T04:15/RawESOdata/quadrant3/ifu_sky_trace.fits
+17:12:17 [ INFO  ] : [tid=000] 5 products created
+17:12:17 [ INFO  ] : [tid=000] Recipe operation(s) took           3.77 seconds to complete.
+17:12:17 [ INFO  ] : [tid=000] Size of single raw input frame  =    17.64 MB
+
+17:12:17 [ INFO  ] : [tid=000] => processing rate of     4.68 MB/sec 
+

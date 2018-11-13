@@ -131,10 +131,19 @@ def reduceifu(datadirectory, rawdatadictionary):
     os.rename(outdir+'/esorex.log',outdir+'/'+routine+'.log')
 
     #Science Soif
-    
-    rawdata['IFU_SPECPHOT_TABLE'] = outdir+'/ifu_specphot_table.fits'
+    specphotfile = outdir+'/ifu_specphot_table.fits'
+    rawdata['IFU_SPECPHOT_TABLE'] = specphotfile
 
-    inputfilesscience = ['IFU_SCIENCE','MASTER_BIAS','IFU_IDS','IFU_TRACE','IFU_TRANSMISSION','EXTINCT_TABLE','IFU_SPECPHOT_TABLE']
+    if os.path.isfile(specphotfile): 
+        calibrateflux = '--CalibrateFlux=true'
+        inputfilesscience = ['IFU_SCIENCE','MASTER_BIAS','IFU_IDS','IFU_TRACE','IFU_TRANSMISSION','EXTINCT_TABLE','IFU_SPECPHOT_TABLE']
+
+    else:
+        calibrateflux = '--CalibrateFlux=false'
+        inputfilesscience = ['IFU_SCIENCE','MASTER_BIAS','IFU_IDS','IFU_TRACE','IFU_TRANSMISSION','EXTINCT_TABLE']
+
+
+
 
     filenamescience = outdir+'/ifuscience.sof'
     with open(filenamescience,'w') as file:
@@ -151,7 +160,7 @@ def reduceifu(datadirectory, rawdatadictionary):
                 
                 routine = 'vmifuscience'
 
-    calibrateflux = '--CalibrateFlux=true'
+    
 
     commandscience = '{} {} {} {} {} {}'.format(esorexpath,outputdir,logdir,routine, calibrateflux ,filenamescience)
     print(commandscience)

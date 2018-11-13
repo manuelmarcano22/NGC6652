@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<association category="SCI_IFU" certified="false" complete="true"
+    mode="Raw2Raw" type="main">
+    <mainFiles>
+        <file category="IFU_SCIENCE" name="VIMOS.2003-06-03T08:40:04.763"/>
+    </mainFiles>
+    <messages/>
+    <associatedFiles>
+        <association category="IFU_MASTER_RESPONSE" certified="true"
+            complete="true" match="N/A" type="main">
+            <mainFiles>
+                <file category="IFU_MASTER_RESPONSE" name="M.VIMOS.2008-06-17T18:20:40.981"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles/>
+        </association>
+        <association category="EXTINCT_TABLE" certified="true"
+            complete="true" match="N/A" type="main">
+            <mainFiles>
+                <file category="EXTINCT_TABLE" name="M.VIMOS.2008-06-17T18:12:53.176"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles/>
+        </association>
+        <association category="BIAS" certified="true" complete="true"
+            match="calib_plan" type="main">
+            <mainFiles>
+                <file category="BIAS" name="VIMOS.2003-06-02T12:33:47.805"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T12:34:39.026"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T12:35:30.201"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T12:36:21.588"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T12:37:13.006"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles/>
+        </association>
+        <association category="BIAS" certified="true" complete="true"
+            match="calib_plan" type="main">
+            <mainFiles>
+                <file category="BIAS" name="VIMOS.2003-06-02T19:27:06.394"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T19:27:58.893"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T19:28:51.438"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T19:29:44.361"/>
+                <file category="BIAS" name="VIMOS.2003-06-02T19:30:37.451"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles/>
+        </association>
+        <association category="IFU_CAL" certified="false"
+            complete="true" match="calib_plan" type="main">
+            <mainFiles>
+                <file category="IFU_ARC_SPECTRUM" name="VIMOS.2003-06-03T09:25:39.665"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles>
+                <association category="LINE_CATALOG" certified="true"
+                    complete="true" match="N/A" type="main">
+                    <mainFiles>
+                        <file category="LINE_CATALOG" name="M.VIMOS.2008-06-17T18:11:18.672"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="IFU_IDENT" certified="true"
+                    complete="true" match="N/A" type="main">
+                    <mainFiles>
+                        <file category="IFU_IDENT" name="M.VIMOS.2008-06-17T18:16:03.380"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="BIAS" certified="true"
+                    complete="true" match="calib_plan" type="main">
+                    <mainFiles>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:33:47.805"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:34:39.026"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:35:30.201"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:36:21.588"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:37:13.006"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="BIAS" certified="true"
+                    complete="true" match="calib_plan" type="main">
+                    <mainFiles>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:27:06.394"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:27:58.893"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:28:51.438"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:29:44.361"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:30:37.451"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="BIAS" certified="true"
+                    complete="true" match="calib_plan" type="main">
+                    <mainFiles>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:23:39.090"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:24:31.674"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:25:26.548"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:26:20.261"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:27:16.646"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+            </associatedFiles>
+        </association>
+        <association category="STD_IFU" certified="false"
+            complete="true" match="calib_plan" type="main">
+            <mainFiles>
+                <file category="IFU_STANDARD" name="VIMOS.2003-06-03T09:32:34.170"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles>
+                <association category="EXTINCT_TABLE" certified="true"
+                    complete="true" match="N/A" type="main">
+                    <mainFiles>
+                        <file category="EXTINCT_TABLE" name="M.VIMOS.2008-06-17T18:12:53.176"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="STD_FLUX_TABLE" certified="true"
+                    complete="true" match="N/A" type="main">
+                    <mainFiles>
+                        <file category="STD_FLUX_TABLE" name="M.VIMOS.2008-06-17T18:14:43.781"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="BIAS" certified="true"
+                    complete="true" match="calib_plan" type="main">
+                    <mainFiles>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:33:47.805"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:34:39.026"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:35:30.201"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:36:21.588"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T12:37:13.006"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="BIAS" certified="true"
+                    complete="true" match="calib_plan" type="main">
+                    <mainFiles>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:27:06.394"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:27:58.893"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:28:51.438"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:29:44.361"/>
+                        <file category="BIAS" name="VIMOS.2003-06-02T19:30:37.451"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+                <association category="IFU_CAL" certified="false"
+                    complete="true" match="extended" type="main">
+                    <mainFiles>
+                        <file category="IFU_ARC_SPECTRUM" name="VIMOS.2003-06-03T09:25:39.665"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles>
+                        <association category="LINE_CATALOG"
+                            certified="true" complete="true" match="N/A" type="main">
+                            <mainFiles>
+                                <file category="LINE_CATALOG" name="M.VIMOS.2008-06-17T18:11:18.672"/>
+                            </mainFiles>
+                            <messages/>
+                            <associatedFiles/>
+                        </association>
+                        <association category="IFU_IDENT"
+                            certified="true" complete="true" match="N/A" type="main">
+                            <mainFiles>
+                                <file category="IFU_IDENT" name="M.VIMOS.2008-06-17T18:16:03.380"/>
+                            </mainFiles>
+                            <messages/>
+                            <associatedFiles/>
+                        </association>
+                        <association category="BIAS" certified="true"
+                            complete="true" match="calib_plan" type="main">
+                            <mainFiles>
+                                <file category="BIAS" name="VIMOS.2003-06-02T12:33:47.805"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T12:34:39.026"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T12:35:30.201"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T12:36:21.588"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T12:37:13.006"/>
+                            </mainFiles>
+                            <messages/>
+                            <associatedFiles/>
+                        </association>
+                        <association category="BIAS" certified="true"
+                            complete="true" match="calib_plan" type="main">
+                            <mainFiles>
+                                <file category="BIAS" name="VIMOS.2003-06-02T19:27:06.394"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T19:27:58.893"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T19:28:51.438"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T19:29:44.361"/>
+                                <file category="BIAS" name="VIMOS.2003-06-02T19:30:37.451"/>
+                            </mainFiles>
+                            <messages/>
+                            <associatedFiles/>
+                        </association>
+                        <association category="BIAS" certified="true"
+                            complete="true" match="calib_plan" type="main">
+                            <mainFiles>
+                                <file category="BIAS" name="VIMOS.2003-06-03T11:23:39.090"/>
+                                <file category="BIAS" name="VIMOS.2003-06-03T11:24:31.674"/>
+                                <file category="BIAS" name="VIMOS.2003-06-03T11:25:26.548"/>
+                                <file category="BIAS" name="VIMOS.2003-06-03T11:26:20.261"/>
+                                <file category="BIAS" name="VIMOS.2003-06-03T11:27:16.646"/>
+                            </mainFiles>
+                            <messages/>
+                            <associatedFiles/>
+                        </association>
+                    </associatedFiles>
+                </association>
+                <association category="BIAS" certified="true"
+                    complete="true" match="calib_plan" type="main">
+                    <mainFiles>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:23:39.090"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:24:31.674"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:25:26.548"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:26:20.261"/>
+                        <file category="BIAS" name="VIMOS.2003-06-03T11:27:16.646"/>
+                    </mainFiles>
+                    <messages/>
+                    <associatedFiles/>
+                </association>
+            </associatedFiles>
+        </association>
+        <association category="BIAS" certified="true" complete="true"
+            match="calib_plan" type="main">
+            <mainFiles>
+                <file category="BIAS" name="VIMOS.2003-06-03T11:23:39.090"/>
+                <file category="BIAS" name="VIMOS.2003-06-03T11:24:31.674"/>
+                <file category="BIAS" name="VIMOS.2003-06-03T11:25:26.548"/>
+                <file category="BIAS" name="VIMOS.2003-06-03T11:26:20.261"/>
+                <file category="BIAS" name="VIMOS.2003-06-03T11:27:16.646"/>
+            </mainFiles>
+            <messages/>
+            <associatedFiles/>
+        </association>
+    </associatedFiles>
+</association>
