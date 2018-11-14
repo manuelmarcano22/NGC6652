@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<association category="IFU_SCREEN_FLAT" certified="true"
+    complete="false" mode="Raw2Raw" type="main">
+    <mainFiles>
+        <file category="IFU_SCREEN_FLAT" name="VIMOS.2003-06-04T04:34:46.144"/>
+    </mainFiles>
+    <messages>
+        <message text="No association could be established: this file type is not supported"/>
+    </messages>
+    <associatedFiles/>
+</association>

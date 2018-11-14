@@ -1,0 +1,31 @@
+PAF.HDR.START;
+PAF.TYPE            "QC1 parameters";        # Type of parameter file
+PAF.ID              "";
+PAF.NAME            "qc0002.paf";            # Name of PAF
+PAF.DESC            "";                      # Short description of PAF
+PAF.CRTE.NAME       "mmarcano";              # Name of creator
+PAF.CRTE.DAYTIM     "2018-11-13T18:33:20";   # Civil time for creation
+PAF.LCHG.NAME       "mmarcano";              # Author of par. file
+PAF.LCHG.DAYTIM     "2018-11-13T18:33:20";   # Timestamp for last change
+PAF.CHCK.NAME       "";                      # Name of appl. checking
+PAF.CHCK.DAYTIM     "";                      # Time for checking
+PAF.CHCK.CHECKSUM   "";                      # Checksum for the PAF
+PAF.HDR.END;
+#------------------------------------------------------------------------------
+QC.DID              "VIMOS_QC-1.0";          # QC1 dictionary [VIMOS]
+PRO.CATG            "IFU_TRANSMISSION";      # Product category [VIMOS]
+ARCFILE             "VIMOS.2003-06-02T03:56:02.397.fits"; # Archive File Name [VIMOS]
+TPL.ID              "VIMOS_ifu_cal_NightCalib"; # Template signature ID [VIMOS]
+OCS.CON.QUAD        4;                       # Quadrant [VIMOS]
+INS.GRIS4.NAME      "HR_blue";               # Grism name [VIMOS]
+INS.FILT4.NAME      "Free";                  # Filter name [VIMOS]
+INS.FOCU4.TEMP      12.233719;               # Beam temperature [VIMOS]
+ADA.ABSROT.START    -119.36253;              # Adaptor initial rotator angle [VIMOS]
+ADA.ABSROT.END      -119.36255;              # Adaptor final rotator angle [VIMOS]
+INS.IFUS.MODE       "ON";                    # IFU mode [VIMOS]
+INS.IFUE.MAG        "2:1";                   # IFU magnification [VIMOS]
+PRO.WLEN.CEN        5015.675;                # Reference wavelength (Angstrom) [VIMOS]
+QC.IFU.FLUX.LAMBDA1 4700.;                   # Start wavelength in flat field flux determination (Angstrom) [VIMOS]
+QC.IFU.FLUX.LAMBDA2 5700.;                   # End wavelength in flat field flux determination (Angstrom) [VIMOS]
+QC.IFU.FLAT.FLUX    477189.008168538;        # Mean flat field signal within given spectral range (ADU/s) [VIMOS]
+QC.IFU.FLAT.FLUXERR 345.394342805632;        # Error on QC.IFU.FLAT.FLUX (ADU/s) [VIMOS]

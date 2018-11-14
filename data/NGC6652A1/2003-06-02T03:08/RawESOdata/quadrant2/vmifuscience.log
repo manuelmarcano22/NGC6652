@@ -1,53 +1,53 @@
 
-Start time     : 2018-10-12T16:01:40
+Start time     : 2018-11-13T19:36:00
 Program name   : esorex
 Severity level : [ INFO  ] 
 
-16:01:40 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
-16:01:40 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
-16:01:40 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2 vmifuscience --CalibrateFlux=true /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifuscience.sof
-16:01:40 [ INFO  ] vmifuscience: [tid=000] Loading input frames...
-16:01:40 [ INFO  ] vmifuscience: [tid=000] Bias removal...
-16:01:40 [ INFO  ] vmifuscience: [tid=000] Processing data from quadrant 2, HR_blue/Free, shutter ON...
-16:01:40 [ INFO  ] vmifuscience: [tid=000] Processing spectra in pseudo-slit 2:
-16:01:40 [ INFO  ] vmifuscience: [tid=000]   Load flat field tracing table...
-16:01:41 [ INFO  ] vmifuscience: [tid=000]   Detect traceable spectra on science...
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 70.000000, Detected spectra: 6
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 67.000000, Detected spectra: 7
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 64.000000, Detected spectra: 8
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 61.000000, Detected spectra: 10
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 58.000000, Detected spectra: 10
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 55.000000, Detected spectra: 10
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 52.000000, Detected spectra: 11
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 49.000000, Detected spectra: 12
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 46.000000, Detected spectra: 15
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 43.000000, Detected spectra: 17
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 40.000000, Detected spectra: 22
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 37.000000, Detected spectra: 36
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 34.000000, Detected spectra: 56
-16:01:41 [ INFO  ] vmifuscience: [tid=000]     56 spectra detected on scientific exposure.
-16:01:41 [ INFO  ] vmifuscience: [tid=000]   Tracing detected spectra...
-16:01:41 [ INFO  ] vmifuscience: [tid=000]   Identify traced spectra on science exposure...
-16:01:41 [ INFO  ] vmifuscience: [tid=000]   Flat tracings alignment: offset: 9.000148, slope: -0.002259
-16:01:41 [ INFO  ] vmifuscience: [tid=000]   Align flat field tracings to science exposure...
-16:01:41 [ INFO  ] vmifuscience: [tid=000]   Extraction of scientific spectra...
-16:01:44 [ INFO  ] vmifuscience: [tid=000]   Align wavelength calibration to detected sky lines...
-16:01:44 [ INFO  ] ifuAlignSkylines: [tid=000]   Applying median shift of -0.230661 px
-16:01:44 [ INFO  ] ifuAlignSkylines: [tid=000]   NOT applying individual shifts
-16:01:44 [ INFO  ] vmifuscience: [tid=000]     Alignment: -0.23 CCD pixels
-16:01:44 [ INFO  ] vmifuscience: [tid=000]   Resample scientific spectra at constant wavelength step (0.54 Angstrom)
-16:01:44 [ INFO  ] vmifuscience: [tid=000] Apply transmission correction to extracted spectra...
-16:01:44 [ INFO  ] vmifuscience: [tid=000] Applying spectro-photometric calibration ...
-16:01:44 [ INFO  ] VmSpApplyPhot: [tid=000] Mean airmass: 1.4063
-16:01:45 [ INFO  ] : [tid=000] Calculating product checksums
-16:01:45 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_fov.fits
-16:01:45 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_science_flux_reduced.fits
-16:01:45 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_science_reduced.fits
-16:01:45 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_sky_ids.fits
-16:01:45 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_sky_trace.fits
-16:01:45 [ INFO  ] : [tid=000] 5 products created
-16:01:45 [ INFO  ] : [tid=000] Recipe operation(s) took           4.87 seconds to complete.
-16:01:45 [ INFO  ] : [tid=000] Size of single raw input frame  =    17.63 MB
+19:36:00 [ INFO  ] : [tid=000] This is EsoRex, version 3.13.1
+19:36:00 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.36, WCSLIB = 4.24, FFTW (normal precision) = 3.3.4-sse2, FFTW (single precision) = 3.3.4-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 200805
+19:36:00 [ INFO  ] : [tid=000] Invocation command line was: /home/mmarcano/Documents/VIMOS/NGC6652/esorex/bin/esorex --output-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2 --log-dir=/home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2 vmifuscience --CalibrateFlux=true /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifuscience.sof
+19:36:00 [ INFO  ] vmifuscience: [tid=000] Loading input frames...
+19:36:00 [ INFO  ] vmifuscience: [tid=000] Bias removal...
+19:36:00 [ INFO  ] vmifuscience: [tid=000] Processing data from quadrant 2, HR_blue/Free, shutter ON...
+19:36:00 [ INFO  ] vmifuscience: [tid=000] Processing spectra in pseudo-slit 2:
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Load flat field tracing table...
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Detect traceable spectra on science...
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 70.000000, Detected spectra: 6
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 67.000000, Detected spectra: 7
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 64.000000, Detected spectra: 8
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 61.000000, Detected spectra: 10
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 58.000000, Detected spectra: 10
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 55.000000, Detected spectra: 10
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 52.000000, Detected spectra: 11
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 49.000000, Detected spectra: 12
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 46.000000, Detected spectra: 15
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 43.000000, Detected spectra: 17
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 40.000000, Detected spectra: 22
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 37.000000, Detected spectra: 36
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     Detection threshold: 34.000000, Detected spectra: 56
+19:36:00 [ INFO  ] vmifuscience: [tid=000]     56 spectra detected on scientific exposure.
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Tracing detected spectra...
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Identify traced spectra on science exposure...
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Flat tracings alignment: offset: 9.000148, slope: -0.002259
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Align flat field tracings to science exposure...
+19:36:00 [ INFO  ] vmifuscience: [tid=000]   Extraction of scientific spectra...
+19:36:03 [ INFO  ] vmifuscience: [tid=000]   Align wavelength calibration to detected sky lines...
+19:36:03 [ INFO  ] ifuAlignSkylines: [tid=000]   Applying median shift of -0.230661 px
+19:36:03 [ INFO  ] ifuAlignSkylines: [tid=000]   NOT applying individual shifts
+19:36:03 [ INFO  ] vmifuscience: [tid=000]     Alignment: -0.23 CCD pixels
+19:36:03 [ INFO  ] vmifuscience: [tid=000]   Resample scientific spectra at constant wavelength step (0.54 Angstrom)
+19:36:03 [ INFO  ] vmifuscience: [tid=000] Apply transmission correction to extracted spectra...
+19:36:03 [ INFO  ] vmifuscience: [tid=000] Applying spectro-photometric calibration ...
+19:36:03 [ INFO  ] VmSpApplyPhot: [tid=000] Mean airmass: 1.4063
+19:36:03 [ INFO  ] : [tid=000] Calculating product checksums
+19:36:03 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_fov.fits
+19:36:03 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_science_flux_reduced.fits
+19:36:03 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_science_reduced.fits
+19:36:03 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_sky_ids.fits
+19:36:03 [ INFO  ] : [tid=000] Created product /home/mmarcano/Documents/VIMOS/NGC6652/data/NGC6652A1/2003-06-02T03:08/RawESOdata/quadrant2/ifu_sky_trace.fits
+19:36:03 [ INFO  ] : [tid=000] 5 products created
+19:36:03 [ INFO  ] : [tid=000] Recipe operation(s) took            3.6 seconds to complete.
+19:36:03 [ INFO  ] : [tid=000] Size of single raw input frame  =    17.63 MB
 
-16:01:45 [ INFO  ] : [tid=000] => processing rate of     3.62 MB/sec 
+19:36:03 [ INFO  ] : [tid=000] => processing rate of     4.90 MB/sec 
 
